@@ -26,14 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/HTML/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="308" column="57" selection-start="12438" selection-end="12438" vertical-scroll-proportion="-21.708334" vertical-offset="4099" max-vertical-offset="14310">
-              <folding>
-                <element signature="n#style#0;n#div#10;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#11;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#12;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="308" column="57" selection-start="12438" selection-end="12438" vertical-scroll-proportion="0.0" vertical-offset="4099" max-vertical-offset="14310">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -41,7 +35,7 @@
       <file leaf-file-name="configuration.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/configuration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="26" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.29624665" vertical-offset="319" max-vertical-offset="1065">
+            <state line="52" column="5" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.90482575" vertical-offset="105" max-vertical-offset="1065">
               <folding />
             </state>
           </provider>
@@ -50,20 +44,8 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/ee/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="205" column="36" selection-start="8107" selection-end="8107" vertical-scroll-proportion="-25.0" vertical-offset="2475" max-vertical-offset="4035">
-              <folding>
-                <element signature="e#6#248#0" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#main#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#3;n#main#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="205" column="36" selection-start="8107" selection-end="8107" vertical-scroll-proportion="0.0" vertical-offset="3075" max-vertical-offset="4035">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -71,7 +53,7 @@
       <file leaf-file-name="component.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/ee/component.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="585">
+            <state line="18" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
@@ -80,10 +62,9 @@
       <file leaf-file-name="template.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/ee/less/template.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="0" selection-start="2860" selection-end="2860" vertical-scroll-proportion="-14.833333" vertical-offset="934" max-vertical-offset="1680">
+            <state line="86" column="0" selection-start="2860" selection-end="2860" vertical-scroll-proportion="0.0" vertical-offset="934" max-vertical-offset="1680">
               <folding>
                 <marker date="1398712491000" expanded="true" signature="2912:2934" placeholder="{...}" />
-                <marker date="1398712491000" expanded="true" signature="3135:3161" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -425,7 +406,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rvmulti" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
   </component>
@@ -470,17 +451,17 @@
     <frame x="922" y="22" width="997" height="880" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24974924" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -507,180 +488,151 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/Documentation/Porto/assets/js/jquery.js">
+    <entry file="file://$PROJECT_DIR$/test/HTML/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="138870">
-          <folding>
-            <marker date="1395266356000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1395266356000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1395266356000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/HTML/about-me.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9060">
+        <state line="308" column="57" selection-start="12438" selection-end="12438" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14310">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Documentation/Porto/index.html">
+    <entry file="file://$PROJECT_DIR$/configuration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7845">
+        <state line="52" column="5" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1065">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/HTML/master/less/less.js">
+    <entry file="file://$PROJECT_DIR$/templates/ee/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="770">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/HTML/master/less/mixins.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
+        <state line="205" column="36" selection-start="8107" selection-end="8107" vertical-scroll-proportion="0.0" vertical-offset="3075" max-vertical-offset="4035">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/HTML/master/less/skin.less">
+    <entry file="file://$PROJECT_DIR$/templates/ee/component.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5475">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/HTML/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="770">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/HTML/contact-us-advanced.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11820">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ee/css/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="760">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/HTML/css/theme-responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ee/vendor/isotope/jquery.isotope.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1605">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/HTML/about-us.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="26" selection-start="1238" selection-end="1238" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="10800">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ee/vendor/modernizr.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="770">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ee/js/views/view.home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ee/css/fonts/font-awesome/css/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-16.83117" vertical-offset="12960" max-vertical-offset="20160">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ee/html/mod_custom/main-nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="29" selection-start="887" selection-end="887" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="2175">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ee/js/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="783">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ee/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="783">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ee/js/template.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="770">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ee/css/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-143.19481" vertical-offset="110260" max-vertical-offset="111030">
+        <state line="18" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="675">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/ee/less/template.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2860" selection-end="2860" vertical-scroll-proportion="-14.833333" vertical-offset="934" max-vertical-offset="1680">
+        <state line="86" column="0" selection-start="2860" selection-end="2860" vertical-scroll-proportion="0.0" vertical-offset="934" max-vertical-offset="1680">
           <folding>
             <marker date="1398712491000" expanded="true" signature="2912:2934" placeholder="{...}" />
-            <marker date="1398712491000" expanded="true" signature="3135:3161" placeholder="{...}" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Documentation/Porto/assets/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="138870" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/HTML/about-me.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9060" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Documentation/Porto/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7845" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/HTML/master/less/less.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="770" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/HTML/master/less/mixins.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/HTML/master/less/skin.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5475" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/HTML/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="770" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/HTML/contact-us-advanced.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11820" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ee/css/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="760" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/HTML/css/theme-responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10080" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ee/vendor/isotope/jquery.isotope.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1605" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/HTML/about-us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="26" selection-start="1238" selection-end="1238" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="10800" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ee/vendor/modernizr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="770" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ee/js/views/view.home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ee/css/fonts/font-awesome/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-16.83117" vertical-offset="12960" max-vertical-offset="20160" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ee/html/mod_custom/main-nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="29" selection-start="887" selection-end="887" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="2175" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ee/js/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="783" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ee/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="783" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ee/js/template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="770" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ee/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-143.19481" vertical-offset="110260" max-vertical-offset="111030" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/ee/js/theme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="970" column="54" selection-start="20794" selection-end="20794" vertical-scroll-proportion="19.556452" vertical-offset="0" max-vertical-offset="15810">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
+        <state line="970" column="54" selection-start="20794" selection-end="20794" vertical-scroll-proportion="19.556452" vertical-offset="0" max-vertical-offset="15810" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="770">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="770" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/ee/templateDetails.xml">
@@ -692,53 +644,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/media/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="783">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="783" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ee/component.php">
+    <entry file="file://$PROJECT_DIR$/test/HTML/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="585">
+        <state line="308" column="57" selection-start="12438" selection-end="12438" vertical-scroll-proportion="0.0" vertical-offset="4099" max-vertical-offset="14310">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/ee/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="36" selection-start="8107" selection-end="8107" vertical-scroll-proportion="-25.0" vertical-offset="2475" max-vertical-offset="4035">
-          <folding>
-            <element signature="e#6#248#0" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#main#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#3;n#main#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="205" column="36" selection-start="8107" selection-end="8107" vertical-scroll-proportion="0.0" vertical-offset="2475" max-vertical-offset="4035">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/HTML/index.html">
+    <entry file="file://$PROJECT_DIR$/templates/ee/component.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="308" column="57" selection-start="12438" selection-end="12438" vertical-scroll-proportion="-21.708334" vertical-offset="4099" max-vertical-offset="14310">
+        <state line="18" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ee/less/template.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="0" selection-start="2860" selection-end="2860" vertical-scroll-proportion="0.0" vertical-offset="934" max-vertical-offset="1680">
           <folding>
-            <element signature="n#style#0;n#div#10;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#11;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#12;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1398712491000" expanded="true" signature="2912:2934" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/configuration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="26" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.29624665" vertical-offset="319" max-vertical-offset="1065">
+        <state line="52" column="5" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.90482575" vertical-offset="105" max-vertical-offset="1065">
           <folding />
         </state>
       </provider>
