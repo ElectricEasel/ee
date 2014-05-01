@@ -36,8 +36,7 @@ else
 ?>
 
 <?php
-// Add JavaScript Frameworks
-JHtml::_('bootstrap.framework');
+
 $doc->addScript('templates/' .$this->template. '/js/template.js')
     ->addScript('templates/' .$this->template. '/vendor/modernizr.js');
 
@@ -51,7 +50,6 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/template.css')
     ->addStyleSheet('templates/'.$this->template.'/css/theme.css')
     ->addStyleSheet('templates/'.$this->template.'/css/theme-elements.css')
     ->addStyleSheet('templates/'.$this->template.'/css/theme-animate.css')
-    ->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css')
     ->addStyleSheet('templates/'.$this->template.'/vendor/rs-plugin/css/settings.css')
     ->addStyleSheet('templates/'.$this->template.'/vendor/circle-flip-slideshow/css/component.css')
     ->addStyleSheet('templates/'.$this->template.'/css/skins/blue.css')
@@ -177,14 +175,6 @@ else
 					</a>
 					<div class="header-search pull-right">
 						<jdoc:include type="modules" name="position-0" style="none" />
-                        <div class="social-icons">
-                            <ul class="social-icons">
-                                <li class="facebook"><a href="http://www.facebook.com/" target="_blank" data-placement="bottom" rel="tooltip" title="Facebook">Facebook</a></li>
-                                <li class="twitter"><a href="http://www.twitter.com/" target="_blank" data-placement="bottom" rel="tooltip" title="Twitter">Twitter</a></li>
-                                <li class="googleplus"><a href="http://www.twitter.com/" target="_blank" data-placement="bottom" rel="tooltip" title="Twitter">Twitter</a></li>
-                                <li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" data-placement="bottom" rel="tooltip" title="Linkedin">Linkedin</a></li>
-                            </ul>
-                        </div>
 					</div>
                     <jdoc:include type="modules" name="nav-top" style="none" />
                 </div>
@@ -237,27 +227,28 @@ else
 	</footer>
 	<jdoc:include type="modules" name="debug" style="none" />
 
-    <script src="templates/ee/vendor/jquery.js"></script>
-    <script src="templates/ee/js/plugins.js"></script>
-    <script src="templates/ee/vendor/jquery.easing.js"></script>
-    <script src="templates/ee/vendor/jquery.appear.js"></script>
-    <script src="templates/ee/vendor/jquery.cookie.js"></script>
+    <script src="/templates/ee/vendor/jquery.js"></script>
+    <script src="/templates/ee/vendor/bootstrap.js"></script>
+    <script src="/templates/ee/js/plugins.js"></script>
+    <script src="/templates/ee/vendor/jquery.easing.js"></script>
+    <script src="/templates/ee/vendor/jquery.appear.js"></script>
+    <script src="/templates/ee/vendor/jquery.cookie.js"></script>
 
-    <script src="templates/ee/vendor/twitterjs/twitter.js"></script>
-    <script src="templates/ee/vendor/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-    <script src="templates/ee/vendor/rs-plugin/js/jquery.themepunch.revolution.js"></script>
-    <script src="templates/ee/vendor/owl-carousel/owl.carousel.js"></script>
-    <script src="templates/ee/vendor/circle-flip-slideshow/js/jquery.flipshow.js"></script>
-    <script src="templates/ee/vendor/magnific-popup/magnific-popup.js"></script>
-    <script src="templates/ee/vendor/jquery.validate.js"></script>
+    <script src="/templates/ee/vendor/twitterjs/twitter.js"></script>
+    <script src="/templates/ee/vendor/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="/templates/ee/vendor/rs-plugin/js/jquery.themepunch.revolution.js"></script>
+    <script src="/templates/ee/vendor/owl-carousel/owl.carousel.js"></script>
+    <script src="/templates/ee/vendor/circle-flip-slideshow/js/jquery.flipshow.js"></script>
+    <script src="/templates/ee/vendor/magnific-popup/magnific-popup.js"></script>
+    <script src="/templates/ee/vendor/jquery.validate.js"></script>
 
     <!-- Current Page Scripts -->
-    <script src="templates/ee/js/views/view.home.js"></script>
+    <script src="/templates/ee/js/views/view.home.js"></script>
 
     <!-- Theme Initializer -->
-    <script src="templates/ee/js/theme.js"></script>
+    <script src="/templates/ee/js/theme.js"></script>
 
     <!-- Custom JS -->
-    <script src="templates/ee/js/custom.js"></script>
+    <script src="/templates/ee/js/custom.js"></script>
 </body>
 </html>

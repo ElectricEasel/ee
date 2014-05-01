@@ -7038,8 +7038,18 @@ div.modal.fade.in {
 .icon-credit-2:before {
   content: "\e287";
 }
+.container {
+  max-width: 960px;
+}
 .navbar-collapse {
-  clear: right;
+  clear: both;
+}
+button.btn-responsive-nav span.icon-bar {
+  background: #ffffff;
+  height: 2px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  display: block;
 }
 footer.footer {
   padding: 10px 0;
