@@ -85,12 +85,68 @@
 // Icon Font
 @import "icomoon.less";
 
+.sans() {
+  font-family: "Open Sans", sans-serif;
+}
+
+body * {
+  .box-sizing(border-box);
+}
 .container {
   max-width: 960px;
 }
 
-.navbar-collapse {
+
+header {
+  background: none;
+  border-top: none;
+}
+header .navbar-collapse {
   clear: both;
+
+  ul.nav-main {
+    margin: 0;
+    li {
+      .sans;
+
+      a {
+        text-transform: none;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+  @media (min-width:@screen-lg-min) {
+    padding-left: 0;
+    padding-right: 0;
+
+    nav.nav-main {
+      margin-top: -30px;
+    }
+    ul.nav-main {
+      li, li.active {
+        a, a:hover, a:focus {
+          background-color: transparent;
+        }
+      }
+      li {
+        a {
+          color: @black;
+
+          &:hover, &:focus {
+            color: @blue;
+          }
+        }
+      }
+      li.active.current a {
+        color: @blue;
+      }
+      li:last-child a {
+        margin-right: 0;
+        padding-right: 0;
+      }
+    }
+  }
 }
 button.btn-responsive-nav {
   span.icon-bar {

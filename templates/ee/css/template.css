@@ -7038,11 +7038,62 @@ div.modal.fade.in {
 .icon-credit-2:before {
   content: "\e287";
 }
+body * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .container {
   max-width: 960px;
 }
-.navbar-collapse {
+header {
+  background: none;
+  border-top: none;
+}
+header .navbar-collapse {
   clear: both;
+}
+header .navbar-collapse ul.nav-main {
+  margin: 0;
+}
+header .navbar-collapse ul.nav-main li {
+  font-family: "Open Sans", sans-serif;
+}
+header .navbar-collapse ul.nav-main li a {
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media (min-width: 980px) {
+  header .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header .navbar-collapse nav.nav-main {
+    margin-top: -30px;
+  }
+  header .navbar-collapse ul.nav-main li a,
+  header .navbar-collapse ul.nav-main li.active a,
+  header .navbar-collapse ul.nav-main li a:hover,
+  header .navbar-collapse ul.nav-main li.active a:hover,
+  header .navbar-collapse ul.nav-main li a:focus,
+  header .navbar-collapse ul.nav-main li.active a:focus {
+    background-color: transparent;
+  }
+  header .navbar-collapse ul.nav-main li a {
+    color: #000000;
+  }
+  header .navbar-collapse ul.nav-main li a:hover,
+  header .navbar-collapse ul.nav-main li a:focus {
+    color: #0072bc;
+  }
+  header .navbar-collapse ul.nav-main li.active.current a {
+    color: #0072bc;
+  }
+  header .navbar-collapse ul.nav-main li:last-child a {
+    margin-right: 0;
+    padding-right: 0;
+  }
 }
 button.btn-responsive-nav span.icon-bar {
   background: #ffffff;

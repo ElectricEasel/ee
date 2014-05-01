@@ -41,8 +41,7 @@ $doc->addScript('templates/' .$this->template. '/js/template.js')
     ->addScript('templates/' .$this->template. '/vendor/modernizr.js');
 
 // Add Stylesheets
-$doc->addStyleSheet('templates/'.$this->template.'/css/template.css')
-    ->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css')
+$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css')
     ->addStyleSheet('templates/'.$this->template.'/css/fonts/font-awesome/css/font-awesome.css')
     ->addStyleSheet('templates/'.$this->template.'/vendor/owl-carousel/owl.carousel.css')
     ->addStyleSheet('templates/'.$this->template.'/vendor/owl-carousel/owl.theme.css')
@@ -52,10 +51,10 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/template.css')
     ->addStyleSheet('templates/'.$this->template.'/css/theme-animate.css')
     ->addStyleSheet('templates/'.$this->template.'/vendor/rs-plugin/css/settings.css')
     ->addStyleSheet('templates/'.$this->template.'/vendor/circle-flip-slideshow/css/component.css')
-    ->addStyleSheet('templates/'.$this->template.'/css/skins/blue.css')
     ->addStyleSheet('templates/'.$this->template.'/css/custom.css')
     ->addStyleSheet('templates/'.$this->template.'/css/theme-responsive.css')
-    ->addStyleSheet('templates/'.$this->template.'/css/fonts/font-awesome/css/font-awesome.min.css');
+    ->addStyleSheet('templates/'.$this->template.'/css/fonts/font-awesome/css/font-awesome.min.css')
+    ->addStyleSheet('templates/'.$this->template.'/css/template.css');
 
 // Load optional RTL Bootstrap CSS
 JHtml::_('bootstrap.loadCss', false, $this->direction);
@@ -121,11 +120,6 @@ else
 	{
 	?>
 	<style type="text/css">
-		body.site
-		{
-			border-top: 3px solid <?php echo $this->params->get('templateColor');?>;
-			background-color: <?php echo $this->params->get('templateBackgroundColor');?>
-		}
 		a
 		{
 			color: <?php echo $this->params->get('templateColor');?>;
