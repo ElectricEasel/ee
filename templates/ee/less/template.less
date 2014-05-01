@@ -88,12 +88,20 @@
 .sans() {
   font-family: "Open Sans", sans-serif;
 }
+.serif() {
+  font-family: "Roboto Slab", serif;
+}
 
 body * {
   .box-sizing(border-box);
 }
 .container {
   max-width: 960px;
+  padding: 0;
+
+  @media (min-width:@screen-lg-min) {
+    width: 960px;
+  }
 }
 
 
@@ -134,12 +142,12 @@ header .navbar-collapse {
           color: @black;
 
           &:hover, &:focus {
-            color: @blue;
+            color: @eeblue;
           }
         }
       }
       li.active.current a {
-        color: @blue;
+        color: @eeblue;
       }
       li:last-child a {
         margin-right: 0;
@@ -155,6 +163,73 @@ button.btn-responsive-nav {
     margin-bottom: 3px;
     margin-top: 3px;
     display: block;
+  }
+}
+div.slider-container {
+  background: none;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .very_large_text, .large_text, .medium_text {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  }
+  .very_large_text {
+    .sans;
+    font-size: 123px;
+    line-height: 123px;
+  }
+  .large_text {
+    .serif;
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 300;
+  }
+  .medium_text {
+    .serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .blue {
+    font-size: 18px;
+
+    .btn-blue {
+      .serif;
+      background: @blue;
+      padding: 9% 14%;
+      border-radius: 0;
+      border: 1px solid @paleblue;
+      font-size: inherit;
+
+      &:hover, &:focus {
+        background: @bluelight;
+      }
+    }
+  }
+  .tp-rightarrow, .tp-leftarrow {
+    background: url("/templates/ee/images/carousel-button.png") 0 0 no-repeat;
+    height: 74px;
+    width: 75px;
+
+    &:before {
+      color: @white;
+      text-align: center;
+      display: block;
+      height: 74px;
+      width: 75px;
+      line-height: 74px;
+      vertical-align: middle;
+    }
+  }
+  .tp-leftarrow:before {
+    content: "Prev";
+  }
+  .tp-rightarrow:before {
+    content: "Next";
+  }
+  .tp-bullets {
+    display: none;
   }
 }
 footer.footer {

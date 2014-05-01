@@ -114,6 +114,7 @@ else
 	}
 	?>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
 	<?php
 	// Template color
 	if ($this->params->get('templateColor'))
@@ -160,7 +161,7 @@ else
 
 	<!-- Body -->
 	<div class="body">
-		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
+        <div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
 			<!-- Header -->
 			<header class="header" role="banner">
 				<div class="header-inner clearfix">
@@ -178,7 +179,11 @@ else
 				<jdoc:include type="modules" name="position-1" style="none" />
 			</nav>
 			<?php endif; ?>
-			<jdoc:include type="modules" name="banner" style="xhtml" />
+            <?php if ($this->countModules('banner')) : ?>
+        </div>
+        <jdoc:include type="modules" name="banner" style="xhtml" />
+        <div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
+            <?php endif; ?>
 			<div class="row-fluid">
 				<?php if ($this->countModules('position-8')) : ?>
 				<!-- Begin Sidebar -->

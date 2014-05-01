@@ -41,8 +41,8 @@ Version: 		2.0
 
 				var defaults = {
 					delay: 9000,
-					startheight: 495,
-					startwidth: 960,
+					startheight: 552,
+					startwidth: 1400,
 
 					hideThumbs: 10,
 
@@ -84,8 +84,8 @@ Version: 		2.0
 			if($("#revolutionSliderFullScreen").get(0)) {
 				var rev = $("#revolutionSliderFullScreen").revolution({
 					delay: 9000,
-					startwidth: 1170,
-					startheight: 600,
+					startwidth: 1400,
+					startheight: 552,
 
 					hideThumbs: 200,
 
