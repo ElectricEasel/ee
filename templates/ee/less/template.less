@@ -92,6 +92,9 @@
   font-family: "Roboto Slab", serif;
 }
 
+body {
+  padding: 0;
+}
 body * {
   .box-sizing(border-box);
 }
@@ -102,6 +105,13 @@ body * {
   @media (min-width:@screen-lg-min) {
     width: 960px;
   }
+  @media (max-width:@screen-sm-max) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.row-fluid [class*="span"] {
+  min-height: 0;
 }
 
 .btn-bluelight {
@@ -192,7 +202,7 @@ div.slider-container {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   min-height: 0;
 
   .very_large_text, .large_text, .medium_text {
@@ -267,6 +277,8 @@ div.slider-container {
 }
 .home-about {
   text-align: center;
+  background: @gray;
+  padding: 24px 0 60px;
 
   p {
     .serif;

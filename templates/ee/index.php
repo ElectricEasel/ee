@@ -179,9 +179,10 @@ else
 				<jdoc:include type="modules" name="position-1" style="none" />
 			</nav>
 			<?php endif; ?>
-            <?php if ($this->countModules('banner')) : ?>
+            <?php if ($this->countModules('banner') || $this->countModules('above-content')) : ?>
         </div>
         <jdoc:include type="modules" name="banner" style="xhtml" />
+        <jdoc:include type="modules" name="above-content" style="none" />
         <div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
             <?php endif; ?>
 			<div class="row-fluid">
@@ -196,12 +197,10 @@ else
 				<?php endif; ?>
 				<main id="content" role="main" class="<?php echo $span;?>">
 					<!-- Begin Content -->
-                    <jdoc:include type="modules" name="above-content" style="xhtml" />
 					<jdoc:include type="modules" name="position-3" style="xhtml" />
 					<jdoc:include type="message" />
 					<jdoc:include type="component" />
 					<jdoc:include type="modules" name="position-2" style="none" />
-                    <jdoc:include type="modules" name="below-content" style="xhtml" />
 					<!-- End Content -->
 				</main>
 				<?php if ($this->countModules('position-7')) : ?>
@@ -213,6 +212,7 @@ else
 				<?php endif; ?>
 			</div>
 		</div>
+        <jdoc:include type="modules" name="below-content" style="none" />
 	</div>
 	<!-- Footer -->
 	<footer class="footer" role="contentinfo">
