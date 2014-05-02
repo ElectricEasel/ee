@@ -104,11 +104,31 @@ body * {
   }
 }
 
+.btn-bluelight {
+  background: @bluelight;
+  border: 1px solid #91c7ef;
+  border-radius: 0;
+  .serif;
+  color: @white;
+  font-weight: 300;
+  font-size: 1.1em;
+  padding: 12px 32px;
+  box-shadow: none;
+
+  &:hover, &:focus {
+    background: darken(@bluelight, 15%);
+    color: @white;
+  }
+}
 
 header {
   background: none;
   border-top: none;
+  margin-bottom: -6px;
+  padding-top: 20px;
 }
+
+// Main navbar
 header .navbar-collapse {
   clear: both;
 
@@ -156,6 +176,8 @@ header .navbar-collapse {
     }
   }
 }
+
+// Home carousel
 button.btn-responsive-nav {
   span.icon-bar {
     background: @white;
@@ -170,6 +192,8 @@ div.slider-container {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
+  min-height: 0;
 
   .very_large_text, .large_text, .medium_text {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
@@ -232,6 +256,30 @@ div.slider-container {
     display: none;
   }
 }
+
+.custom h2 {
+  .sans;
+  color: @black;
+  font-size: 3.4em;
+  font-weight: 300;
+  text-align: center;
+  margin: 16px 0;
+}
+.home-about {
+  text-align: center;
+
+  p {
+    .serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: @black;
+    font-weight: 300;
+  }
+  .btn-bluelight {
+    margin-top: 15px;
+  }
+}
+
 footer.footer {
   padding: 10px 0;
 }

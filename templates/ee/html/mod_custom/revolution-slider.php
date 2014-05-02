@@ -16,7 +16,7 @@
                              data-easing="easeOutExpo"><img src="/templates/ee/images/tt.png" alt=""></div>
 
                         <div class="tp-caption medium_text lfl stl"
-                             data-x="274"
+                             data-x="270"
                              data-y="142"
                              data-speed="300"
                              data-start="2000"
@@ -49,14 +49,14 @@
                         <img src="/templates/ee/images/carousel-bg.jpg" alt="Thousand Trails" data-bgfit="contain" data-bgposition="center center" data-bgrepeat="no-repeat">
 
                         <div class="tp-caption randomrotate lft"
-                             data-x="346"
+                             data-x="344"
                              data-y="46"
                              data-speed="500"
                              data-start="1000"
                              data-easing="easeOutExpo"><img src="/templates/ee/images/tt.png" alt=""></div>
 
                         <div class="tp-caption medium_text lfl stl"
-                             data-x="274"
+                             data-x="270"
                              data-y="142"
                              data-speed="300"
                              data-start="2000"
