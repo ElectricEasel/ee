@@ -7231,6 +7231,27 @@ div.slider-container .tp-bullets {
 .home-about .btn-bluelight {
   margin-top: 15px;
 }
+#quotes .quote {
+  font-family: "Droid Serif", serif;
+  font-size: 200px;
+  line-height: 200px;
+  color: #b8dbf5;
+  display: inline-block;
+  width: 10%;
+}
+#quotes p {
+  font-family: "Roboto Slab", serif;
+  color: #000000;
+  font-size: 1.8em;
+  font-weight: 300;
+  line-height: 1.6em;
+  display: inline-block;
+  width: 80%;
+  margin-right: 10%;
+  margin-top: 44px;
+  text-align: center;
+  vertical-align: top;
+}
 footer.footer {
   padding: 14px 0;
   margin-top: 0;

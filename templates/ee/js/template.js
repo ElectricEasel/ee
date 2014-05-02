@@ -10,6 +10,12 @@
 {
 	$(document).ready(function()
 	{
+
+        // Owl Carousel
+        $("#quotes").owlCarousel({
+            singleItem : true
+        });
+
 		$('*[rel=tooltip]').tooltip()
 
 		// Turn radios into btn-group
@@ -184,5 +190,6 @@
             Home.initialize();
 
         })();
+
 	})
 })(jQuery);

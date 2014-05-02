@@ -45,6 +45,9 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css')
     ->addStyleSheet('templates/'.$this->template.'/css/theme-elements.css')
     ->addStyleSheet('templates/'.$this->template.'/css/theme-animate.css')
     ->addStyleSheet('templates/'.$this->template.'/vendor/rs-plugin/css/settings.css')
+    ->addStyleSheet('templates/'.$this->template.'/vendor/owl-carousel/owl.carousel.css')
+    ->addStyleSheet('templates/'.$this->template.'/vendor/owl-carousel/owl.theme.css')
+    ->addStyleSheet('templates/'.$this->template.'/vendor/owl-carousel/owl.transitions.css')
     ->addStyleSheet('templates/'.$this->template.'/css/theme-responsive.css')
     ->addStyleSheet('templates/'.$this->template.'/css/fonts/font-awesome/css/font-awesome.min.css')
     ->addStyleSheet('templates/'.$this->template.'/css/template.css');
@@ -108,7 +111,7 @@ else
 	?>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400' rel='stylesheet' type='text/css'>
 	<?php
 	// Template color
 	if ($this->params->get('templateColor'))
@@ -228,6 +231,7 @@ else
 
     <script src="/templates/ee/vendor/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script src="/templates/ee/vendor/rs-plugin/js/jquery.themepunch.revolution.js"></script>
+    <script src="/templates/ee/vendor/owl-carousel/owl.carousel.js"></script>
 
     <script src="/templates/ee/js/template.js"></script>
 
