@@ -37,21 +37,14 @@ else
 
 <?php
 
-$doc->addScript('templates/' .$this->template. '/js/template.js')
-    ->addScript('templates/' .$this->template. '/vendor/modernizr.js');
+$doc->addScript('templates/' .$this->template. '/vendor/modernizr.js');
 
 // Add Stylesheets
 $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css')
-    ->addStyleSheet('templates/'.$this->template.'/css/fonts/font-awesome/css/font-awesome.css')
-    ->addStyleSheet('templates/'.$this->template.'/vendor/owl-carousel/owl.carousel.css')
-    ->addStyleSheet('templates/'.$this->template.'/vendor/owl-carousel/owl.theme.css')
-    ->addStyleSheet('templates/'.$this->template.'/vendor/magnific-popup/magnific-popup.css')
     ->addStyleSheet('templates/'.$this->template.'/css/theme.css')
     ->addStyleSheet('templates/'.$this->template.'/css/theme-elements.css')
     ->addStyleSheet('templates/'.$this->template.'/css/theme-animate.css')
     ->addStyleSheet('templates/'.$this->template.'/vendor/rs-plugin/css/settings.css')
-    ->addStyleSheet('templates/'.$this->template.'/vendor/circle-flip-slideshow/css/component.css')
-    ->addStyleSheet('templates/'.$this->template.'/css/custom.css')
     ->addStyleSheet('templates/'.$this->template.'/css/theme-responsive.css')
     ->addStyleSheet('templates/'.$this->template.'/css/fonts/font-awesome/css/font-awesome.min.css')
     ->addStyleSheet('templates/'.$this->template.'/css/template.css');
@@ -232,25 +225,14 @@ else
     <script src="/templates/ee/vendor/jquery.js"></script>
     <script src="/templates/ee/vendor/bootstrap.js"></script>
     <script src="/templates/ee/js/plugins.js"></script>
-    <script src="/templates/ee/vendor/jquery.easing.js"></script>
-    <script src="/templates/ee/vendor/jquery.appear.js"></script>
-    <script src="/templates/ee/vendor/jquery.cookie.js"></script>
 
-    <script src="/templates/ee/vendor/twitterjs/twitter.js"></script>
     <script src="/templates/ee/vendor/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script src="/templates/ee/vendor/rs-plugin/js/jquery.themepunch.revolution.js"></script>
-    <script src="/templates/ee/vendor/owl-carousel/owl.carousel.js"></script>
-    <script src="/templates/ee/vendor/circle-flip-slideshow/js/jquery.flipshow.js"></script>
-    <script src="/templates/ee/vendor/magnific-popup/magnific-popup.js"></script>
-    <script src="/templates/ee/vendor/jquery.validate.js"></script>
 
-    <!-- Current Page Scripts -->
-    <script src="/templates/ee/js/views/view.home.js"></script>
+    <script src="/templates/ee/js/template.js"></script>
 
     <!-- Theme Initializer -->
     <script src="/templates/ee/js/theme.js"></script>
 
-    <!-- Custom JS -->
-    <script src="/templates/ee/js/custom.js"></script>
 </body>
 </html>
