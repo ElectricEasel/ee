@@ -282,8 +282,8 @@ div.slider-container {
 
   p {
     .serif;
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 1.4em;
+    line-height: 1.8em;
     color: @black;
     font-weight: 300;
   }
@@ -293,19 +293,48 @@ div.slider-container {
 }
 
 footer.footer {
-  padding: 10px 0;
+  padding: 14px 0;
+  margin-top: 0;
+  background: @eeblack;
 }
 footer span.pull-left {
+  .sans;
   width: 170px;
-  font-size: 20px;
+  font-size: 1.7em;
   text-transform: uppercase;
   text-align: right;
   padding-right: 30px;
   height: 30px;
+  color: #a1a1a1;
+  font-weight: 300;
+  padding-top: 3px;
 }
 footer p {
   margin-bottom: 4px;
+  .sans;
+  color: #5d5d5d;
+  font-size: 1em;
+
+  a {
+    color: #5d5d5d !important;
+  }
 }
 footer .custom {
   margin-bottom: 20px;
+
+  p {
+    color: @white;
+    font-size: 1.3em;
+    font-weight: 300;
+
+    a {
+      color: @eeblue !important;
+    }
+  }
+  .slash {
+    color: @eeblue;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-weight: 400;
+  }
 }
