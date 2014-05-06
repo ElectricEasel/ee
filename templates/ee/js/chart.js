@@ -55,7 +55,7 @@ function drawChart() {
         chartArea: {
             width: '100%'
         },
-        width: 1200,
+        width: window.innerWidth,
         height: 500,
         interpolateNulls: true,
         pointSize: 1
@@ -66,14 +66,22 @@ function drawChart() {
 
     addPoints();
 
-
 }
+
+// Adjust chart width on window resize
+var chart1 = "done";
+$(window).resize(function() {
+    if(chart1=="done"){
+        chart1 = "waiting";
+        setTimeout(function(){removePoints();drawChart();chart1 = "done"},1000);
+    }
+});
 
 // Adds points and text in place of annotations.
 function addPoints(){
 
     var textTags = document.getElementsByTagName("text");
-    var chartWidth = 1200;
+    var chartWidth = window.innerWidth;
     var chartHeight = 500;
 
     var pointsArr = [];
@@ -129,37 +137,38 @@ function addPoints(){
             if (k == 0 || k == 2) {
                 content = "leads up <span>200%</span>";
                 txt.className = "blue";
-                offsetX = 2.5;
             }
             else if (k == 1 || k == 3) {
                 content = "social media <span>presence</span>";
                 txt.className = "black";
-                offsetX = 4;
             }
             else if (k == 4) {
                 content = "<strong>900%</strong> <span>growth</span>"
                 txt.className = "blue";
-                offsetX = 2.5;
             }
             else {
                 content = " ";
-                offsetX = 0;
             }
 
             txt.innerHTML = content;
             txt.style.position = "absolute";
             offsetY = -5;
             txt.style.top = -(100 - top + offsetY) + "%";
-            txt.style.left = left - offsetX + "%";
+            txt.style.left = left + "%";
 
-            var plots = document.getElementById('plots')
+            var plots = document.getElementById('plots');
             plots.style.position = "relative";
             plots.style.height = chartHeight + "px";
-            plots.style.margin = "0 0 " + (-1 * chartHeight) + "px 0";
+            plots.style.marginBottom = (-1 * chartHeight) + "px";
             plots.style.width = chartWidth + "px";
             plots.appendChild(circle1);
             plots.appendChild(circle2);
             plots.appendChild(txt);
+
+
+            // centers txt at any screen width
+            offsetX = txt.offsetWidth / 2;
+            txt.style.marginLeft = (-1 * offsetX) + "px";
 
         }
     }
@@ -179,4 +188,12 @@ function addPoints(){
 
     head.appendChild(style);
 
+}
+
+// Removes the points from addPoints
+function removePoints() {
+    var plots = document.getElementById('plots')
+    while (plots.hasChildNodes()) {
+        plots.removeChild(plots.lastChild);
+    }
 }
