@@ -16,6 +16,7 @@ $app = JFactory::getApplication();
 $doc = JFactory::getDocument();
 $this->language = $doc->language;
 $this->direction = $doc->direction;
+$menu = $app->getMenu();
 
 // Detecting Active Variables
 $option   = $app->input->getCmd('option', '');
@@ -110,7 +111,7 @@ else
 	}
 	?>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400' rel='stylesheet' type='text/css'>
 	<?php
 	// Template color
@@ -237,6 +238,11 @@ else
 
     <!-- Theme Initializer -->
     <script src="/templates/ee/js/theme.js"></script>
+
+    <?php if ($menu->getActive() == $menu->getDefault()) : ?>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="/templates/ee/js/chart.js"></script>
+<?php endif; ?>
 
 </body>
 </html>

@@ -267,6 +267,94 @@ div.slider-container {
   }
 }
 
+.capabilities {
+  .span4 {
+    display: table;
+
+    &:before {
+      content: "";
+      display: table-cell;
+      height: 40px;
+      width: 40px;
+      background: url("/templates/ee/images/icon-cogwheel.png") 0 10px no-repeat;
+    }
+    .module {
+      display: table-cell;
+      padding-left: 12px;
+    }
+  }
+  h4 {
+    .sans;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0 0 6px;
+    line-height: normal;
+  }
+  p {
+    .serif;
+    color: @grayText;
+    font-size: 17px;
+    font-weight: 300;
+  }
+}
+
+// Google area chart
+#chart_div {
+  margin: -70px auto -95px;
+  position: relative;
+  z-index: -1;
+
+  div[dir="ltr"] {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+#plots {
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  .blue {
+    color: @eeblue;
+    line-height: 24px;
+
+    span {
+      font-size: 27px;
+    }
+    strong {
+      font-size: 28px;
+      font-weight: 700;
+    }
+    strong + span {
+      font-size: 16px;
+    }
+  }
+  .black {
+    color: @black;
+    line-height: 20px;
+    margin-top: 10px;
+
+    span {
+      .sans;
+      font-size: 19px;
+      letter-spacing: 2px;
+    }
+  }
+  p {
+    .serif;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+
+    span {
+      display: block;
+      text-transform: uppercase;
+    }
+  }
+  p:last-child {
+    line-height: 20px;
+  }
+}
+
 .custom h2 {
   .sans;
   color: @black;
@@ -291,13 +379,68 @@ div.slider-container {
     margin-top: 15px;
   }
 }
+.numbers {
+  min-height: 240px;
+  background: url("/templates/ee/images/texture-bg.jpg") center top no-repeat #3c6396;
+  padding: 40px 0;
+
+  .box {
+    text-align: center;
+    background: rgba(255,255,255,0.25);
+    border: 1px solid @white;
+    padding: 14px 0 40px;
+
+    .sans;
+    color: @white;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 300;
+
+    span {
+      .serif;
+      color: @eeblue;
+      font-size: 72px;
+      line-height: 72px;
+      font-weight: 100;
+      display: block;
+      margin-bottom: 10px;
+    }
+    @media (min-width:@screen-sm-max) {
+      display: inline-block;
+      width: 30%;
+      margin-left: 5%;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  @media (max-width:@screen-sm-max) {
+    background-size: cover;
+
+    .box {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  @media (min-width:1200px) {
+    background-size: cover;
+  }
+}
 
 // Owl Carousel
 #quotes {
+  text-align: center;
+  margin-bottom: 40px;
+
   .quote {
     font-family: "Droid Serif", serif;
     font-size: 200px;
-    line-height: 200px;
+    line-height: 116px;
+    padding-top: 40px;
     color: #b8dbf5;
     display: inline-block;
     width: 10%;
@@ -314,6 +457,23 @@ div.slider-container {
     margin-top: 44px;
     text-align: center;
     vertical-align: top;
+  }
+  .name {
+    .sans;
+    color: @eeblue;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  .owl-pagination {
+    margin-top: 14px;
+  }
+  .owl-page {
+    span {
+      background: #d2d2d2;
+      width: 15px;
+      height: 15px;
+      box-shadow: inset -1px 1px 4px rgba(0,0,0,0.8);
+    }
   }
 }
 

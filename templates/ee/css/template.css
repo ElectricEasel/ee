@@ -7208,6 +7208,83 @@ div.slider-container .tp-rightarrow:before {
 div.slider-container .tp-bullets {
   display: none;
 }
+.capabilities .span4 {
+  display: table;
+}
+.capabilities .span4:before {
+  content: "";
+  display: table-cell;
+  height: 40px;
+  width: 40px;
+  background: url("/templates/ee/images/icon-cogwheel.png") 0 10px no-repeat;
+}
+.capabilities .span4 .module {
+  display: table-cell;
+  padding-left: 12px;
+}
+.capabilities h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 0 6px;
+  line-height: normal;
+}
+.capabilities p {
+  font-family: "Roboto Slab", serif;
+  color: #5d5d5d;
+  font-size: 17px;
+  font-weight: 300;
+}
+#chart_div {
+  margin: -70px auto -95px;
+  position: relative;
+  z-index: -1;
+}
+#chart_div div[dir="ltr"] {
+  margin-left: auto;
+  margin-right: auto;
+}
+#plots {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+#plots .blue {
+  color: #0072bc;
+  line-height: 24px;
+}
+#plots .blue span {
+  font-size: 27px;
+}
+#plots .blue strong {
+  font-size: 28px;
+  font-weight: 700;
+}
+#plots .blue strong + span {
+  font-size: 16px;
+}
+#plots .black {
+  color: #000000;
+  line-height: 20px;
+  margin-top: 10px;
+}
+#plots .black span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  letter-spacing: 2px;
+}
+#plots p {
+  font-family: "Roboto Slab", serif;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: center;
+}
+#plots p span {
+  display: block;
+  text-transform: uppercase;
+}
+#plots p:last-child {
+  line-height: 20px;
+}
 .custom h2 {
   font-family: "Open Sans", sans-serif;
   color: #000000;
@@ -7231,10 +7308,66 @@ div.slider-container .tp-bullets {
 .home-about .btn-bluelight {
   margin-top: 15px;
 }
+.numbers {
+  min-height: 240px;
+  background: url("/templates/ee/images/texture-bg.jpg") center top no-repeat #3c6396;
+  padding: 40px 0;
+}
+.numbers .box {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid #ffffff;
+  padding: 14px 0 40px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 300;
+}
+.numbers .box span {
+  font-family: "Roboto Slab", serif;
+  color: #0072bc;
+  font-size: 72px;
+  line-height: 72px;
+  font-weight: 100;
+  display: block;
+  margin-bottom: 10px;
+}
+@media (min-width: 767px) {
+  .numbers .box {
+    display: inline-block;
+    width: 30%;
+    margin-left: 5%;
+  }
+  .numbers .box:first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .numbers {
+    background-size: cover;
+  }
+  .numbers .box {
+    margin-bottom: 30px;
+  }
+  .numbers .box:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .numbers {
+    background-size: cover;
+  }
+}
+#quotes {
+  text-align: center;
+  margin-bottom: 40px;
+}
 #quotes .quote {
   font-family: "Droid Serif", serif;
   font-size: 200px;
-  line-height: 200px;
+  line-height: 116px;
+  padding-top: 40px;
   color: #b8dbf5;
   display: inline-block;
   width: 10%;
@@ -7251,6 +7384,21 @@ div.slider-container .tp-bullets {
   margin-top: 44px;
   text-align: center;
   vertical-align: top;
+}
+#quotes .name {
+  font-family: "Open Sans", sans-serif;
+  color: #0072bc;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+#quotes .owl-pagination {
+  margin-top: 14px;
+}
+#quotes .owl-page span {
+  background: #d2d2d2;
+  width: 15px;
+  height: 15px;
+  box-shadow: inset -1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 footer.footer {
   padding: 14px 0;
