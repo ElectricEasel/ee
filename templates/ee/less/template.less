@@ -130,6 +130,10 @@ body * {
     color: @white;
   }
 }
+.frost {
+  background: rgba(255,255,255,0.25);
+  border: 1px solid @white;
+}
 
 .custom h2 {
   .sans;
@@ -320,6 +324,10 @@ div.slider-container {
     position: absolute;
     top: -80px;
     margin-left: -84px;
+
+    &:hover, &:focus {
+      background: darken(@bluelight, 30%);
+    }
   }
 }
 
@@ -401,10 +409,8 @@ div.slider-container {
   background: url("/templates/ee/images/texture-bg.jpg") center top no-repeat #3c6396;
   padding: 40px 0;
 
-  .box {
+  .frost {
     text-align: center;
-    background: rgba(255,255,255,0.25);
-    border: 1px solid @white;
     padding: 14px 0 40px;
 
     .sans;
@@ -435,7 +441,7 @@ div.slider-container {
   @media (max-width:@screen-sm-max) {
     background-size: cover;
 
-    .box {
+    .frost {
       margin-bottom: 30px;
 
       &:last-child {

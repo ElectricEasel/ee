@@ -7080,6 +7080,10 @@ body * {
   background: #1d7dc3;
   color: #ffffff;
 }
+.frost {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid #ffffff;
+}
 .custom h2 {
   font-family: "Open Sans", sans-serif;
   color: #000000;
@@ -7262,6 +7266,10 @@ div.slider-container .tp-bullets {
   top: -80px;
   margin-left: -84px;
 }
+.capabilities .btn-bluelight:hover,
+.capabilities .btn-bluelight:focus {
+  background: #135280;
+}
 #chart_div {
   margin: -75px auto -95px;
   position: relative;
@@ -7332,10 +7340,8 @@ div.slider-container .tp-bullets {
   background: url("/templates/ee/images/texture-bg.jpg") center top no-repeat #3c6396;
   padding: 40px 0;
 }
-.numbers .box {
+.numbers .frost {
   text-align: center;
-  background: rgba(255, 255, 255, 0.25);
-  border: 1px solid #ffffff;
   padding: 14px 0 40px;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -7343,7 +7349,7 @@ div.slider-container .tp-bullets {
   line-height: 22px;
   font-weight: 300;
 }
-.numbers .box span {
+.numbers .frost span {
   font-family: "Roboto Slab", serif;
   color: #0072bc;
   font-size: 72px;
@@ -7353,12 +7359,12 @@ div.slider-container .tp-bullets {
   margin-bottom: 10px;
 }
 @media (min-width: 767px) {
-  .numbers .box {
+  .numbers .frost {
     display: inline-block;
     width: 30%;
     margin-left: 5%;
   }
-  .numbers .box:first-child {
+  .numbers .frost:first-child {
     margin-left: 0;
   }
 }
@@ -7366,10 +7372,10 @@ div.slider-container .tp-bullets {
   .numbers {
     background-size: cover;
   }
-  .numbers .box {
+  .numbers .frost {
     margin-bottom: 30px;
   }
-  .numbers .box:last-child {
+  .numbers .frost:last-child {
     margin-bottom: 0;
   }
 }
