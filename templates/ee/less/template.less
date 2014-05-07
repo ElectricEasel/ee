@@ -520,6 +520,73 @@ div.slider-container {
   }
 }
 
+#interior-banner {
+  background: url("/templates/ee/images/banner-bg.jpg") center center no-repeat #3c6396;
+  min-height: 209px;
+
+  h1 {
+    .sans;
+    color: @white;
+    font-weight: 700;
+    margin: 0;
+    line-height: normal;
+    display: inline-block;
+  }
+  h2 {
+    .serif;
+    color: @white;
+    font-weight: 100;
+    margin: 0 0 0 24px;
+    line-height: normal;
+    display: inline-block;
+  }
+  span {
+    letter-spacing: 4px;
+    margin: 0 10px;
+  }
+  @media (min-width:1200px) {
+    background-size: cover;
+  }
+  @media (min-width:@screen-lg-min) {
+    padding: 60px 0;
+
+    h1 {
+      font-size: 54px;
+    }
+    h2 {
+      font-size: 38px;
+    }
+  }
+  @media (min-width:@screen-md-min) and (max-width:@screen-md-max) {
+    padding: 70px 0;
+
+    h1 {
+      font-size: 46px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+  }
+  @media (max-width:@screen-sm-max) {
+    padding: 50px 0;
+    text-align: center;
+
+    h1 {
+      font-size: 40px;
+      display: block;
+    }
+    h2 {
+      font-size: 26px;
+      display: block;
+      margin: 0;
+
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
 footer.footer {
   padding: 14px 0;
   margin-top: 0;

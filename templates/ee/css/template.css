@@ -7445,6 +7445,75 @@ div.slider-container .tp-bullets {
     display: none;
   }
 }
+#interior-banner {
+  background: url("/templates/ee/images/banner-bg.jpg") center center no-repeat #3c6396;
+  min-height: 209px;
+}
+#interior-banner h1 {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0;
+  line-height: normal;
+  display: inline-block;
+}
+#interior-banner h2 {
+  font-family: "Roboto Slab", serif;
+  color: #ffffff;
+  font-weight: 100;
+  margin: 0 0 0 24px;
+  line-height: normal;
+  display: inline-block;
+}
+#interior-banner span {
+  letter-spacing: 4px;
+  margin: 0 10px;
+}
+@media (min-width: 1200px) {
+  #interior-banner {
+    background-size: cover;
+  }
+}
+@media (min-width: 980px) {
+  #interior-banner {
+    padding: 60px 0;
+  }
+  #interior-banner h1 {
+    font-size: 54px;
+  }
+  #interior-banner h2 {
+    font-size: 38px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  #interior-banner {
+    padding: 70px 0;
+  }
+  #interior-banner h1 {
+    font-size: 46px;
+  }
+  #interior-banner h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  #interior-banner {
+    padding: 50px 0;
+    text-align: center;
+  }
+  #interior-banner h1 {
+    font-size: 40px;
+    display: block;
+  }
+  #interior-banner h2 {
+    font-size: 26px;
+    display: block;
+    margin: 0;
+  }
+  #interior-banner h2 span {
+    display: none;
+  }
+}
 footer.footer {
   padding: 14px 0;
   margin-top: 0;
