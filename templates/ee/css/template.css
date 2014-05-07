@@ -7084,6 +7084,13 @@ body * {
   background: rgba(255, 255, 255, 0.25);
   border: 1px solid #ffffff;
 }
+.custom p {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.4em;
+  line-height: 1.8em;
+  color: #000000;
+  font-weight: 300;
+}
 .custom h2 {
   font-family: "Open Sans", sans-serif;
   color: #000000;
@@ -7092,6 +7099,15 @@ body * {
   text-align: center;
   margin: 10px 0;
   line-height: 1em;
+}
+.custom h4 {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  font-weight: 300;
+  font-size: 2.4em;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 1.5em;
 }
 header {
   background: none;
@@ -7325,13 +7341,6 @@ div.slider-container .tp-bullets {
   background: #f4f4f4;
   padding: 24px 0 60px;
 }
-.home-about p {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.4em;
-  line-height: 1.8em;
-  color: #000000;
-  font-weight: 300;
-}
 .home-about .btn-bluelight {
   margin-top: 15px;
 }
@@ -7513,6 +7522,41 @@ div.slider-container .tp-bullets {
   #interior-banner h2 span {
     display: none;
   }
+}
+.view-studies {
+  text-align: center;
+  padding: 16px 0 40px;
+  position: relative;
+  border-bottom: 1px solid #d9e0e3;
+}
+.view-studies:before,
+.view-studies:after {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+.view-studies:before {
+  border: 20px solid transparent;
+  border-top-color: #ffffff;
+  bottom: -40px;
+  margin-left: -20px;
+  z-index: 2;
+}
+.view-studies:after {
+  border: 21px solid transparent;
+  border-top-color: #d9e0e3;
+  bottom: -42px;
+  margin-left: -21px;
+  z-index: 1;
+}
+.view-studies p {
+  margin-left: -1px;
+  margin-right: -1px;
+}
+.view-studies a {
+  margin-top: 20px;
+  padding: 12px 20px;
 }
 footer.footer {
   padding: 14px 0;
