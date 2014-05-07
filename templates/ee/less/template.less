@@ -158,7 +158,26 @@ body * {
 }
 .frost {
   background: rgba(255,255,255,0.25);
-  border: 1px solid @white;
+  border: 1px solid rgba(255,255,255,0.5);
+}
+.sprite:before {
+  content: "";
+  display: block;
+  background: url("/templates/ee/images/icons-sprite.png") no-repeat;
+  height: 50px;
+  width: 52px;
+}
+.quote-sprite:before {
+  background-position: 0 0;
+}
+.search-sprite:before {
+  background-position: 0 -50px;
+}
+.cog-sprite:before {
+  background-position: 0 -100px;
+}
+.star-sprite:before {
+  background-position: 0 -150px;
 }
 
 .custom {
@@ -449,7 +468,6 @@ div.slider-container {
   .frost {
     text-align: center;
     padding: 14px 0 40px;
-
     .sans;
     color: @white;
     font-size: 22px;
@@ -636,6 +654,66 @@ div.slider-container {
   a {
     margin-top: 20px;
     padding: 12px 20px;
+  }
+}
+.wwd-boxes {
+  min-height: 352px;
+  background: url("/templates/ee/images/texture-bg2.jpg") center top no-repeat #3c6396;
+  padding: 40px 0;
+
+  .frost {
+    text-align: center;
+    padding: 14px 20px 26px;
+
+    h6 {
+      .serif;
+      color: @white;
+      font-weight: 100;
+      font-size: 1.7em;
+      line-height: normal;
+      margin: 0 0 10px;
+    }
+    .sprite:before {
+      margin: 6px auto;
+    }
+    p {
+      .sans;
+      color: @white;
+      font-weight: 300;
+      font-size: 1.2em;
+      line-height: normal;
+    }
+    @media (min-width:@screen-md-min) {
+      display: inline-block;
+      width: 23.5%;
+      margin-left: 2%;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    @media (min-width:@screen-md-min) and (max-width:@screen-md-max) {
+      h6 {
+        font-size: 1.3em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  }
+  @media (max-width:@screen-sm-max) {
+    background-size: cover;
+
+    .frost {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  @media (min-width:1200px) {
+    background-size: cover;
   }
 }
 
