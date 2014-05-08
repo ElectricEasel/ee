@@ -95,6 +95,7 @@
 .hanging-arrow(@color:@white; @border:@black; @size:20px; @borderWidth:1px) {
   @borderSize: @size + @borderWidth;
   position: relative;
+  text-align: center;
   border-bottom: @borderWidth solid @border;
   &:before, &:after {
     content: "";
@@ -180,32 +181,48 @@ body * {
   background-position: 0 -150px;
 }
 
-.custom {
-  p {
-    .serif;
-    font-size: 1.4em;
-    line-height: 1.8em;
-    color: @black;
-    font-weight: 300;
-  }
-  h2 {
-    .sans;
-    color: @black;
-    font-size: 3.4em;
-    font-weight: 300;
-    text-align: center;
-    margin: 10px 0;
-    line-height: 1em;
-  }
-  h4 {
-    .sans;
-    color: @black;
-    font-weight: 300;
-    font-size: 2.4em;
-    margin: 10px 0;
-    text-align: center;
-    line-height: 1.5em;
-  }
+.custom p {
+  .serif;
+  font-size: 1.4em;
+  line-height: 1.8em;
+  color: @black;
+  font-weight: 300;
+}
+h2 {
+  .sans;
+  color: @black;
+  font-size: 3.4em;
+  font-weight: 300;
+  text-align: center;
+  margin: 10px 0;
+  line-height: 1em;
+}
+h3 {
+  .sans;
+  color: @eeblue;
+  font-size: 3.4em;
+  font-weight: 300;
+  text-align: center;
+  margin: 10px 0;
+  line-height: 1em;
+  text-transform: none;
+}
+h4 {
+  .sans;
+  color: @black;
+  font-weight: 300;
+  font-size: 2.4em;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 1.5em;
+}
+h5 {
+  .serif;
+  color: @bluelight;
+  font-weight: 300;
+  font-size: 2.15em;
+  text-align: center;
+  text-transform: none;
 }
 
 header {
@@ -372,6 +389,7 @@ div.slider-container {
     font-weight: 300;
     margin: 0 0 6px;
     line-height: normal;
+    text-align: left;
   }
   p {
     .serif;
@@ -643,7 +661,6 @@ div.slider-container {
 }
 
 .view-studies {
-  text-align: center;
   padding: 16px 0 40px;
   .hanging-arrow(@border:@grayBorder);
 
@@ -654,6 +671,148 @@ div.slider-container {
   a {
     margin-top: 20px;
     padding: 12px 20px;
+  }
+}
+.content-marketing {
+  background: @gray;
+  .hanging-arrow(@color:@gray; @border:@grayBorder);
+
+  h3 {
+    margin: 36px 0 30px;
+  }
+  h5 {
+    text-align: right;
+    margin: 24px 0 18px;
+  }
+  p {
+    color: @grayText;
+    text-align: right;
+    line-height: 1.5em;
+  }
+  .circle {
+    background: @eeblue;
+    width: 325px;
+    height: 325px;
+    border-radius: 50%;
+    padding: 40px 0 40px 70px;
+    .rotate(270deg);
+    margin-bottom: -70px;
+
+    .bar {
+      margin-top: 15px;
+      height: 50px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+      span {
+        display: block;
+        height: 100%;
+        background: @bluelight;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: @white;
+        font-weight: 300;
+        .sans;
+        text-transform: uppercase;
+        font-size: 14px;
+        text-align: left;
+        white-space: nowrap;
+        padding: 16px 10px;
+        position: relative;
+
+        &:after {
+          content: "10%";
+          .serif;
+          color: @white;
+          font-weight: 100;
+          font-size: 22px;
+          position: absolute;
+          display: inline-block;
+          .rotate(90deg);
+          top: 16px;
+          right: -36px;
+        }
+      }
+      // Change widths to affect the rotated bar heights.
+      .item1 {
+        width: 33%;
+        &:after {
+          content: "10%";
+        }
+      }
+      .item2 {
+        width: 57%;
+        &:after {
+          content: "10%";
+        }
+      }
+      .item3 {
+        width: 73%;
+        &:after {
+          content: "10%";
+        }
+      }
+      .item4 {
+        width: 48%;
+        &:after {
+          content: "10%";
+        }
+      }
+    }
+  }
+  .span5 {
+    overflow: hidden;
+    margin-bottom: -1px;
+  }
+  .span7 {
+    padding-bottom: 50px;
+  }
+  @media (min-width:@screen-lg-min) {
+    .row {
+      width: 100%;
+    }
+  }
+  @media (min-width:@screen-md-min) and (max-width:@screen-md-max) {
+    .span5 {
+      .circle {
+        width: 290px;
+        height: 290px;
+
+        .bar {
+          height: 41px;
+
+          span {
+            padding: 12px 10px;
+          }
+        }
+      }
+    }
+    .span7 {
+      h5 {
+        font-size: 2.0em;
+      }
+      p {
+        font-size: 1.1em;
+      }
+    }
+  }
+  @media (max-width:@screen-sm-max) {
+    .hanging-arrow(@color:transparent; @border:transparent);
+
+    h5, p {
+      text-align: center;
+    }
+    .circle {
+      margin-top: 20px;
+      margin-bottom: -93px;
+      margin-right: auto;
+      margin-left: auto;
+      -webkit-transform: rotate(270deg) scale(0.75);
+    }
+  }
+  .span7 {
+    padding-bottom: 0;
   }
 }
 .wwd-boxes {
@@ -729,7 +888,7 @@ footer span.pull-left {
   text-transform: uppercase;
   text-align: right;
   padding-right: 30px;
-  height: 30px;
+  height: 40px;
   color: #a1a1a1;
   font-weight: 300;
   padding-top: 3px;
