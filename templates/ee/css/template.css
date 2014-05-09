@@ -7648,19 +7648,28 @@ div.slider-container .tp-bullets {
   transform: rotate(270deg);
   margin-bottom: -70px;
 }
-.content-marketing .circle .bar {
-  margin-top: 15px;
+.content-marketing .circle .progress {
+  overflow: visible;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
   height: 50px;
+  margin: 15px 0 0;
 }
-.content-marketing .circle .bar:first-child {
-  margin-top: 0;
-}
-.content-marketing .circle .bar span {
-  display: block;
-  height: 100%;
+.content-marketing .circle .progress .progress-bar {
   background: #48a2e4;
-  border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  padding: 16px 0;
+  text-align: left;
+}
+.content-marketing .circle .progress .progress-bar .hider {
+  width: 100%;
+  overflow: hidden;
+}
+.content-marketing .circle .progress .progress-bar .bar-label {
   color: #ffffff;
   font-weight: 300;
   font-family: "Open Sans", sans-serif;
@@ -7668,48 +7677,27 @@ div.slider-container .tp-bullets {
   font-size: 14px;
   text-align: left;
   white-space: nowrap;
-  padding: 16px 10px;
-  position: relative;
+  padding: 0 10px;
 }
-.content-marketing .circle .bar span:after {
-  content: "10%";
+.content-marketing .circle .progress .progress-bar .progress-bar-tooltip {
   font-family: "Roboto Slab", serif;
   color: #ffffff;
   font-weight: 100;
   font-size: 22px;
-  position: absolute;
-  display: inline-block;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
   top: 16px;
-  right: -36px;
+  right: -46px;
+  background: none;
 }
-.content-marketing .circle .bar .item1 {
-  width: 33%;
+.content-marketing .circle .progress .progress-bar .progress-bar-tooltip:after {
+  border: none;
 }
-.content-marketing .circle .bar .item1:after {
-  content: "10%";
-}
-.content-marketing .circle .bar .item2 {
-  width: 57%;
-}
-.content-marketing .circle .bar .item2:after {
-  content: "10%";
-}
-.content-marketing .circle .bar .item3 {
-  width: 73%;
-}
-.content-marketing .circle .bar .item3:after {
-  content: "10%";
-}
-.content-marketing .circle .bar .item4 {
-  width: 48%;
-}
-.content-marketing .circle .bar .item4:after {
-  content: "10%";
+.content-marketing .circle .progress:first-child {
+  margin-top: 0;
 }
 .content-marketing .span5 {
   overflow: hidden;
@@ -7728,11 +7716,11 @@ div.slider-container .tp-bullets {
     width: 290px;
     height: 290px;
   }
-  .content-marketing .span5 .circle .bar {
+  .content-marketing .span5 .circle .progress {
     height: 41px;
   }
-  .content-marketing .span5 .circle .bar span {
-    padding: 12px 10px;
+  .content-marketing .span5 .circle .progress-bar {
+    padding: 12px 0;
   }
   .content-marketing .span7 h5 {
     font-size: 2.0em;

@@ -698,67 +698,55 @@ div.slider-container {
     .rotate(270deg);
     margin-bottom: -70px;
 
-    .bar {
-      margin-top: 15px;
+    .progress {
+      overflow: visible;
+      background: none;
+      box-shadow: none;
+      border-radius: 0;
       height: 50px;
+      margin: 15px 0 0;
 
-      &:first-child {
-        margin-top: 0;
-      }
-      span {
-        display: block;
-        height: 100%;
+      .progress-bar {
         background: @bluelight;
-        border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-        color: @white;
-        font-weight: 300;
-        .sans;
-        text-transform: uppercase;
-        font-size: 14px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        padding: 16px 0;
         text-align: left;
-        white-space: nowrap;
-        padding: 16px 10px;
-        position: relative;
 
-        &:after {
-          content: "10%";
+        .hider {
+          width: 100%;
+          overflow: hidden;
+        }
+        .bar-label {
+          color: @white;
+          font-weight: 300;
+          .sans;
+          text-transform: uppercase;
+          font-size: 14px;
+          text-align: left;
+          white-space: nowrap;
+          padding: 0 10px;
+        }
+        .progress-bar-tooltip {
           .serif;
           color: @white;
           font-weight: 100;
           font-size: 22px;
-          position: absolute;
-          display: inline-block;
           .rotate(90deg);
           top: 16px;
-          right: -36px;
+          right: -46px;
+          background: none;
+
+          &:after {
+            border: none;
+          }
         }
       }
-      // Change widths to affect the rotated bar heights.
-      .item1 {
-        width: 33%;
-        &:after {
-          content: "10%";
-        }
-      }
-      .item2 {
-        width: 57%;
-        &:after {
-          content: "10%";
-        }
-      }
-      .item3 {
-        width: 73%;
-        &:after {
-          content: "10%";
-        }
-      }
-      .item4 {
-        width: 48%;
-        &:after {
-          content: "10%";
-        }
-      }
+    }
+    .progress:first-child {
+      margin-top: 0;
     }
   }
   .span5 {
@@ -779,12 +767,11 @@ div.slider-container {
         width: 290px;
         height: 290px;
 
-        .bar {
+        .progress {
           height: 41px;
-
-          span {
-            padding: 12px 10px;
-          }
+        }
+        .progress-bar {
+          padding: 12px 0;
         }
       }
     }
@@ -815,6 +802,7 @@ div.slider-container {
     padding-bottom: 0;
   }
 }
+
 .wwd-boxes {
   min-height: 352px;
   background: url("/templates/ee/images/texture-bg2.jpg") center top no-repeat #3c6396;

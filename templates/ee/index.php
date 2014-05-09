@@ -224,10 +224,13 @@ else
     <script src="/templates/ee/vendor/jquery.js"></script>
     <script src="/templates/ee/vendor/bootstrap.js"></script>
     <script src="/templates/ee/js/plugins.js"></script>
+    <script src="/templates/ee/vendor/jquery.easing.js"></script>
+    <script src="/templates/ee/vendor/jquery.appear.js"></script>
 
     <script src="/templates/ee/vendor/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script src="/templates/ee/vendor/rs-plugin/js/jquery.themepunch.revolution.js"></script>
     <script src="/templates/ee/vendor/owl-carousel/owl.carousel.js"></script>
+    <script src="/templates/ee/vendor/jquery.validate.js"></script>
 
     <script src="/templates/ee/js/template.js"></script>
 

@@ -11,6 +11,9 @@
 	$(document).ready(function()
 	{
 
+        // Trigger Progress Bar
+        $(".progress-bar").css("width","1%");
+
         // Owl Carousel
         $("#quotes").owlCarousel({
             singleItem : true
