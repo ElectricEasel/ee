@@ -826,7 +826,7 @@ div.slider-container {
       .serif;
       font-size: 18px;
       font-weight: 300;
-      line-height: normal;
+      line-height: 1.3em;
 
       span {
         text-transform: uppercase;
@@ -850,7 +850,7 @@ div.slider-container {
       .serif;
       font-size: 16px;
       font-weight: 300;
-      line-height: normal;
+      line-height: 1.4em;
 
       span {
         display: block;
@@ -876,15 +876,16 @@ div.slider-container {
       width: 222px;
       height: 176px;
       background: url("/templates/ee/images/quote-white-bmr.png") 0 0 no-repeat;
-      bottom: 0;
-      left: 30px;
+      bottom: 54px;
+      left: 33px;
       z-index: 20;
+      padding-top: 7px;
     }
     #empty1 {
       width: 323px;
       height: 257px;
       background: url("/templates/ee/images/quote-white-lr.png") 0 0 no-repeat;
-      bottom: 40px;
+      bottom: 106px;
       left: -10px;
       z-index: 1;
     }
@@ -892,57 +893,109 @@ div.slider-container {
       width: 153px;
       height: 122px;
       background: url("/templates/ee/images/quote-blue-sr.png") 0 0 no-repeat;
-      bottom: 220px;
-      left: 120px;
+      bottom: 287px;
+      left: 142px;
       z-index: 20;
+      padding-top: 7px;
     }
     #empty2 {
       width: 271px;
       height: 215px;
       background: url("/templates/ee/images/quote-faint-lr.png") 0 0 no-repeat;
-      bottom: 240px;
-      left: 190px;
+      bottom: 270px;
+      left: 263px;
       z-index: 1;
     }
     #leads1 {
       width: 150px;
       height: 120px;
       background: url("/templates/ee/images/quote-white-bsr.png") 0 0 no-repeat;
-      bottom: 280px;
-      left: 230px;
+      bottom: 335px;
+      left: 346px;
       z-index: 20;
+      padding-top: 12px;
+
+      img {
+        margin: 2px auto;
+      }
     }
     #content {
       width: 174px;
       height: 138px;
       background: url("/templates/ee/images/quote-gray-sl.png") 0 0 no-repeat;
-      bottom: 270px;
-      left: 610px;
+      bottom: 323px;
+      left: 570px;
       z-index: 20;
+      padding-top: 18px;
+
+      img {
+        margin: 2px auto;
+      }
     }
     #empty3 {
       width: 310px;
       height: 246px;
       background: url("/templates/ee/images/quote-white-ll.png") 0 0 no-repeat;
-      bottom: 100px;
-      left: 720px;
+      bottom: 132px;
+      left: 642px;
       z-index: 1;
     }
     #leads2 {
       width: 153px;
       height: 122px;
       background: url("/templates/ee/images/quote-white-bsl.png") 0 0 no-repeat;
-      bottom: 160px;
-      left: 800px;
+      bottom: 183px;
+      left: 715px;
       z-index: 20;
+      padding-top: 12px;
+
+      img {
+        margin: 2px auto;
+      }
     }
     #envelope {
       width: 127px;
       height: 102px;
       background: url("/templates/ee/images/quote-blue-sl.png") 0 0 no-repeat;
-      bottom: 20px;
-      left: 750px;
+      bottom: 33px;
+      left: 685px;
       z-index: 20;
+      padding-top: 22px;
+    }
+
+    @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
+      .scale(0.8);
+
+      #presence {
+        left: -80px;
+      }
+      #empty1 {
+        left: -126px;
+      }
+      #pie {
+        left: 25px;
+      }
+      #empty2 {
+        left: 147px;
+      }
+      #leads1 {
+        left: 222px;
+      }
+      #content {
+        left: 455px;
+      }
+      #empty3 {
+        left: 524px;
+      }
+      #leads2 {
+        left: 600px;
+      }
+      #envelope {
+        left: 568px;
+      }
+    }
+    @media (max-width:@screen-sm-max) {
+      display: none;
     }
   }
 }

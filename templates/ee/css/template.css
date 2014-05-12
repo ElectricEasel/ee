@@ -7817,7 +7817,7 @@ div.slider-container .tp-bullets {
   font-family: "Roboto Slab", serif;
   font-size: 18px;
   font-weight: 300;
-  line-height: normal;
+  line-height: 1.3em;
 }
 .consulting #holder .black-text span {
   text-transform: uppercase;
@@ -7840,7 +7840,7 @@ div.slider-container .tp-bullets {
   font-family: "Roboto Slab", serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: normal;
+  line-height: 1.4em;
 }
 .consulting #holder .blue-text span {
   display: block;
@@ -7864,15 +7864,16 @@ div.slider-container .tp-bullets {
   width: 222px;
   height: 176px;
   background: url("/templates/ee/images/quote-white-bmr.png") 0 0 no-repeat;
-  bottom: 0;
-  left: 30px;
+  bottom: 54px;
+  left: 33px;
   z-index: 20;
+  padding-top: 7px;
 }
 .consulting #holder #empty1 {
   width: 323px;
   height: 257px;
   background: url("/templates/ee/images/quote-white-lr.png") 0 0 no-repeat;
-  bottom: 40px;
+  bottom: 106px;
   left: -10px;
   z-index: 1;
 }
@@ -7880,57 +7881,112 @@ div.slider-container .tp-bullets {
   width: 153px;
   height: 122px;
   background: url("/templates/ee/images/quote-blue-sr.png") 0 0 no-repeat;
-  bottom: 220px;
-  left: 120px;
+  bottom: 287px;
+  left: 142px;
   z-index: 20;
+  padding-top: 7px;
 }
 .consulting #holder #empty2 {
   width: 271px;
   height: 215px;
   background: url("/templates/ee/images/quote-faint-lr.png") 0 0 no-repeat;
-  bottom: 240px;
-  left: 190px;
+  bottom: 270px;
+  left: 263px;
   z-index: 1;
 }
 .consulting #holder #leads1 {
   width: 150px;
   height: 120px;
   background: url("/templates/ee/images/quote-white-bsr.png") 0 0 no-repeat;
-  bottom: 280px;
-  left: 230px;
+  bottom: 335px;
+  left: 346px;
   z-index: 20;
+  padding-top: 12px;
+}
+.consulting #holder #leads1 img {
+  margin: 2px auto;
 }
 .consulting #holder #content {
   width: 174px;
   height: 138px;
   background: url("/templates/ee/images/quote-gray-sl.png") 0 0 no-repeat;
-  bottom: 270px;
-  left: 610px;
+  bottom: 323px;
+  left: 570px;
   z-index: 20;
+  padding-top: 18px;
+}
+.consulting #holder #content img {
+  margin: 2px auto;
 }
 .consulting #holder #empty3 {
   width: 310px;
   height: 246px;
   background: url("/templates/ee/images/quote-white-ll.png") 0 0 no-repeat;
-  bottom: 100px;
-  left: 720px;
+  bottom: 132px;
+  left: 642px;
   z-index: 1;
 }
 .consulting #holder #leads2 {
   width: 153px;
   height: 122px;
   background: url("/templates/ee/images/quote-white-bsl.png") 0 0 no-repeat;
-  bottom: 160px;
-  left: 800px;
+  bottom: 183px;
+  left: 715px;
   z-index: 20;
+  padding-top: 12px;
+}
+.consulting #holder #leads2 img {
+  margin: 2px auto;
 }
 .consulting #holder #envelope {
   width: 127px;
   height: 102px;
   background: url("/templates/ee/images/quote-blue-sl.png") 0 0 no-repeat;
-  bottom: 20px;
-  left: 750px;
+  bottom: 33px;
+  left: 685px;
   z-index: 20;
+  padding-top: 22px;
+}
+@media (max-width: 979px) and (min-width: 768px) {
+  .consulting #holder {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  .consulting #holder #presence {
+    left: -80px;
+  }
+  .consulting #holder #empty1 {
+    left: -126px;
+  }
+  .consulting #holder #pie {
+    left: 25px;
+  }
+  .consulting #holder #empty2 {
+    left: 147px;
+  }
+  .consulting #holder #leads1 {
+    left: 222px;
+  }
+  .consulting #holder #content {
+    left: 455px;
+  }
+  .consulting #holder #empty3 {
+    left: 524px;
+  }
+  .consulting #holder #leads2 {
+    left: 600px;
+  }
+  .consulting #holder #envelope {
+    left: 568px;
+  }
+}
+@media (max-width: 767px) {
+  .consulting #holder {
+    display: none;
+  }
 }
 .wwd-boxes {
   min-height: 352px;
