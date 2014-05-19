@@ -7064,6 +7064,12 @@ body * {
 .row-fluid [class*="span"] {
   min-height: 0;
 }
+ul.social-icons li {
+  background-color: transparent;
+}
+ul.social-icons li:hover {
+  background-color: #fff;
+}
 .btn-bluelight {
   background: #48a2e4;
   border: 2px solid #91c7ef;
