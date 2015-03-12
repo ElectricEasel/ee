@@ -2,11 +2,11 @@
 /**
  * @package     FrameworkOnFramework
  * @subpackage  model
- * @copyright   Copyright (C) 2010 - 2012 Akeeba Ltd. All rights reserved.
+ * @copyright   Copyright (C) 2010 - 2014 Akeeba Ltd. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 // Protect from unauthorized access
-defined('_JEXEC') or die;
+defined('FOF_INCLUDED') or die;
 
 /**
  * FrameworkOnFramework model behavior class
@@ -32,6 +32,8 @@ class FOFModelBehaviorFilters extends FOFModelBehavior
 		$tableKey = $table->getKeyName();
 		$db = $model->getDBO();
 
+		$filterzero = $model->getState('_emptynonzero', null);
+
 		$fields = $model->getTableFields();
 
 		foreach ($fields as $fieldname => $fieldtype)
@@ -39,13 +41,18 @@ class FOFModelBehaviorFilters extends FOFModelBehavior
 			$field = new stdClass;
 			$field->name = $fieldname;
 			$field->type = $fieldtype;
+			$field->filterzero = $filterzero;
 
 			$filterName = ($field->name == $tableKey) ? 'id' : $field->name;
 			$filterState = $model->getState($filterName, null);
 
 			$field = FOFModelField::getField($field, array('dbo' => $db, 'table_alias' => $model->getTableAlias()));
 
-			if ((is_array($filterState) && array_key_exists('value', $filterState)) || is_object($filterState))
+			if ((is_array($filterState) && (
+					array_key_exists('value', $filterState) ||
+					array_key_exists('from', $filterState) ||
+					array_key_exists('to', $filterState)
+				)) || is_object($filterState))
 			{
 				$options = new JRegistry($filterState);
 			}
@@ -67,10 +74,12 @@ class FOFModelBehaviorFilters extends FOFModelBehavior
 			{
 				case 'between':
 				case 'outside':
+				case 'range' :
 					$sql = $field->$method($options->get('from', null), $options->get('to'));
 					break;
 
 				case 'interval':
+				case 'modulo':
 					$sql = $field->$method($options->get('value', null), $options->get('interval'));
 					break;
 

@@ -117,6 +117,16 @@
 				<option value="1">JSHOW</option>
 			</field>
 
+			<field name="show_cat_tags"
+				type="list"
+				label="COM_CONTENT_FIELD_SHOW_CAT_TAGS_LABEL"
+				description="COM_CONTENT_FIELD_SHOW_CAT_TAGS_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
 			<field name="page_subheading" type="text"
 				description="JGLOBAL_SUBHEADING_DESC"
 				label="JGLOBAL_SUBHEADING_LABEL"
@@ -130,7 +140,6 @@
 			<field name="bloglayout" type="spacer" class="text"
 					label="JGLOBAL_SUBSLIDER_BLOG_LAYOUT_LABEL"
 			/>
-
 
 			<field name="num_leading_articles" type="text"
 				description="JGLOBAL_NUM_LEADING_ARTICLES_DESC"
@@ -246,6 +255,15 @@
 				<option value="1">JSHOW</option>
 			</field>
 
+			<field name="show_featured" type="list" default=""
+				   label="JGLOBAL_SHOW_FEATURED_ARTICLES_LABEL"
+				   description="JGLOBAL_SHOW_FEATURED_ARTICLES_DESC"
+					>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="show">JSHOW</option>
+				<option value="hide">JHIDE</option>
+				<option value="only">JONLY</option>
+			</field>
 </fieldset>
 
 <fieldset name="article" label="COM_CONTENT_ATTRIBS_FIELDSET_LABEL">
@@ -391,7 +409,6 @@
 				<option value="0">JHIDE</option>
 				<option value="1">JSHOW</option>
 			</field>
-
 
 			<field
 			name="show_vote" type="list"
