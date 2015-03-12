@@ -7070,6 +7070,10 @@ ul.social-icons li {
 ul.social-icons li:hover {
   background-color: #fff;
 }
+.tooltip.in {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .btn-bluelight {
   background: #48a2e4;
   border: 2px solid #91c7ef;
@@ -7157,6 +7161,10 @@ header {
   border-top: none;
   margin-bottom: -6px;
   padding-top: 20px;
+}
+header .pull-right {
+  position: relative;
+  z-index: 100;
 }
 header .navbar-collapse {
   clear: both;
@@ -8069,8 +8077,12 @@ footer span.pull-left {
   padding-right: 30px;
   height: 40px;
   color: #a1a1a1;
-  font-weight: 300;
+  font-weight: 400;
   padding-top: 3px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 footer p {
   margin-bottom: 4px;
@@ -8085,9 +8097,14 @@ footer .custom {
   margin-bottom: 20px;
 }
 footer .custom p {
+  font-family: "Open Sans", sans-serif;
   color: #ffffff;
   font-size: 1.3em;
-  font-weight: 300;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 footer .custom p a {
   color: #0072bc !important;

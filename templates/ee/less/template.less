@@ -85,11 +85,24 @@
 // Icon Font
 @import "icomoon.less";
 
+
 .sans() {
   font-family: "Open Sans", sans-serif;
 }
 .serif() {
   font-family: "Roboto Slab", serif;
+}
+.antialiased() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+.subpixel() {
+  -webkit-font-smoothing: sub-pixel-antialiased;
+  -moz-osx-font-smoothing: sub-pixel-antialiased;
+  -o-font-smoothing: auto;
+  font-smoothing: antialiased;
 }
 
 .hanging-arrow(@color:@white; @border:@black; @size:20px; @borderWidth:1px) {
@@ -147,6 +160,9 @@ ul.social-icons li {
   &:hover {
     background-color: #fff;
   }
+}
+.tooltip.in {
+  .opacity(100);
 }
 .btn-bluelight {
   background: @bluelight;
@@ -237,6 +253,11 @@ header {
   border-top: none;
   margin-bottom: -6px;
   padding-top: 20px;
+
+  .pull-right {
+    position: relative;
+    z-index: 100;
+  }
 }
 
 // Main navbar
@@ -1081,8 +1102,9 @@ footer span.pull-left {
   padding-right: 30px;
   height: 40px;
   color: #a1a1a1;
-  font-weight: 300;
+  font-weight: 400;
   padding-top: 3px;
+  .antialiased;
 }
 footer p {
   margin-bottom: 4px;
@@ -1098,9 +1120,11 @@ footer .custom {
   margin-bottom: 20px;
 
   p {
+    .sans;
     color: @white;
     font-size: 1.3em;
-    font-weight: 300;
+    font-weight: 400;
+    .antialiased;
 
     a {
       color: @eeblue !important;
