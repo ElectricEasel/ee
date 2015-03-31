@@ -44,6 +44,7 @@
 		<position>position-14</position>
 		<position>footer</position>
         <position>nav-top</position>
+        <position>header-content</position>
         <position>above-content</position>
         <position>below-content</position>
 	</positions>

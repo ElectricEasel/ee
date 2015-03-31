@@ -96,6 +96,7 @@ else
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<jdoc:include type="head" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Oleo+Script:400,700' rel='stylesheet' type='text/css'>
 	<?php
 	// Use of Google Font
 	if ($this->params->get('googleFont'))
@@ -104,11 +105,6 @@ else
 		<link href='//fonts.googleapis.com/css?family=<?php echo $this->params->get('googleFontName');?>' rel='stylesheet' type='text/css' />
 	<?php
 	}
-	?>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400' rel='stylesheet' type='text/css'>
-	<?php
 	// Template color
 	if ($this->params->get('templateColor'))
 	{
@@ -154,26 +150,29 @@ else
 
 	<!-- Body -->
 	<div class="body">
-        <div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
-			<!-- Header -->
-			<header class="header" role="banner">
-				<div class="header-inner clearfix">
+		<!-- Header -->
+		<header class="header" role="banner">
+			<div class="header-inner clearfix">
+				<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
 					<a class="brand pull-left" href="<?php echo $this->baseurl; ?>">
-						<img src="/templates/ee/images/logo.png" alt= "" /><?php if ($this->params->get('sitedescription')) { echo '<div class="site-description">'. htmlspecialchars($this->params->get('sitedescription')) .'</div>'; } ?>
+						<img src="/templates/ee/images/logo.png" alt= "Electric Easel Digital Marketing Agency" /><?php if ($this->params->get('sitedescription')) { echo '<div class="site-description">'. htmlspecialchars($this->params->get('sitedescription')) .'</div>'; } ?>
 					</a>
 					<div class="header-search pull-right">
 						<jdoc:include type="modules" name="position-0" style="none" />
 					</div>
-                    <jdoc:include type="modules" name="nav-top" style="none" />
-                </div>
-			</header>
-			<?php if ($this->countModules('position-1')) : ?>
-			<nav class="navigation" role="navigation">
-				<jdoc:include type="modules" name="position-1" style="none" />
-			</nav>
-			<?php endif; ?>
-            <?php if ($this->countModules('banner') || $this->countModules('above-content')) : ?>
-        </div>
+					<jdoc:include type="modules" name="nav-top" style="none" />
+				</div>
+			</div>
+			<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
+				<jdoc:include type="modules" name="header-content" style="none" />
+			</div>
+		</header>
+		<?php if ($this->countModules('position-1')) : ?>
+		<nav class="navigation" role="navigation">
+			<jdoc:include type="modules" name="position-1" style="none" />
+		</nav>
+		<?php endif; ?>
+        <?php if ($this->countModules('banner') || $this->countModules('above-content')) : ?>
         <jdoc:include type="modules" name="banner" style="xhtml" />
         <jdoc:include type="modules" name="above-content" style="none" />
         <div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
@@ -206,13 +205,15 @@ else
 			</div>
 		</div>
         <jdoc:include type="modules" name="below-content" style="none" />
-	</div>
 	<!-- Footer -->
 	<footer class="footer" role="contentinfo">
 		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
-            <p class="pull-right">
-                <img src="/templates/ee/images/logo-circle.png" alt="" />
-            </p>
+            <ul class="pull-left social-icons">
+	            <li><a class="facebook"></a></li>
+	            <li><a class="twiter"></a></li>
+	            <li><a class="google_plus"></a></li>
+	            <li><a class="linkedin"></a></li>
+            </ul>
 			<jdoc:include type="modules" name="footer" style="none" />
 			<p>
 				&copy; <?php echo date('Y'); ?> Electric Easel, Inc. All rights reserved. | <a href="#">Privacy Policy</a>
@@ -239,7 +240,6 @@ else
 
     <?php if ($menu->getActive() == $menu->getDefault()) : ?>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="/templates/ee/js/chart.js"></script>
 <?php endif; ?>
 
 </body>
