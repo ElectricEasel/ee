@@ -1,0 +1,1 @@
+[29-Apr-2014 15:42:15 America/Chicago] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;/home/eebetaco/public_html/ee/administrator/help/helpsites.xml&quot; in /home/eebetaco/public_html/ee/libraries/cms/help/help.php on line 183
