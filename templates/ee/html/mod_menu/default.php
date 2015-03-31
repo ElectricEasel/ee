@@ -19,8 +19,7 @@ defined('_JEXEC') or die;
 <div class="navbar-collapse nav-main-collapse collapse">
     <nav class="nav-main mega-menu">
         <?php // The menu class is deprecated. Use nav instead. ?>
-        <ul class="nav menu nav-main<?php echo $class_sfx;?>" id="mainMenu
-            <?php
+        <ul class="nav menu nav-main<?php echo $class_sfx;?>" id="mainMenu<?php
             $tag = '';
 
             if ($params->get('tag_id') != null)

@@ -4,7 +4,7 @@ Written by: 	Okler Themes - (http://www.okler.net)
 Version: 		2.9.0 - Wed Mar 19 2014 16:59:18
 */
 
-(function() {
+jQuery(function($) {
 
 	"use strict";
 
@@ -1046,4 +1046,4 @@ Version: 		2.9.0 - Wed Mar 19 2014 16:59:18
 
 	});
 
-})();
+});
