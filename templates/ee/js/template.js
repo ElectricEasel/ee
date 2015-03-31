@@ -194,6 +194,11 @@
 
         })();
 
+        // Custom Code
+        $('#homeHeaderCarousel').carousel({
+            interval: 5000
+        });
+
 	})
 
 })(jQuery);

@@ -23,7 +23,6 @@ header {
 	background: -o-linear-gradient(top,  #f6f6f6 0%,#ffffff 100%);
 	background: -ms-linear-gradient(top,  #f6f6f6 0%,#ffffff 100%);
 	background: linear-gradient(to bottom,  #f6f6f6 0%,#ffffff 100%);
-	min-height: 100px;
 	padding: 8px 0;
 }
 
@@ -117,8 +116,6 @@ body.sticky-menu-active header div.social-icons {
 
 /* Header Container */
 header > div.container {
-	height: 100px;
-	margin-bottom: -35px;
 	position: relative;
 	display: table;
 	max-width: 1170px;

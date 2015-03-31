@@ -3,16 +3,8 @@
 /administrator/help/*
 /cache/*
 /cli/*
-/images/banners/*
-/images/sampledata/*
-/images/joomla*
-/images/index.html
-/images/powered_by.png
 /installation/*
 /logs/*
-/templates/atomic/*
-/templates/beez_20/*
-/templates/beez5/*
 /tmp/*
 /configuration.php
 /*.txt

@@ -105,6 +105,51 @@
   font-smoothing: antialiased;
 }
 
+.btn {
+  .sans;
+  font-weight: 700;
+  .antialiased;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 22px 36px;
+  border-radius: 8px;
+  border: 1px solid;
+  text-shadow: none;
+  -webkit-transition: background 150ms linear;
+  -moz-transition: background 150ms linear;
+  -o-transition: background 150ms linear;
+  -ms-transition: background 150ms linear;
+  transition: background 150ms linear;
+
+  &:hover {
+    -webkit-transition: background 150ms linear;
+    -moz-transition: background 150ms linear;
+    -o-transition: background 150ms linear;
+    -ms-transition: background 150ms linear;
+    transition: background 150ms linear;
+  }
+}
+.btn-white {
+  color: @blue;
+  border-color: @white;
+  background: rgba(255,255,255,0.32);
+
+  &:hover {
+    color: @blue;
+    background: rgb(255,255,255);
+  }
+}
+.btn-white-alt {
+  color: @white;
+  border-color: @white;
+  background: rgba(255,255,255,0.32);
+
+  &:hover {
+    color: @white;
+    background: @blue;
+  }
+}
+
 .hanging-arrow(@color:@white; @border:@black; @size:20px; @borderWidth:1px) {
   @borderSize: @size + @borderWidth;
   position: relative;
@@ -163,12 +208,13 @@ header {
   background: url(/templates/ee/images/header-bg.jpg) center center no-repeat;
   background-size: cover;
   padding: 0;
+  position: relative;
+  z-index: 15;
 
   .header-inner {
-    padding: 16px 0;
-    min-height: 90px;
-    margin-bottom: 50px;
-    background-color: rgba(0,0,30,0.2);
+    padding: 22px 0;
+    height: 88px;
+    background-color: rgba(0, 0, 30, 0.2);
 
     #mainMenu {
       margin: 0;
@@ -187,13 +233,87 @@ header {
       }
     }
   }
-  #screens {
-    display: block;
-    margin: 0 auto -50px;
-  }
 }
-.home header {
-  background: url(/templates/ee/images/header-home.png) center center no-repeat,
-              url(/templates/ee/images/header-bg.jpg) center center no-repeat;
-  background-size: cover;
+.home .header {
+  background: none;
+}
+#homeHeaderCarousel {
+  height: 785px;
+  margin-top: -88px;
+  position: relative;
+  z-index: 10;
+
+  .carousel-inner {
+    height: 100%;
+
+    .item {
+      width: 100%;
+      height: 100%;
+
+      .slide {
+        height: 100%;
+        background-size: 100% 3%, cover !important;
+        text-align: center;
+
+        h3 {
+          .sans;
+          color: @white;
+          font-size: 27px;
+          font-weight: 400;
+          .antialiased;
+          text-transform: none;
+          line-height: 45px;
+          display: block;
+          margin: 0 auto 28px;
+        }
+        @media (max-width:1200px) {
+          background-size: auto, cover !important;
+        }
+      }
+      .tt {
+        background: url(/templates/ee/images/home-header-carousel/hanging-caret.png) no-repeat center bottom,
+                    url(/templates/ee/images/home-header-carousel/tt-bg.jpg) no-repeat center bottom transparent;
+        padding: 186px 0 0;
+        img {
+          margin: -64px 0;
+        }
+        h3 {
+          max-width: 770px;
+        }
+      }
+      .posrg {
+        background: url(/templates/ee/images/home-header-carousel/hanging-caret.png) no-repeat center bottom,
+                    url(/templates/ee/images/home-header-carousel/posrg-bg.jpg) no-repeat center bottom transparent;
+        padding: 226px 0 0;
+        img {
+          margin-bottom: 20px;
+        }
+        h3 {
+          max-width: 520px;
+        }
+      }
+      .echo {
+        background: url(/templates/ee/images/home-header-carousel/hanging-caret.png) no-repeat center bottom,
+                    url(/templates/ee/images/home-header-carousel/echo-bg.jpg) no-repeat center bottom transparent;
+        padding: 238px 0 0;
+        img {
+          margin: -15px 0 0;
+        }
+        h3 {
+          max-width: 480px;
+        }
+      }
+      .al {
+        background: url(/templates/ee/images/home-header-carousel/hanging-caret.png) no-repeat center bottom,
+                    url(/templates/ee/images/home-header-carousel/al-bg.jpg) no-repeat center bottom transparent;
+        padding: 62px 0 0;
+        img {
+          margin: 0 0 -145px;
+        }
+        h3 {
+          max-width: 630px;
+        }
+      }
+    }
+  }
 }

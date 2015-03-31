@@ -94,7 +94,7 @@ jQuery(function($) {
 				Core.featuredBoxes();
 
 				// Sticky Menu
-				Core.checkStickyMenu();
+				// Core.checkStickyMenu();
 
 				// Revolution Slider Fix
 				Core.fixRevolutionSlider();
@@ -1042,7 +1042,7 @@ jQuery(function($) {
 	$(window).load(function () {
 
 		// Sticky Meny
-		Core.stickyMenu();
+		// Core.stickyMenu();
 
 	});
 
