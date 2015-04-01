@@ -33,7 +33,7 @@ jQuery(function($) {
 			}
 
 			// Scroll to Top Button.
-			$.scrollToTop();
+			//$.scrollToTop();
 
 			// Nav Menu
 			this.navMenu();

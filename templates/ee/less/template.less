@@ -165,6 +165,34 @@
   }
 }
 
+.social-icons-custom {
+  list-style: none;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    margin: 0 15px;
+    a {
+      background: url(/templates/ee/images/social-sprite.png) no-repeat;
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+    }
+    a.facebook {
+      background-position: 0 0;
+    }
+    a.twitter {
+      background-position: 0 -45px;
+    }
+    a.google_plus {
+      background-position: 0 -95px;
+    }
+    a.linkedin {
+      background-position: 0 -145px;
+    }
+  }
+}
+
 .hanging-arrow(@color:@white; @border:@black; @size:20px; @borderWidth:1px) {
   @borderSize: @size + @borderWidth;
   position: relative;
@@ -223,13 +251,24 @@ html * {
 .row-fluid [class*="span"] {
   min-height: 0;
 }
+h1 {
+  .sans;
+  color: @white;
+  font-size: 64px;
+  line-height: 80px;
+  .antialiased;
+  font-weight: 300;
+  text-transform: lowercase;
+  margin: 0 0 6px;
+}
 h2 {
   .cursive;
   color: @white;
   .antialiased;
   font-size: 48px;
+  line-height: 64px;
   font-weight: 400;
-  margin: 0 0 18px;
+  margin: 0 0 6px;
   text-transform: lowercase;
   letter-spacing: 1px;
 }
@@ -243,6 +282,24 @@ h3 {
   line-height: 40px;
   margin: 0 0 28px;
 }
+h4 {
+  .sans;
+  color: @black;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin: 0 0 10px;
+}
+h5 {
+  .sans;
+  color: @black;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: none;
+  line-height: 30px;
+  margin: 0;
+}
 
 .hide {
   display: none;
@@ -250,17 +307,25 @@ h3 {
 
 header {
   border: none;
-  background: url(/templates/ee/images/header-bg.jpg) center center no-repeat;
-  background-size: cover;
+  background: url(/templates/ee/images/hanging-caret-greylight.png) no-repeat center bottom,
+              url(/templates/ee/images/header-bg.jpg) center center no-repeat;
+  background-size: 100% 26px, cover;
   padding: 0;
   position: relative;
   z-index: 15;
 
+  @media (max-width:@screen-lg-max) {
+    background-size: auto, cover !important;
+  }
   .header-inner {
     padding: 22px 0;
     height: 88px;
     background-color: rgba(0, 0, 30, 0.2);
 
+    .brand {
+      position: relative;
+      z-index: 9999;
+    }
     #mainMenu {
       margin: 0;
 
@@ -282,6 +347,21 @@ header {
 .home .header {
   background: none;
 }
+.footer {
+  background: @blue;
+  padding: 35px 0;
+
+  p {
+    color: @white;
+    text-align: right;
+    .sans;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 35px;
+    vertical-align: middle;
+  }
+}
 #homeHeaderCarousel {
   height: 785px;
   margin: -88px auto 0;
@@ -297,7 +377,7 @@ header {
 
       .slide {
         height: 100%;
-        background-size: 100% 3%, cover !important;
+        background-size: 100% 26px, cover !important;
         text-align: center;
         padding-left: 20px;
         padding-right: 20px;
@@ -308,12 +388,12 @@ header {
           line-height: 45px;
           margin: 0 auto 28px;
         }
-        @media (max-width:1200px) {
+        @media (max-width:@screen-lg-max) {
           background-size: auto, cover !important;
         }
       }
       .tt {
-        background: url(/templates/ee/images/home-header-carousel/hanging-caret.png) no-repeat center bottom,
+        background: url(/templates/ee/images/hanging-caret-blue.png) no-repeat center bottom,
                     url(/templates/ee/images/home-header-carousel/tt-bg.jpg) no-repeat center bottom transparent;
         padding-top: 186px;
         img {
@@ -324,7 +404,7 @@ header {
         }
       }
       .posrg {
-        background: url(/templates/ee/images/home-header-carousel/hanging-caret.png) no-repeat center bottom,
+        background: url(/templates/ee/images/hanging-caret-blue.png) no-repeat center bottom,
                     url(/templates/ee/images/home-header-carousel/posrg-bg.jpg) no-repeat center bottom transparent;
         padding-top: 226px;
         img {
@@ -335,7 +415,7 @@ header {
         }
       }
       .echo {
-        background: url(/templates/ee/images/home-header-carousel/hanging-caret.png) no-repeat center bottom,
+        background: url(/templates/ee/images/hanging-caret-blue.png) no-repeat center bottom,
                     url(/templates/ee/images/home-header-carousel/echo-bg.jpg) no-repeat center bottom transparent;
         padding-top: 238px;
         img {
@@ -346,8 +426,8 @@ header {
         }
       }
       .al {
-        background: url(/templates/ee/images/home-header-carousel/hanging-caret.png) no-repeat center bottom,
-                    url(/templates/ee/images/home-header-carousel/al-bg.jpg) no-repeat right bottom transparent;
+        background: url(/templates/ee/images/hanging-caret-blue.png) no-repeat center bottom,
+                    url(/templates/ee/images/home-header-carousel/al-bg.jpg) no-repeat center bottom transparent;
         padding-top: 62px;
         img {
           margin: 0 0 -145px;
@@ -359,6 +439,95 @@ header {
     }
   }
 }
+.custom.header-banner {
+  padding: 40px 0 80px;
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+}
 .custom.banner {
-  padding: 40px 0 45px;
+  padding: 24px 0 45px;
+}
+.icon-services {
+  background: url(/templates/ee/images/services-sprite.png) no-repeat;
+  height: 54px;
+  width: 57px;
+  display: inline-block;
+}
+.icon-services.gear {
+  background-position: 0 0;
+}
+.icon-services.star {
+  background-position: 0 -100px;
+}
+.icon-services.mag {
+  background-position: 0 -200px;
+}
+.icon-services.quote {
+  background-position: 0 -300px;
+}
+.icon-services.bulb {
+  background-position: 0 -400px;
+}
+.icon-services.people {
+  background-position: 0 -500px;
+}
+.custom.services-carousel {
+  background: @grayLight;
+  padding: 50px 0 60px;
+
+  .container {
+    position: relative;
+  }
+  .item {
+    background: rgba(255,255,255,0.32);
+    border: 1px solid @white;
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 20px 15px 25px;
+    text-align: center;
+
+    h4 {
+      text-transform: none;
+      margin-bottom: 5px;
+    }
+    .break {
+      @media (min-width:@screen-md-min) {
+        max-width: 121px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .prev, .next {
+    color: @white;
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 300;
+    .sans;
+    .antialiased;
+    -ms-transform: scaleY(1.5);
+    -webkit-transform: scaleY(1.5);
+    -moz-transform: scaleY(1.5);
+    -o-transform: scaleY(1.5);
+    transform: scaleY(1.5);
+    position: absolute;
+    top: 50%;
+    height: 26px;
+    margin-top: -13px;
+
+    &:hover {
+      text-decoration: none;
+      color: @blue;
+      cursor: pointer;
+    }
+  }
+  .prev {
+    left: -45px;
+  }
+  .next {
+    right: -45px;
+  }
 }

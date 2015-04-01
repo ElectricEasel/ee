@@ -44,14 +44,10 @@ $doc->addScript('templates/' .$this->template. '/vendor/modernizr.js');
 // Add Stylesheets
 $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css')
     ->addStyleSheet('templates/'.$this->template.'/css/theme.css')
-    ->addStyleSheet('templates/'.$this->template.'/css/theme-elements.css')
-    ->addStyleSheet('templates/'.$this->template.'/css/theme-animate.css')
-    ->addStyleSheet('templates/'.$this->template.'/vendor/rs-plugin/css/settings.css')
     ->addStyleSheet('templates/'.$this->template.'/vendor/owl-carousel/owl.carousel.css')
     ->addStyleSheet('templates/'.$this->template.'/vendor/owl-carousel/owl.theme.css')
     ->addStyleSheet('templates/'.$this->template.'/vendor/owl-carousel/owl.transitions.css')
     ->addStyleSheet('templates/'.$this->template.'/css/theme-responsive.css')
-    ->addStyleSheet('templates/'.$this->template.'/css/fonts/font-awesome/css/font-awesome.min.css')
     ->addStyleSheet('templates/'.$this->template.'/css/template.css');
 
 // Load optional RTL Bootstrap CSS
@@ -210,11 +206,11 @@ else
 	<!-- Footer -->
 	<footer class="footer" role="contentinfo">
 		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
-            <ul class="pull-left social-icons">
-	            <li><a class="facebook"></a></li>
-	            <li><a class="twiter"></a></li>
-	            <li><a class="google_plus"></a></li>
-	            <li><a class="linkedin"></a></li>
+            <ul class="pull-left social-icons-custom">
+	            <li><a class="facebook" href="#"></a></li>
+	            <li><a class="twitter" href="#"></a></li>
+	            <li><a class="google_plus" href="#"></a></li>
+	            <li><a class="linkedin" href="#"></a></li>
             </ul>
 			<jdoc:include type="modules" name="footer" style="none" />
 			<p>
@@ -226,12 +222,9 @@ else
 
     <script src="/templates/ee/vendor/jquery.js"></script>
     <script src="/templates/ee/js/plugins.js"></script>
-    <script src="/templates/ee/vendor/jquery.easing.js"></script>
-    <script src="/templates/ee/vendor/jquery.appear.js"></script>
 
     <script src="/templates/ee/vendor/bootstrap.js"></script>
     <script src="/templates/ee/vendor/owl-carousel/owl.carousel.js"></script>
-    <script src="/templates/ee/vendor/jquery.validate.js"></script>
 
     <script src="/templates/ee/js/template.js"></script>
 

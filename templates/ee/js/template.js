@@ -199,6 +199,24 @@
             interval: 5000
         });
 
+        var servicesCarousel = $('#servicesCarousel');
+        servicesCarousel.owlCarousel({
+            items: 4,
+            pagination: false
+        });
+        $(".next").click(function(){
+            servicesCarousel.trigger('owl.next');
+        });
+        $(".prev").click(function(){
+            servicesCarousel.trigger('owl.prev');
+        });
+        $(".play").click(function(){
+            servicesCarousel.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+        });
+        $(".stop").click(function(){
+            servicesCarousel.trigger('owl.stop');
+        });
+
 	})
 
 })(jQuery);
