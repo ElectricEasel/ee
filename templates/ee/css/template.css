@@ -7073,18 +7073,23 @@ dl.article-info dd.hits span[class*=" icon-"] {
   border-radius: 8px;
   border: 1px solid;
   text-shadow: none;
-  -webkit-transition: background 150ms linear;
-  -moz-transition: background 150ms linear;
-  -o-transition: background 150ms linear;
-  -ms-transition: background 150ms linear;
-  transition: background 150ms linear;
+  box-shadow: none;
+  -webkit-transition: 150ms linear;
+  -moz-transition: 150ms linear;
+  -o-transition: 150ms linear;
+  -ms-transition: 150ms linear;
+  transition: 150ms linear;
 }
 .btn:hover {
-  -webkit-transition: background 150ms linear;
-  -moz-transition: background 150ms linear;
-  -o-transition: background 150ms linear;
-  -ms-transition: background 150ms linear;
-  transition: background 150ms linear;
+  -webkit-transition: 150ms linear;
+  -moz-transition: 150ms linear;
+  -o-transition: 150ms linear;
+  -ms-transition: 150ms linear;
+  transition: 150ms linear;
+}
+.btn-wide {
+  padding: 22px 58px;
+  width: auto;
 }
 .btn-white {
   color: #0977bc;
@@ -7102,6 +7107,21 @@ dl.article-info dd.hits span[class*=" icon-"] {
 }
 .btn-white-alt:hover {
   color: #ffffff;
+  background: #0977bc;
+}
+.btn-blue {
+  color: #ffffff;
+  border-color: #ffffff;
+  background: #0977bc;
+}
+.btn-blue:hover {
+  color: #0977bc;
+  background: #ffffff;
+}
+.centered {
+  text-align: center;
+}
+.blue-bg {
   background: #0977bc;
 }
 body {
@@ -7131,6 +7151,35 @@ html * {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+.row-fluid [class*="span"] {
+  min-height: 0;
+}
+h2 {
+  font-family: "Oleo Script", cursive;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0 0 18px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+h3 {
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-transform: none;
+  line-height: 40px;
+  margin: 0 0 28px;
 }
 .hide {
   display: none;
@@ -7165,7 +7214,7 @@ header .header-inner #mainMenu li > a:hover {
 }
 #homeHeaderCarousel {
   height: 785px;
-  margin-top: -88px;
+  margin: -88px auto 0;
   position: relative;
   z-index: 10;
 }
@@ -7180,19 +7229,13 @@ header .header-inner #mainMenu li > a:hover {
   height: 100%;
   background-size: 100% 3%, cover !important;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
 }
 #homeHeaderCarousel .carousel-inner .item .slide h3 {
-  font-family: "Lato", sans-serif;
-  color: #ffffff;
   font-size: 27px;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  text-transform: none;
   line-height: 45px;
-  display: block;
   margin: 0 auto 28px;
 }
 @media (max-width: 1200px) {
@@ -7202,7 +7245,7 @@ header .header-inner #mainMenu li > a:hover {
 }
 #homeHeaderCarousel .carousel-inner .item .tt {
   background: url(/templates/ee/images/home-header-carousel/hanging-caret.png) no-repeat center bottom, url(/templates/ee/images/home-header-carousel/tt-bg.jpg) no-repeat center bottom transparent;
-  padding: 186px 0 0;
+  padding-top: 186px;
 }
 #homeHeaderCarousel .carousel-inner .item .tt img {
   margin: -64px 0;
@@ -7212,7 +7255,7 @@ header .header-inner #mainMenu li > a:hover {
 }
 #homeHeaderCarousel .carousel-inner .item .posrg {
   background: url(/templates/ee/images/home-header-carousel/hanging-caret.png) no-repeat center bottom, url(/templates/ee/images/home-header-carousel/posrg-bg.jpg) no-repeat center bottom transparent;
-  padding: 226px 0 0;
+  padding-top: 226px;
 }
 #homeHeaderCarousel .carousel-inner .item .posrg img {
   margin-bottom: 20px;
@@ -7222,7 +7265,7 @@ header .header-inner #mainMenu li > a:hover {
 }
 #homeHeaderCarousel .carousel-inner .item .echo {
   background: url(/templates/ee/images/home-header-carousel/hanging-caret.png) no-repeat center bottom, url(/templates/ee/images/home-header-carousel/echo-bg.jpg) no-repeat center bottom transparent;
-  padding: 238px 0 0;
+  padding-top: 238px;
 }
 #homeHeaderCarousel .carousel-inner .item .echo img {
   margin: -15px 0 0;
@@ -7231,12 +7274,15 @@ header .header-inner #mainMenu li > a:hover {
   max-width: 480px;
 }
 #homeHeaderCarousel .carousel-inner .item .al {
-  background: url(/templates/ee/images/home-header-carousel/hanging-caret.png) no-repeat center bottom, url(/templates/ee/images/home-header-carousel/al-bg.jpg) no-repeat center bottom transparent;
-  padding: 62px 0 0;
+  background: url(/templates/ee/images/home-header-carousel/hanging-caret.png) no-repeat center bottom, url(/templates/ee/images/home-header-carousel/al-bg.jpg) no-repeat right bottom transparent;
+  padding-top: 62px;
 }
 #homeHeaderCarousel .carousel-inner .item .al img {
   margin: 0 0 -145px;
 }
 #homeHeaderCarousel .carousel-inner .item .al h3 {
   max-width: 630px;
+}
+.custom.banner {
+  padding: 40px 0 45px;
 }
