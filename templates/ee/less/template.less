@@ -121,6 +121,7 @@
   -o-transition: 150ms linear;
   -ms-transition: 150ms linear;
   transition: 150ms linear;
+  letter-spacing: 1px;
 
   &:hover {
     -webkit-transition: 150ms linear;
@@ -300,6 +301,16 @@ h5 {
   line-height: 30px;
   margin: 0;
 }
+h6 {
+  .sans;
+  color: @white;
+  font-size: 16px;
+  font-weight: 700;
+  .antialiased;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin: 0 0 15px;
+}
 
 .hide {
   display: none;
@@ -308,7 +319,7 @@ h5 {
 header {
   border: none;
   background: url(/templates/ee/images/hanging-caret-greylight.png) no-repeat center bottom,
-              url(/templates/ee/images/header-bg.jpg) center center no-repeat;
+              url(/templates/ee/images/header-bg.jpg) 0 0 no-repeat;
   background-size: 100% 26px, cover;
   padding: 0;
   position: relative;
@@ -336,8 +347,15 @@ header {
           font-size: 15px;
           font-weight: 300;
 
-          &:hover {
+          &:hover, &:focus {
             background: none;
+            color: @blue;
+          }
+        }
+        &.active.current {
+          a {
+            background: none;
+            font-weight: 700;
           }
         }
       }
@@ -355,11 +373,16 @@ header {
     color: @white;
     text-align: right;
     .sans;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 300;
     margin: 0;
     line-height: 35px;
     vertical-align: middle;
+    letter-spacing: 1px;
+
+    span.divider {
+      margin: 0 2px
+    }
   }
 }
 #homeHeaderCarousel {
@@ -480,6 +503,11 @@ header {
 
   .container {
     position: relative;
+
+    @media (min-width:@screen-lg-min) {
+      width: 990px;
+      max-width: 990px;
+    }
   }
   .item {
     background: rgba(255,255,255,0.32);
@@ -529,5 +557,109 @@ header {
   }
   .next {
     right: -45px;
+  }
+}
+.custom.home-split {
+  .split {
+    float: left;
+    height: 466px;
+  }
+  .split-white {
+    background: @white;
+    width: 48%;
+    position: relative;
+
+    img {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  .split-texture {
+    background: url(/templates/ee/images/header-bg.jpg) no-repeat top left;
+    background-size: cover;
+    width: 52%;
+
+    .split-content {
+      max-width: 500px;
+      text-align: center;
+      padding: 55px;
+      display: inline-block;
+
+      img {
+        margin-bottom: 36px;
+      }
+      h3 {
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+  }
+  .split-right {
+    text-align: left;
+
+    &.split-white {
+      img {
+        left: 0;
+      }
+    }
+    &.split-texture {
+      background: url(/templates/ee/images/hanging-caret-white-left.png) no-repeat left center,
+                  url(/templates/ee/images/header-bg.jpg) no-repeat top left;
+      background-size: 4% 100%, auto;
+
+      .split-content {
+        margin-left: 4%;
+      }
+    }
+  }
+  .split-left {
+    text-align: right;
+
+    &.split-white {
+      img {
+        right: 0;
+      }
+    }
+    &.split-texture {
+      background: url(/templates/ee/images/hanging-caret-white-right.png) no-repeat right center,
+                  url(/templates/ee/images/header-bg.jpg) no-repeat top right;
+      background-size: 4% 100%, auto;
+
+      .split-content {
+        margin-right: 4%;
+      }
+    }
+  }
+}
+.custom.home-aerex {
+  .split-white {
+    img {
+      max-width: 576px;
+      margin-top: 30px;
+      bottom: 15px;
+    }
+  }
+  .split-texture {
+    .split-content {
+      padding: 60px 55px;
+    }
+  }
+}
+.custom.home-angel {
+  .split-white {
+    img {
+      max-width: 575px;
+      padding: 0 15px;
+    }
+  }
+  .split-texture {
+    .split-content {
+      padding: 48px 55px;
+
+      img {
+        margin-bottom: 25px;
+      }
+    }
   }
 }

@@ -7079,6 +7079,7 @@ dl.article-info dd.hits span[class*=" icon-"] {
   -o-transition: 150ms linear;
   -ms-transition: 150ms linear;
   transition: 150ms linear;
+  letter-spacing: 1px;
 }
 .btn:hover {
   -webkit-transition: 150ms linear;
@@ -7239,12 +7240,25 @@ h5 {
   line-height: 30px;
   margin: 0;
 }
+h6 {
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin: 0 0 15px;
+}
 .hide {
   display: none;
 }
 header {
   border: none;
-  background: url(/templates/ee/images/hanging-caret-greylight.png) no-repeat center bottom, url(/templates/ee/images/header-bg.jpg) center center no-repeat;
+  background: url(/templates/ee/images/hanging-caret-greylight.png) no-repeat center bottom, url(/templates/ee/images/header-bg.jpg) 0 0 no-repeat;
   background-size: 100% 26px, cover;
   padding: 0;
   position: relative;
@@ -7273,8 +7287,14 @@ header .header-inner #mainMenu li > a {
   font-size: 15px;
   font-weight: 300;
 }
-header .header-inner #mainMenu li > a:hover {
+header .header-inner #mainMenu li > a:hover,
+header .header-inner #mainMenu li > a:focus {
   background: none;
+  color: #0977bc;
+}
+header .header-inner #mainMenu li.active.current a {
+  background: none;
+  font-weight: 700;
 }
 .home .header {
   background: none;
@@ -7287,11 +7307,15 @@ header .header-inner #mainMenu li > a:hover {
   color: #ffffff;
   text-align: right;
   font-family: "Lato", sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 300;
   margin: 0;
   line-height: 35px;
   vertical-align: middle;
+  letter-spacing: 1px;
+}
+.footer p span.divider {
+  margin: 0 2px;
 }
 #homeHeaderCarousel {
   height: 785px;
@@ -7405,6 +7429,12 @@ header .header-inner #mainMenu li > a:hover {
 .custom.services-carousel .container {
   position: relative;
 }
+@media (min-width: 980px) {
+  .custom.services-carousel .container {
+    width: 990px;
+    max-width: 990px;
+  }
+}
 .custom.services-carousel .item {
   background: rgba(255, 255, 255, 0.32);
   border: 1px solid #ffffff;
@@ -7456,4 +7486,80 @@ header .header-inner #mainMenu li > a:hover {
 }
 .custom.services-carousel .next {
   right: -45px;
+}
+.custom.home-split .split {
+  float: left;
+  height: 466px;
+}
+.custom.home-split .split-white {
+  background: #ffffff;
+  width: 48%;
+  position: relative;
+}
+.custom.home-split .split-white img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.custom.home-split .split-texture {
+  background: url(/templates/ee/images/header-bg.jpg) no-repeat top left;
+  background-size: cover;
+  width: 52%;
+}
+.custom.home-split .split-texture .split-content {
+  max-width: 500px;
+  text-align: center;
+  padding: 55px;
+  display: inline-block;
+}
+.custom.home-split .split-texture .split-content img {
+  margin-bottom: 36px;
+}
+.custom.home-split .split-texture .split-content h3 {
+  font-size: 18px;
+  line-height: 32px;
+}
+.custom.home-split .split-right {
+  text-align: left;
+}
+.custom.home-split .split-right.split-white img {
+  left: 0;
+}
+.custom.home-split .split-right.split-texture {
+  background: url(/templates/ee/images/hanging-caret-white-left.png) no-repeat left center, url(/templates/ee/images/header-bg.jpg) no-repeat top left;
+  background-size: 4% 100%, auto;
+}
+.custom.home-split .split-right.split-texture .split-content {
+  margin-left: 4%;
+}
+.custom.home-split .split-left {
+  text-align: right;
+}
+.custom.home-split .split-left.split-white img {
+  right: 0;
+}
+.custom.home-split .split-left.split-texture {
+  background: url(/templates/ee/images/hanging-caret-white-right.png) no-repeat right center, url(/templates/ee/images/header-bg.jpg) no-repeat top right;
+  background-size: 4% 100%, auto;
+}
+.custom.home-split .split-left.split-texture .split-content {
+  margin-right: 4%;
+}
+.custom.home-aerex .split-white img {
+  max-width: 576px;
+  margin-top: 30px;
+  bottom: 15px;
+}
+.custom.home-aerex .split-texture .split-content {
+  padding: 60px 55px;
+}
+.custom.home-angel .split-white img {
+  max-width: 575px;
+  padding: 0 15px;
+}
+.custom.home-angel .split-texture .split-content {
+  padding: 48px 55px;
+}
+.custom.home-angel .split-texture .split-content img {
+  margin-bottom: 25px;
 }

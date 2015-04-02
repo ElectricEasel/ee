@@ -38,17 +38,11 @@ jQuery(function($) {
 			// Nav Menu
 			this.navMenu();
 
-			// Header Search
-			this.headerSearch();
-
 			// Animations
 			this.animations();
 
 			// Word Rotate
 			this.wordRotate();
-
-			// Newsletter
-			this.newsletter();
 
 			// Featured Boxes
 			this.featuredBoxes();
@@ -308,33 +302,6 @@ jQuery(function($) {
 
 		},
 
-		headerSearch: function() {
-
-			$("#searchForm").validate({
-				rules: {
-					q: {
-						required: true
-					}
-				},
-	            errorPlacement: function(error, element) {
-
-	            },
-				highlight: function (element) {
-					$(element)
-						.closest(".input-group")
-						.removeClass("has-success")
-						.addClass("has-error");
-				},
-				success: function (element) {
-					$(element)
-						.closest(".input-group")
-						.removeClass("has-error")
-						.addClass("has-success");
-				}
-			});
-
-		},
-
 		animations: function() {
 
 			// Animation Appear
@@ -463,73 +430,6 @@ jQuery(function($) {
 
 				}, 2000);
 
-			});
-
-		},
-
-		newsletter: function() {
-
-			$("#newsletterForm").validate({
-				submitHandler: function(form) {
-
-					$.ajax({
-						type: "POST",
-						url: $("#newsletterForm").attr("action"),
-						data: {
-							"email": $("#newsletterForm #email").val()
-						},
-						dataType: "json",
-						success: function (data) {
-							if (data.response == "success") {
-
-								$("#newsletterSuccess").removeClass("hidden");
-								$("#newsletterError").addClass("hidden");
-
-								$("#newsletterForm #email")
-									.val("")
-									.blur()
-									.closest(".control-group")
-									.removeClass("success")
-									.removeClass("error");
-
-							} else {
-
-								$("#newsletterError").html(data.message);
-								$("#newsletterError").removeClass("hidden");
-								$("#newsletterSuccess").addClass("hidden");
-
-								$("#newsletterForm #email")
-									.blur()
-									.closest(".control-group")
-									.removeClass("success")
-									.addClass("error");
-
-							}
-						}
-					});
-
-				},
-				rules: {
-					email: {
-						required: true,
-						email: true
-					}
-				},
-	            errorPlacement: function(error, element) {
-
-	            },
-				highlight: function (element) {
-					$(element)
-						.closest(".control-group")
-						.removeClass("success")
-						.addClass("error");
-				},
-				success: function (element) {
-					$(element)
-						.closest(".control-group")
-						.removeClass("error")
-						.addClass("success");
-				}
 			});
 
 		},
