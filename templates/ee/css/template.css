@@ -7489,16 +7489,18 @@ header .header-inner #mainMenu li.active.current a {
 .custom.services-carousel .next {
   right: -45px;
 }
+.custom.services-carousel .hanging-arrow {
+  display: none;
+}
 .what-we-do .custom.services-carousel {
   padding: 0;
 }
 .what-we-do .custom.services-carousel .container {
   padding: 50px 0 55px;
   position: relative;
-  text-align: center;
 }
-.what-we-do .custom.services-carousel .container:before {
-  content: "";
+.what-we-do .custom.services-carousel .container .hanging-arrow {
+  display: block;
   height: 0;
   width: 0;
   position: absolute;
@@ -7506,7 +7508,12 @@ header .header-inner #mainMenu li.active.current a {
   border-top-color: #eceef2;
   bottom: -40px;
   margin-left: -20px;
-  left: 12.5%;
+  left: 50%;
+  -webkit-transition: left 400ms linear;
+  -moz-transition: left 400ms linear;
+  -o-transition: left 400ms linear;
+  -ms-transition: left 400ms linear;
+  transition: left 400ms linear;
 }
 .custom.home-split .split {
   float: left;
@@ -7665,6 +7672,9 @@ header .header-inner #mainMenu li.active.current a {
   -o-transition: opacity 350ms linear;
   -ms-transition: opacity 350ms linear;
   transition: opacity 350ms linear;
+}
+.custom.expanded-services .toggleable.visible {
+  opacity: 1;
 }
 .custom.clients {
   background: #dcdee3;

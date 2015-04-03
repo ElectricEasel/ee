@@ -554,13 +554,33 @@ header {
   .next {
     right: -45px;
   }
+  .hanging-arrow {
+    display: none;
+  }
 }
 .what-we-do .custom.services-carousel {
   padding: 0;
 
   .container {
     padding: 50px 0 55px;
-    .hanging-arrow(@grayLight;20px;12.5%);
+    position: relative;
+
+    .hanging-arrow {
+      display: block;
+      height: 0;
+      width: 0;
+      position: absolute;
+      border: 20px solid transparent;
+      border-top-color: #eceef2;
+      bottom: -40px;
+      margin-left: -20px;
+      left: 50%;
+      -webkit-transition: left 400ms linear;
+      -moz-transition: left 400ms linear;
+      -o-transition: left 400ms linear;
+      -ms-transition: left 400ms linear;
+      transition: left 400ms linear;
+    }
   }
 }
 .custom.home-split {
@@ -749,6 +769,10 @@ header {
     -o-transition: opacity 350ms linear;
     -ms-transition: opacity 350ms linear;
     transition: opacity 350ms linear;
+
+    &.visible {
+      opacity: 1;
+    }
   }
 }
 .custom.clients {
