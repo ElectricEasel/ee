@@ -744,10 +744,32 @@ header {
     top: 0;
     left: 0;
     opacity: 0;
-    -webkit-transition: opacity 250ms linear;
-    -moz-transition: opacity 250ms linear;
-    -o-transition: opacity 250ms linear;
-    -ms-transition: opacity 250ms linear;
-    transition: opacity 250ms linear;
+    -webkit-transition: opacity 350ms linear;
+    -moz-transition: opacity 350ms linear;
+    -o-transition: opacity 350ms linear;
+    -ms-transition: opacity 350ms linear;
+    transition: opacity 350ms linear;
+  }
+}
+.custom.clients {
+  background: @gray;
+  text-align: center;
+  padding: 50px 0 20px;
+  .hanging-arrow(@gray;20px;50%);
+
+  h4 {
+    margin-bottom: 50px;
+  }
+  .row-fluid {
+    margin-bottom: 80px;
+
+    .span3 {
+      @media (min-width:@screen-md-min) {
+        margin: 0 auto;
+        float: none;
+        display: inline-block;
+        width: 25%;
+      }
+    }
   }
 }

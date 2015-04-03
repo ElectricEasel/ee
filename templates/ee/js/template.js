@@ -203,20 +203,13 @@
         servicesCarousel.owlCarousel({
             items: 4,
             pagination: false,
-            slideSpeed: 400,
-            mouseDrag: false
+            slideSpeed: 400
         });
         $(".next").click(function(){
             servicesCarousel.trigger('owl.next');
         });
         $(".prev").click(function(){
             servicesCarousel.trigger('owl.prev');
-        });
-        $(".play").click(function(){
-            servicesCarousel.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
-        });
-        $(".stop").click(function(){
-            servicesCarousel.trigger('owl.stop');
         });
 
         $('.expanded').addClass('toggleable');
