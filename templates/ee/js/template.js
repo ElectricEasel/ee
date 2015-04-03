@@ -202,7 +202,9 @@
         var servicesCarousel = $('#servicesCarousel');
         servicesCarousel.owlCarousel({
             items: 4,
-            pagination: false
+            pagination: false,
+            slideSpeed: 400,
+            mouseDrag: false
         });
         $(".next").click(function(){
             servicesCarousel.trigger('owl.next');
@@ -216,6 +218,21 @@
         $(".stop").click(function(){
             servicesCarousel.trigger('owl.stop');
         });
+
+        toggleExpandedServices($('.owl-item .item:first'));
+
+        $('.owl-item .item').click(function(){
+            toggleExpandedServices($(this));
+        });
+
+        function toggleExpandedServices(activeSlide) {
+            var activeTag = activeSlide.attr('data-selector');
+            var jqueryTag = "div[data-select='" + activeTag + "']";
+            var activeItem = $(jqueryTag);
+
+            $('.expanded').hide();
+            activeItem.show();
+        }
 
 	})
 

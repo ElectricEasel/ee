@@ -194,38 +194,20 @@
   }
 }
 
-.hanging-arrow(@color:@white; @border:@black; @size:20px; @borderWidth:1px) {
-  @borderSize: @size + @borderWidth;
+.hanging-arrow(@color:@white; @size:20px; @left:50%) {
   position: relative;
   text-align: center;
-  border-bottom: @borderWidth solid @border;
-  &:before, &:after {
+  &:before {
     content: "";
     height: 0;
     width: 0;
     position: absolute;
-  }
-  &:before {
     border: @size solid transparent;
     border-top-color: @color;
     bottom: -2 * @size;
     margin-left: -1 * @size;
-    z-index: 2;
+    left: @left;
   }
-  &:after {
-    border: @borderSize solid transparent;
-    border-top-color: @border;
-    bottom: -2 * @borderSize;
-    margin-left: -1 * @borderSize;
-    z-index: 1;
-  }
-}
-
-.centered {
-  text-align: center;
-}
-.blue-bg {
-  background: @blue;
 }
 
 body {
@@ -263,15 +245,13 @@ h1 {
   margin: 0 0 6px;
 }
 h2 {
-  .cursive;
-  color: @white;
-  .antialiased;
-  font-size: 48px;
-  line-height: 64px;
-  font-weight: 400;
-  margin: 0 0 6px;
-  text-transform: lowercase;
-  letter-spacing: 1px;
+  .sans;
+  color: @blue;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: none;
+  line-height: 34px;
+  margin: 0 0 5px;
 }
 h3 {
   .sans;
@@ -318,16 +298,13 @@ h6 {
 
 header {
   border: none;
-  background: url(/templates/ee/images/hanging-caret-greylight.png) no-repeat center bottom,
+  background: url(/templates/ee/images/hanging-caret-greylight.png) repeat-x center bottom,
               url(/templates/ee/images/header-bg.jpg) 0 0 no-repeat;
-  background-size: 100% 26px, cover;
+  background-size: auto, cover;
   padding: 0;
   position: relative;
   z-index: 15;
 
-  @media (max-width:@screen-lg-max) {
-    background-size: auto, cover !important;
-  }
   .header-inner {
     padding: 22px 0;
     height: 88px;
@@ -400,7 +377,7 @@ header {
 
       .slide {
         height: 100%;
-        background-size: 100% 26px, cover !important;
+        background-size: auto, cover !important;
         text-align: center;
         padding-left: 20px;
         padding-right: 20px;
@@ -411,12 +388,9 @@ header {
           line-height: 45px;
           margin: 0 auto 28px;
         }
-        @media (max-width:@screen-lg-max) {
-          background-size: auto, cover !important;
-        }
       }
       .tt {
-        background: url(/templates/ee/images/hanging-caret-blue.png) no-repeat center bottom,
+        background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom,
                     url(/templates/ee/images/home-header-carousel/tt-bg.jpg) no-repeat center bottom transparent;
         padding-top: 186px;
         img {
@@ -427,7 +401,7 @@ header {
         }
       }
       .posrg {
-        background: url(/templates/ee/images/hanging-caret-blue.png) no-repeat center bottom,
+        background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom,
                     url(/templates/ee/images/home-header-carousel/posrg-bg.jpg) no-repeat center bottom transparent;
         padding-top: 226px;
         img {
@@ -438,7 +412,7 @@ header {
         }
       }
       .echo {
-        background: url(/templates/ee/images/hanging-caret-blue.png) no-repeat center bottom,
+        background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom,
                     url(/templates/ee/images/home-header-carousel/echo-bg.jpg) no-repeat center bottom transparent;
         padding-top: 238px;
         img {
@@ -449,7 +423,7 @@ header {
         }
       }
       .al {
-        background: url(/templates/ee/images/hanging-caret-blue.png) no-repeat center bottom,
+        background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom,
                     url(/templates/ee/images/home-header-carousel/al-bg.jpg) no-repeat center bottom transparent;
         padding-top: 62px;
         img {
@@ -464,14 +438,29 @@ header {
 }
 .custom.header-banner {
   padding: 40px 0 80px;
+  text-align: center;
 
   h3 {
     font-size: 24px;
     margin-bottom: 0;
   }
 }
-.custom.banner {
+.custom.innovative-solutions {
   padding: 24px 0 45px;
+  text-align: center;
+  background: @blue;
+
+  h2 {
+    .cursive;
+    color: @white;
+    .antialiased;
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 400;
+    margin: 0 0 6px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+  }
 }
 .icon-services {
   background: url(/templates/ee/images/services-sprite.png) no-repeat;
@@ -516,16 +505,23 @@ header {
     margin: 0 10px;
     padding: 20px 15px 25px;
     text-align: center;
+    cursor: pointer;
 
     h4 {
       text-transform: none;
       margin-bottom: 5px;
     }
-    .break {
-      @media (min-width:@screen-md-min) {
-        max-width: 121px;
+
+    @media (min-width:@screen-md-min) {
+      .break {
         margin-left: auto;
         margin-right: auto;
+      }
+      h4.break {
+        max-width: 121px;
+      }
+      h5.break {
+        max-width: 154px;
       }
     }
   }
@@ -557,6 +553,14 @@ header {
   }
   .next {
     right: -45px;
+  }
+}
+.what-we-do .custom.services-carousel {
+  padding: 0;
+
+  .container {
+    padding: 50px 0 55px;
+    .hanging-arrow(@grayLight;20px;12.5%);
   }
 }
 .custom.home-split {
@@ -605,7 +609,7 @@ header {
     }
     &.split-texture {
       background: url(/templates/ee/images/hanging-caret-white-left.png) no-repeat left center,
-                  url(/templates/ee/images/header-bg.jpg) no-repeat top left;
+                  url(/templates/ee/images/header-bg.jpg) no-repeat left top;
       background-size: 4% 100%, auto;
 
       .split-content {
@@ -623,7 +627,7 @@ header {
     }
     &.split-texture {
       background: url(/templates/ee/images/hanging-caret-white-right.png) no-repeat right center,
-                  url(/templates/ee/images/header-bg.jpg) no-repeat top right;
+                  url(/templates/ee/images/header-bg.jpg) no-repeat right top;
       background-size: 4% 100%, auto;
 
       .split-content {
@@ -660,6 +664,76 @@ header {
       img {
         margin-bottom: 25px;
       }
+    }
+  }
+}
+.custom.explore {
+  background: @grayLight;
+  padding: 35px 0;
+  text-align: center;
+
+  h5 {
+    max-width: 775px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.custom.expanded-services {
+  height: 433px;
+  overflow: hidden;
+  padding-top: 16px;
+
+  .expanded {
+    overflow: hidden;
+    display:none;
+    img {
+      float: right;
+    }
+    .expanded-content {
+      max-width: 54%;
+    }
+  }
+  .programming {
+    padding-top: 29px;
+    .expanded-content {
+      margin-top: 30px;
+    }
+  }
+  .design {
+    padding-top: 64px;
+    .expanded-content {
+      margin-top: -5px;
+    }
+  }
+  .sem {
+    padding-top: 48px;
+    img {
+      margin-right: 80px;
+    }
+    .expanded-content {
+      margin-top: 11px;
+    }
+  }
+  .social {
+    padding-top: 44px;
+    .expanded-content {
+      margin-top: 15px;
+    }
+  }
+  .content {
+    padding-top: 0;
+    .expanded-content {
+      margin-top: 59px;
+    }
+  }
+  .consulting {
+    padding-top: 18px;
+    img {
+      margin-right: 64px;
+    }
+    .expanded-content {
+      margin-top: 41px;
+      max-width: 52%;
     }
   }
 }

@@ -7145,12 +7145,6 @@ dl.article-info dd.hits span[class*=" icon-"] {
 .social-icons-custom li a.linkedin {
   background-position: 0 -145px;
 }
-.centered {
-  text-align: center;
-}
-.blue-bg {
-  background: #0977bc;
-}
 body {
   padding: 0;
 }
@@ -7196,18 +7190,13 @@ h1 {
   margin: 0 0 6px;
 }
 h2 {
-  font-family: "Oleo Script", cursive;
-  color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  font-size: 48px;
-  line-height: 64px;
-  font-weight: 400;
-  margin: 0 0 6px;
-  text-transform: lowercase;
-  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+  color: #0977bc;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: none;
+  line-height: 34px;
+  margin: 0 0 5px;
 }
 h3 {
   font-family: "Lato", sans-serif;
@@ -7258,16 +7247,11 @@ h6 {
 }
 header {
   border: none;
-  background: url(/templates/ee/images/hanging-caret-greylight.png) no-repeat center bottom, url(/templates/ee/images/header-bg.jpg) 0 0 no-repeat;
-  background-size: 100% 26px, cover;
+  background: url(/templates/ee/images/hanging-caret-greylight.png) repeat-x center bottom, url(/templates/ee/images/header-bg.jpg) 0 0 no-repeat;
+  background-size: auto, cover;
   padding: 0;
   position: relative;
   z-index: 15;
-}
-@media (max-width: 1199px) {
-  header {
-    background-size: auto, cover !important;
-  }
 }
 header .header-inner {
   padding: 22px 0;
@@ -7332,7 +7316,7 @@ header .header-inner #mainMenu li.active.current a {
 }
 #homeHeaderCarousel .carousel-inner .item .slide {
   height: 100%;
-  background-size: 100% 26px, cover !important;
+  background-size: auto, cover !important;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -7343,13 +7327,8 @@ header .header-inner #mainMenu li.active.current a {
   line-height: 45px;
   margin: 0 auto 28px;
 }
-@media (max-width: 1199px) {
-  #homeHeaderCarousel .carousel-inner .item .slide {
-    background-size: auto, cover !important;
-  }
-}
 #homeHeaderCarousel .carousel-inner .item .tt {
-  background: url(/templates/ee/images/hanging-caret-blue.png) no-repeat center bottom, url(/templates/ee/images/home-header-carousel/tt-bg.jpg) no-repeat center bottom transparent;
+  background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom, url(/templates/ee/images/home-header-carousel/tt-bg.jpg) no-repeat center bottom transparent;
   padding-top: 186px;
 }
 #homeHeaderCarousel .carousel-inner .item .tt img {
@@ -7359,7 +7338,7 @@ header .header-inner #mainMenu li.active.current a {
   max-width: 770px;
 }
 #homeHeaderCarousel .carousel-inner .item .posrg {
-  background: url(/templates/ee/images/hanging-caret-blue.png) no-repeat center bottom, url(/templates/ee/images/home-header-carousel/posrg-bg.jpg) no-repeat center bottom transparent;
+  background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom, url(/templates/ee/images/home-header-carousel/posrg-bg.jpg) no-repeat center bottom transparent;
   padding-top: 226px;
 }
 #homeHeaderCarousel .carousel-inner .item .posrg img {
@@ -7369,7 +7348,7 @@ header .header-inner #mainMenu li.active.current a {
   max-width: 520px;
 }
 #homeHeaderCarousel .carousel-inner .item .echo {
-  background: url(/templates/ee/images/hanging-caret-blue.png) no-repeat center bottom, url(/templates/ee/images/home-header-carousel/echo-bg.jpg) no-repeat center bottom transparent;
+  background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom, url(/templates/ee/images/home-header-carousel/echo-bg.jpg) no-repeat center bottom transparent;
   padding-top: 238px;
 }
 #homeHeaderCarousel .carousel-inner .item .echo img {
@@ -7379,7 +7358,7 @@ header .header-inner #mainMenu li.active.current a {
   max-width: 480px;
 }
 #homeHeaderCarousel .carousel-inner .item .al {
-  background: url(/templates/ee/images/hanging-caret-blue.png) no-repeat center bottom, url(/templates/ee/images/home-header-carousel/al-bg.jpg) no-repeat center bottom transparent;
+  background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom, url(/templates/ee/images/home-header-carousel/al-bg.jpg) no-repeat center bottom transparent;
   padding-top: 62px;
 }
 #homeHeaderCarousel .carousel-inner .item .al img {
@@ -7390,13 +7369,30 @@ header .header-inner #mainMenu li.active.current a {
 }
 .custom.header-banner {
   padding: 40px 0 80px;
+  text-align: center;
 }
 .custom.header-banner h3 {
   font-size: 24px;
   margin-bottom: 0;
 }
-.custom.banner {
+.custom.innovative-solutions {
   padding: 24px 0 45px;
+  text-align: center;
+  background: #0977bc;
+}
+.custom.innovative-solutions h2 {
+  font-family: "Oleo Script", cursive;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 400;
+  margin: 0 0 6px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
 }
 .icon-services {
   background: url(/templates/ee/images/services-sprite.png) no-repeat;
@@ -7442,6 +7438,7 @@ header .header-inner #mainMenu li.active.current a {
   margin: 0 10px;
   padding: 20px 15px 25px;
   text-align: center;
+  cursor: pointer;
 }
 .custom.services-carousel .item h4 {
   text-transform: none;
@@ -7449,9 +7446,14 @@ header .header-inner #mainMenu li.active.current a {
 }
 @media (min-width: 768px) {
   .custom.services-carousel .item .break {
-    max-width: 121px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .custom.services-carousel .item h4.break {
+    max-width: 121px;
+  }
+  .custom.services-carousel .item h5.break {
+    max-width: 154px;
   }
 }
 .custom.services-carousel .prev,
@@ -7486,6 +7488,25 @@ header .header-inner #mainMenu li.active.current a {
 }
 .custom.services-carousel .next {
   right: -45px;
+}
+.what-we-do .custom.services-carousel {
+  padding: 0;
+}
+.what-we-do .custom.services-carousel .container {
+  padding: 50px 0 55px;
+  position: relative;
+  text-align: center;
+}
+.what-we-do .custom.services-carousel .container:before {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border: 20px solid transparent;
+  border-top-color: #eceef2;
+  bottom: -40px;
+  margin-left: -20px;
+  left: 12.5%;
 }
 .custom.home-split .split {
   float: left;
@@ -7526,7 +7547,7 @@ header .header-inner #mainMenu li.active.current a {
   left: 0;
 }
 .custom.home-split .split-right.split-texture {
-  background: url(/templates/ee/images/hanging-caret-white-left.png) no-repeat left center, url(/templates/ee/images/header-bg.jpg) no-repeat top left;
+  background: url(/templates/ee/images/hanging-caret-white-left.png) no-repeat left center, url(/templates/ee/images/header-bg.jpg) no-repeat left top;
   background-size: 4% 100%, auto;
 }
 .custom.home-split .split-right.split-texture .split-content {
@@ -7539,7 +7560,7 @@ header .header-inner #mainMenu li.active.current a {
   right: 0;
 }
 .custom.home-split .split-left.split-texture {
-  background: url(/templates/ee/images/hanging-caret-white-right.png) no-repeat right center, url(/templates/ee/images/header-bg.jpg) no-repeat top right;
+  background: url(/templates/ee/images/hanging-caret-white-right.png) no-repeat right center, url(/templates/ee/images/header-bg.jpg) no-repeat right top;
   background-size: 4% 100%, auto;
 }
 .custom.home-split .split-left.split-texture .split-content {
@@ -7562,4 +7583,72 @@ header .header-inner #mainMenu li.active.current a {
 }
 .custom.home-angel .split-texture .split-content img {
   margin-bottom: 25px;
+}
+.custom.explore {
+  background: #eceef2;
+  padding: 35px 0;
+  text-align: center;
+}
+.custom.explore h5 {
+  max-width: 775px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.custom.expanded-services {
+  height: 433px;
+  overflow: hidden;
+  padding-top: 16px;
+}
+.custom.expanded-services .expanded {
+  overflow: hidden;
+  display: none;
+}
+.custom.expanded-services .expanded img {
+  float: right;
+}
+.custom.expanded-services .expanded .expanded-content {
+  max-width: 54%;
+}
+.custom.expanded-services .programming {
+  padding-top: 29px;
+}
+.custom.expanded-services .programming .expanded-content {
+  margin-top: 30px;
+}
+.custom.expanded-services .design {
+  padding-top: 64px;
+}
+.custom.expanded-services .design .expanded-content {
+  margin-top: -5px;
+}
+.custom.expanded-services .sem {
+  padding-top: 48px;
+}
+.custom.expanded-services .sem img {
+  margin-right: 80px;
+}
+.custom.expanded-services .sem .expanded-content {
+  margin-top: 11px;
+}
+.custom.expanded-services .social {
+  padding-top: 44px;
+}
+.custom.expanded-services .social .expanded-content {
+  margin-top: 15px;
+}
+.custom.expanded-services .content {
+  padding-top: 0;
+}
+.custom.expanded-services .content .expanded-content {
+  margin-top: 59px;
+}
+.custom.expanded-services .consulting {
+  padding-top: 18px;
+}
+.custom.expanded-services .consulting img {
+  margin-right: 64px;
+}
+.custom.expanded-services .consulting .expanded-content {
+  margin-top: 41px;
+  max-width: 52%;
 }
