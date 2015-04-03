@@ -683,9 +683,11 @@ header {
   overflow: hidden;
   padding-top: 16px;
 
+  .container {
+    position: relative;
+  }
   .expanded {
     overflow: hidden;
-    display:none;
     img {
       float: right;
     }
@@ -735,5 +737,17 @@ header {
       margin-top: 41px;
       max-width: 52%;
     }
+  }
+  .toggleable {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: opacity 250ms linear;
+    -moz-transition: opacity 250ms linear;
+    -o-transition: opacity 250ms linear;
+    -ms-transition: opacity 250ms linear;
+    transition: opacity 250ms linear;
   }
 }

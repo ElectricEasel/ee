@@ -7599,9 +7599,11 @@ header .header-inner #mainMenu li.active.current a {
   overflow: hidden;
   padding-top: 16px;
 }
+.custom.expanded-services .container {
+  position: relative;
+}
 .custom.expanded-services .expanded {
   overflow: hidden;
-  display: none;
 }
 .custom.expanded-services .expanded img {
   float: right;
@@ -7651,4 +7653,16 @@ header .header-inner #mainMenu li.active.current a {
 .custom.expanded-services .consulting .expanded-content {
   margin-top: 41px;
   max-width: 52%;
+}
+.custom.expanded-services .toggleable {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 250ms linear;
+  -moz-transition: opacity 250ms linear;
+  -o-transition: opacity 250ms linear;
+  -ms-transition: opacity 250ms linear;
+  transition: opacity 250ms linear;
 }

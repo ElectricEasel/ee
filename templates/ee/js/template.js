@@ -219,6 +219,8 @@
             servicesCarousel.trigger('owl.stop');
         });
 
+        $('.expanded').addClass('toggleable');
+        $('.toggleable').show();
         toggleExpandedServices($('.owl-item .item:first'));
 
         $('.owl-item .item').click(function(){
@@ -230,8 +232,8 @@
             var jqueryTag = "div[data-select='" + activeTag + "']";
             var activeItem = $(jqueryTag);
 
-            $('.expanded').hide();
-            activeItem.show();
+            $('.toggleable').css('opacity','0');
+            activeItem.css('opacity','1');
         }
 
 	})
