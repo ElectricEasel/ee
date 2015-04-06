@@ -204,10 +204,7 @@
             items: 4,
             pagination: false,
             slideSpeed: 400,
-            addClassActive: true,
-            afterMove: function(){
-                moveServicesArrow();
-            }
+            addClassActive: true
         });
         $(".next").click(function(){
             servicesCarousel.trigger('owl.next');
@@ -219,56 +216,20 @@
         $('.expanded').addClass('toggleable');
         $('.toggleable').show();
         toggleExpandedServices($('.owl-item .item:first'));
-        moveServicesArrow();
 
         $('.owl-item .item').click(function(){
             toggleExpandedServices($(this));
         });
 
         function toggleExpandedServices(activeSlide) {
+            $('.owl-item .item').removeClass('arrow');
+            activeSlide.addClass('arrow');
             var activeTag = activeSlide.attr('data-selector');
             var jQueryTag = "div[data-select='" + activeTag + "']";
             var activeItem = $(jQueryTag);
 
             $('.toggleable').removeClass('visible');
             activeItem.addClass('visible');
-            moveServicesArrow();
-        }
-        function moveServicesArrow() {
-            var active = $('#servicesCarousel .active');
-            var slideCount = active.length;
-            var activeTag = $('.expanded-services .visible').attr('data-select');
-            var activeIndex = null;
-            active.each(function(index){
-                if ($(this).children('.item').attr('data-selector') == activeTag) {
-                    activeIndex = index;
-                }
-            });
-            var arrow = $('.hanging-arrow');
-            if (activeIndex === null) {
-                var items = $('#servicesCarousel .item');
-                var itemIndex = null;
-                var maxActive = null;
-                items.each(function(index){
-                    if ($(this).attr('data-selector') == activeTag) {
-                        itemIndex = index;
-                    }
-                    if ($(this).parent().hasClass('active')) {
-                        maxActive = index;
-                    }
-                });
-                var absLeft = parseFloat(100 / slideCount / 2);
-                if (itemIndex < maxActive) {
-                    var left = parseFloat(0 - absLeft) + '%';
-                    arrow.css('left',left);
-                } else {
-                    var left = parseFloat(100 + absLeft) + '%';
-                    arrow.css('left',left);
-                }
-            } else {
-                var left = parseFloat(100 / slideCount * (activeIndex + 1) - 100 / slideCount / 2) + '%';
-                arrow.css('left', left);
-            }
         }
 	})
 

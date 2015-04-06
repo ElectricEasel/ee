@@ -7496,24 +7496,44 @@ header .header-inner #mainMenu li.active.current a {
   padding: 0;
 }
 .what-we-do .custom.services-carousel .container {
-  padding: 50px 0 55px;
-  position: relative;
+  padding: 50px 0 0;
 }
-.what-we-do .custom.services-carousel .container .hanging-arrow {
-  display: block;
+.what-we-do .custom.services-carousel .container .owl-wrapper {
+  z-index: 200;
+}
+.what-we-do .custom.services-carousel .container .owl-wrapper .owl-item {
+  padding-bottom: 75px;
+}
+.what-we-do .custom.services-carousel .container .owl-wrapper .owl-item .item {
+  position: relative;
+  text-align: center;
+}
+.what-we-do .custom.services-carousel .container .owl-wrapper .owl-item .item:before {
+  content: "";
   height: 0;
   width: 0;
   position: absolute;
   border: 20px solid transparent;
   border-top-color: #eceef2;
-  bottom: -40px;
+  bottom: -95px;
   margin-left: -20px;
   left: 50%;
-  -webkit-transition: left 400ms linear;
-  -moz-transition: left 400ms linear;
-  -o-transition: left 400ms linear;
-  -ms-transition: left 400ms linear;
-  transition: left 400ms linear;
+  z-index: 200;
+  opacity: 0;
+  -webkit-transition: opacity 350ms linear;
+  -moz-transition: opacity 350ms linear;
+  -o-transition: opacity 350ms linear;
+  -ms-transition: opacity 350ms linear;
+  transition: opacity 350ms linear;
+}
+.what-we-do .custom.services-carousel .container .owl-wrapper .owl-item .item.arrow:before {
+  opacity: 1;
+}
+.what-we-do .custom.services-carousel .bottom-stripe {
+  background: #ffffff;
+  height: 20px;
+  position: relative;
+  top: -20px;
 }
 .custom.home-split .split {
   float: left;
@@ -7600,6 +7620,11 @@ header .header-inner #mainMenu li.active.current a {
   max-width: 775px;
   margin-left: auto;
   margin-right: auto;
+}
+.moduletable.expanded-services {
+  position: relative;
+  top: -20px;
+  background: #ffffff;
 }
 .custom.expanded-services {
   height: 433px;
@@ -7692,6 +7717,7 @@ header .header-inner #mainMenu li.active.current a {
   bottom: -40px;
   margin-left: -20px;
   left: 50%;
+  z-index: 200;
 }
 .custom.clients h4 {
   margin-bottom: 50px;

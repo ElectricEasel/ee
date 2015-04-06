@@ -207,6 +207,7 @@
     bottom: -2 * @size;
     margin-left: -1 * @size;
     left: @left;
+    z-index: 200;
   }
 }
 
@@ -562,25 +563,47 @@ header {
   padding: 0;
 
   .container {
-    padding: 50px 0 55px;
-    position: relative;
+    padding: 50px 0 0;
 
-    .hanging-arrow {
-      display: block;
-      height: 0;
-      width: 0;
-      position: absolute;
-      border: 20px solid transparent;
-      border-top-color: #eceef2;
-      bottom: -40px;
-      margin-left: -20px;
-      left: 50%;
-      -webkit-transition: left 400ms linear;
-      -moz-transition: left 400ms linear;
-      -o-transition: left 400ms linear;
-      -ms-transition: left 400ms linear;
-      transition: left 400ms linear;
+    .owl-wrapper {
+      z-index: 200;
+
+      .owl-item {
+        padding-bottom: 75px;
+
+        .item {
+          position: relative;
+          text-align: center;
+          &:before {
+            content: "";
+            height: 0;
+            width: 0;
+            position: absolute;
+            border: 20px solid transparent;
+            border-top-color: @grayLight;
+            bottom: -95px;
+            margin-left: -1 * 20px;
+            left: 50%;
+            z-index: 200;
+            opacity: 0;
+            -webkit-transition: opacity 350ms linear;
+            -moz-transition: opacity 350ms linear;
+            -o-transition: opacity 350ms linear;
+            -ms-transition: opacity 350ms linear;
+            transition: opacity 350ms linear;
+          }
+          &.arrow:before {
+            opacity: 1;
+          }
+        }
+      }
     }
+  }
+  .bottom-stripe {
+    background: @white;
+    height: 20px;
+    position: relative;
+    top: -20px;
   }
 }
 .custom.home-split {
@@ -697,6 +720,11 @@ header {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.moduletable.expanded-services {
+  position: relative;
+  top: -20px;
+  background: @white;
 }
 .custom.expanded-services {
   height: 433px;
