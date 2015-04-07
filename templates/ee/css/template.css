@@ -7119,6 +7119,15 @@ dl.article-info dd.hits span[class*=" icon-"] {
   color: #0977bc;
   background: #ffffff;
 }
+.btn-clear {
+  color: #ffffff;
+  border-color: #ffffff;
+  background: transparent;
+}
+.btn-clear:hover {
+  color: #ffffff;
+  background: #0977bc;
+}
 .social-icons-custom {
   list-style: none;
   margin: 0;
@@ -7247,7 +7256,7 @@ h6 {
 }
 header {
   border: none;
-  background: url(/templates/ee/images/hanging-caret-greylight.png) repeat-x center bottom, url(/templates/ee/images/header-bg.jpg) 0 0 no-repeat;
+  background: url(/templates/ee/images/hanging-caret-greylight.png) repeat-x center bottom, url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat;
   background-size: auto, cover;
   padding: 0;
   position: relative;
@@ -7282,6 +7291,9 @@ header .header-inner #mainMenu li.active.current a {
 }
 .home .header {
   background: none;
+}
+.who-we-are .header {
+  background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom, url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat;
 }
 .footer {
   background: #0977bc;
@@ -7550,7 +7562,7 @@ header .header-inner #mainMenu li.active.current a {
   bottom: 0;
 }
 .custom.home-split .split-texture {
-  background: url(/templates/ee/images/header-bg.jpg) no-repeat top left;
+  background: url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat top left;
   background-size: cover;
   width: 52%;
 }
@@ -7574,7 +7586,7 @@ header .header-inner #mainMenu li.active.current a {
   left: 0;
 }
 .custom.home-split .split-right.split-texture {
-  background: url(/templates/ee/images/hanging-caret-white-left.png) no-repeat left center, url(/templates/ee/images/header-bg.jpg) no-repeat left top;
+  background: url(/templates/ee/images/hanging-caret-white-left.png) no-repeat left center, url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat left top;
   background-size: 4% 100%, auto;
 }
 .custom.home-split .split-right.split-texture .split-content {
@@ -7587,7 +7599,7 @@ header .header-inner #mainMenu li.active.current a {
   right: 0;
 }
 .custom.home-split .split-left.split-texture {
-  background: url(/templates/ee/images/hanging-caret-white-right.png) no-repeat right center, url(/templates/ee/images/header-bg.jpg) no-repeat right top;
+  background: url(/templates/ee/images/hanging-caret-white-right.png) no-repeat right center, url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat right top;
   background-size: 4% 100%, auto;
 }
 .custom.home-split .split-left.split-texture .split-content {
@@ -7611,15 +7623,27 @@ header .header-inner #mainMenu li.active.current a {
 .custom.home-angel .split-texture .split-content img {
   margin-bottom: 25px;
 }
-.custom.explore {
+.custom.banner-gray {
   background: #eceef2;
   padding: 35px 0;
   text-align: center;
 }
-.custom.explore h5 {
+.custom.banner-gray h5 {
   max-width: 775px;
   margin-left: auto;
   margin-right: auto;
+}
+.custom.banner-blue {
+  background: #0977bc;
+  padding: 35px 0;
+  text-align: center;
+}
+.custom.banner-blue h6 {
+  font-size: 18px;
+}
+.custom.banner-blue h3 {
+  font-size: 18px;
+  line-height: 30px;
 }
 .moduletable.expanded-services {
   position: relative;
@@ -7629,7 +7653,7 @@ header .header-inner #mainMenu li.active.current a {
 .custom.expanded-services {
   height: 433px;
   overflow: hidden;
-  padding-top: 16px;
+  padding-top: 0;
 }
 .custom.expanded-services .container {
   position: relative;
@@ -7732,4 +7756,22 @@ header .header-inner #mainMenu li.active.current a {
     display: inline-block;
     width: 25%;
   }
+}
+.custom.testimonials {
+  background: url(/templates/ee/images/gray-gradient-bg.jpg) top left no-repeat;
+  background-size: cover;
+  padding: 80px 0 50px;
+  text-align: center;
+}
+.custom.testimonials h3 {
+  font-size: 19px;
+  line-height: 34px;
+  margin-bottom: 15px;
+  height: 136px;
+  overflow: hidden;
+}
+.custom.testimonials h6 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 45px;
 }

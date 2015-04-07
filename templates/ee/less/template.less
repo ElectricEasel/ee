@@ -165,6 +165,16 @@
     background: @white;
   }
 }
+.btn-clear {
+  color: @white;
+  border-color: @white;
+  background: transparent;
+
+  &:hover {
+    color: @white;
+    background: @blue;
+  }
+}
 
 .social-icons-custom {
   list-style: none;
@@ -300,7 +310,7 @@ h6 {
 header {
   border: none;
   background: url(/templates/ee/images/hanging-caret-greylight.png) repeat-x center bottom,
-              url(/templates/ee/images/header-bg.jpg) 0 0 no-repeat;
+              url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat;
   background-size: auto, cover;
   padding: 0;
   position: relative;
@@ -342,6 +352,10 @@ header {
 }
 .home .header {
   background: none;
+}
+.who-we-are .header {
+  background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom,
+              url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat;
 }
 .footer {
   background: @blue;
@@ -623,7 +637,7 @@ header {
     }
   }
   .split-texture {
-    background: url(/templates/ee/images/header-bg.jpg) no-repeat top left;
+    background: url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat top left;
     background-size: cover;
     width: 52%;
 
@@ -652,7 +666,7 @@ header {
     }
     &.split-texture {
       background: url(/templates/ee/images/hanging-caret-white-left.png) no-repeat left center,
-                  url(/templates/ee/images/header-bg.jpg) no-repeat left top;
+                  url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat left top;
       background-size: 4% 100%, auto;
 
       .split-content {
@@ -670,7 +684,7 @@ header {
     }
     &.split-texture {
       background: url(/templates/ee/images/hanging-caret-white-right.png) no-repeat right center,
-                  url(/templates/ee/images/header-bg.jpg) no-repeat right top;
+                  url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat right top;
       background-size: 4% 100%, auto;
 
       .split-content {
@@ -710,7 +724,7 @@ header {
     }
   }
 }
-.custom.explore {
+.custom.banner-gray {
   background: @grayLight;
   padding: 35px 0;
   text-align: center;
@@ -721,6 +735,19 @@ header {
     margin-right: auto;
   }
 }
+.custom.banner-blue {
+  background: @blue;
+  padding: 35px 0;
+  text-align: center;
+
+  h6 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
 .moduletable.expanded-services {
   position: relative;
   top: -20px;
@@ -729,7 +756,7 @@ header {
 .custom.expanded-services {
   height: 433px;
   overflow: hidden;
-  padding-top: 16px;
+  padding-top: 0;
 
   .container {
     position: relative;
@@ -823,5 +850,24 @@ header {
         width: 25%;
       }
     }
+  }
+}
+.custom.testimonials {
+  background: url(/templates/ee/images/gray-gradient-bg.jpg) top left no-repeat;
+  background-size: cover;
+  padding: 80px 0 50px;
+  text-align: center;
+
+  h3 {
+    font-size: 19px;
+    line-height: 34px;
+    margin-bottom: 15px;
+    height: 136px;
+    overflow: hidden;
+  }
+  h6 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 45px;
   }
 }

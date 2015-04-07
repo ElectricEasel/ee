@@ -198,6 +198,9 @@
         $('#homeHeaderCarousel').carousel({
             interval: 5000
         });
+        $('#testimonialsCarousel').carousel({
+            interval: 10000
+        });
 
         var servicesCarousel = $('#servicesCarousel');
         servicesCarousel.owlCarousel({
