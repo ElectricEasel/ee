@@ -204,7 +204,7 @@
   }
 }
 
-.hanging-arrow(@color:@white; @size:20px; @left:50%) {
+.hanging-arrow(@color:@white; @height:20px; @width:20px; @left:50%) {
   position: relative;
   text-align: center;
   &:before {
@@ -212,10 +212,12 @@
     height: 0;
     width: 0;
     position: absolute;
-    border: @size solid transparent;
-    border-top-color: @color;
-    bottom: -2 * @size;
-    margin-left: -1 * @size;
+    border-bottom: @height solid transparent;
+    border-left: @width solid transparent;
+    border-right: @width solid transparent;
+    border-top: @height solid @color;
+    bottom: -2 * @height;
+    margin-left: -1 * @width;
     left: @left;
     z-index: 200;
   }
@@ -569,9 +571,6 @@ header {
   .next {
     right: -45px;
   }
-  .hanging-arrow {
-    display: none;
-  }
 }
 .what-we-do .custom.services-carousel {
   padding: 0;
@@ -593,10 +592,10 @@ header {
             height: 0;
             width: 0;
             position: absolute;
-            border: 20px solid transparent;
+            border: 22px solid transparent;
             border-top-color: @grayLight;
-            bottom: -95px;
-            margin-left: -1 * 20px;
+            bottom: -98px;
+            margin-left: -1 * 22px;
             left: 50%;
             z-index: 200;
             opacity: 0;
@@ -615,9 +614,9 @@ header {
   }
   .bottom-stripe {
     background: @white;
-    height: 20px;
+    height: 22px;
     position: relative;
-    top: -20px;
+    top: -22px;
   }
 }
 .custom.home-split {
@@ -750,7 +749,7 @@ header {
 }
 .moduletable.expanded-services {
   position: relative;
-  top: -20px;
+  top: -22px;
   background: @white;
 }
 .custom.expanded-services {
@@ -834,7 +833,7 @@ header {
   background: @gray;
   text-align: center;
   padding: 50px 0 20px;
-  .hanging-arrow(@gray;20px;50%);
+  .hanging-arrow(@gray;28px;22px;50%);
 
   h4 {
     margin-bottom: 50px;
@@ -869,5 +868,24 @@ header {
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 45px;
+  }
+}
+.custom.team {
+  padding: 50px 0 100px;
+  text-align: center;
+  .hanging-arrow(@white;28px;22px;50%);
+
+  h4 {
+    margin-bottom: 35px;
+  }
+  h5 {
+    font-weight: 700;
+    margin: 10px 0 0;
+  }
+  h5 + h4 {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 30px;
   }
 }

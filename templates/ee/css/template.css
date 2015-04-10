@@ -7501,9 +7501,6 @@ header .header-inner #mainMenu li.active.current a {
 .custom.services-carousel .next {
   right: -45px;
 }
-.custom.services-carousel .hanging-arrow {
-  display: none;
-}
 .what-we-do .custom.services-carousel {
   padding: 0;
 }
@@ -7525,10 +7522,10 @@ header .header-inner #mainMenu li.active.current a {
   height: 0;
   width: 0;
   position: absolute;
-  border: 20px solid transparent;
+  border: 22px solid transparent;
   border-top-color: #eceef2;
-  bottom: -95px;
-  margin-left: -20px;
+  bottom: -98px;
+  margin-left: -22px;
   left: 50%;
   z-index: 200;
   opacity: 0;
@@ -7543,9 +7540,9 @@ header .header-inner #mainMenu li.active.current a {
 }
 .what-we-do .custom.services-carousel .bottom-stripe {
   background: #ffffff;
-  height: 20px;
+  height: 22px;
   position: relative;
-  top: -20px;
+  top: -22px;
 }
 .custom.home-split .split {
   float: left;
@@ -7647,7 +7644,7 @@ header .header-inner #mainMenu li.active.current a {
 }
 .moduletable.expanded-services {
   position: relative;
-  top: -20px;
+  top: -22px;
   background: #ffffff;
 }
 .custom.expanded-services {
@@ -7736,10 +7733,12 @@ header .header-inner #mainMenu li.active.current a {
   height: 0;
   width: 0;
   position: absolute;
-  border: 20px solid transparent;
-  border-top-color: #dcdee3;
-  bottom: -40px;
-  margin-left: -20px;
+  border-bottom: 28px solid transparent;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-top: 28px solid #dcdee3;
+  bottom: -56px;
+  margin-left: -22px;
   left: 50%;
   z-index: 200;
 }
@@ -7774,4 +7773,36 @@ header .header-inner #mainMenu li.active.current a {
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 45px;
+}
+.custom.team {
+  padding: 50px 0 100px;
+  position: relative;
+  text-align: center;
+}
+.custom.team:before {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-bottom: 28px solid transparent;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-top: 28px solid #ffffff;
+  bottom: -56px;
+  margin-left: -22px;
+  left: 50%;
+  z-index: 200;
+}
+.custom.team h4 {
+  margin-bottom: 35px;
+}
+.custom.team h5 {
+  font-weight: 700;
+  margin: 10px 0 0;
+}
+.custom.team h5 + h4 {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 30px;
 }
