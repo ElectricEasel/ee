@@ -203,6 +203,25 @@
     }
   }
 }
+.social-icons-custom.social-icons-blue {
+  li {
+    a {
+      background: url(/templates/ee/images/social-sprite-blue.png) no-repeat;
+    }
+    a.facebook {
+      background-position: 0 0;
+    }
+    a.twitter {
+      background-position: 0 -45px;
+    }
+    a.google_plus {
+      background-position: 0 -95px;
+    }
+    a.linkedin {
+      background-position: 0 -145px;
+    }
+  }
+}
 
 .hanging-arrow(@color:@white; @height:20px; @width:20px; @left:50%) {
   position: relative;
@@ -225,7 +244,7 @@
 .input-text() {
   .sans;
   font-size: 20px;
-  color: #0e263f;
+  color: @nearBlack;
   line-height: 30px;
 }
 
@@ -310,6 +329,25 @@ h6 {
   line-height: 24px;
   margin: 0 0 15px;
 }
+p {
+  .sans;
+  color: @nearBlack;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 0 0 8px;
+
+  a {
+    color: @blue;
+    font-weight: bold;
+    .antialiased;
+
+    &:hover {
+      text-decoration: none;
+      color: lighten(@blue,20%);
+    }
+  }
+}
 
 .hide {
   display: none;
@@ -333,6 +371,9 @@ header {
       position: relative;
       z-index: 9999;
     }
+    .navbar-collapse {
+      padding: 0;
+    }
     #mainMenu {
       margin: 0;
 
@@ -355,6 +396,9 @@ header {
           }
         }
       }
+      @media (min-width:@screen-sm-min) {
+        margin-right: -13px;
+      }
     }
   }
 }
@@ -364,6 +408,14 @@ header {
 .who-we-are .header {
   background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom,
               url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat @grayGradientBackup;
+  background-size: auto, cover;
+}
+.contact, .blog {
+  .header {
+    background: url(/templates/ee/images/hanging-caret-white.png) repeat-x center bottom,
+                url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat @grayGradientBackup;
+    background-size: auto, cover;
+  }
 }
 .footer {
   background: @blue;
@@ -753,12 +805,10 @@ header {
     line-height: 30px;
   }
 }
-.moduletable.expanded-services {
+.custom.expanded-services {
   position: relative;
   top: -22px;
   background: @white;
-}
-.custom.expanded-services {
   height: 433px;
   overflow: hidden;
   padding-top: 0;
@@ -876,7 +926,7 @@ header {
     margin-bottom: 45px;
   }
 }
-.custom.team {
+.team {
   padding: 50px 0 100px;
   text-align: center;
   .hanging-arrow(@white;28px;22px;50%);
@@ -895,32 +945,16 @@ header {
     margin-bottom: 30px;
   }
 }
-#careersForm {
-  background: url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat @grayGradientBackup;
-  background-size: cover;
-  padding: 70px 0 25px;
+#careersForm, #contactForm {
   margin: 0;
 
-  h6 {
-    text-align: center;
-    font-size: 18px;
-  }
-  h3 {
-    text-align: center;
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 50px;
-  }
   .formContainer {
     .rsform-block {
-      margin-bottom: 14px;
-
       .formControls {
         margin-left: 0;
 
         input[type="text"], textarea {
           width: 100%;
-          background: rgba(255, 255, 255, 0.38);
           border: 1px solid #bfc5d0;
           border-radius: 8px;
           box-shadow: none;
@@ -949,12 +983,11 @@ header {
           height: 64px;
         }
         textarea {
-          height: 245px;
           resize: none;
         }
         input[type="submit"] {
         margin-top: 10px;
-      }
+        }
         input[type="submit"].btn {
           font-size: 16px !important;
           padding: 22px 36px !important;
@@ -978,9 +1011,49 @@ header {
             background: @blue !important;
           }
         }
+        input[type="submit"].btn-blue {
+          color: @white !important;
+          background: @blue !important;
+          border-color: @blue !important;
+
+          &:hover {
+            color: @white !important;
+            background: darken(@blue,15%) !important;
+          }
+        }
         input[type="submit"].btn-wide {
           padding: 22px 80px !important;
           width: auto !important;
+        }
+      }
+    }
+  }
+}
+#careersForm {
+  background: url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat @grayGradientBackup;
+  background-size: cover;
+  padding: 70px 0 25px;
+
+  h6 {
+    text-align: center;
+    font-size: 18px;
+  }
+  h3 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  .formContainer {
+    .rsform-block {
+      margin-bottom: 14px;
+      .formControls {
+
+        input[type="text"], textarea {
+          background: rgba(255, 255, 255, 0.38);
+        }
+        textarea {
+          height: 245px;
         }
       }
     }
@@ -988,4 +1061,62 @@ header {
       text-align: center;
     }
   }
+}
+#contactForm {
+  padding: 70px 0 270px;
+
+  .formContainer {
+    .rsform-block {
+      margin-bottom: 20px;
+
+      .formControls {
+        input[type="submit"].btn-wide {
+          @media (min-width:@screen-lg-min) {
+            width: 50% !important;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width:@screen-lg-min) {
+    padding-right: 75px;
+  }
+}
+.well.sidebar-contact {
+  padding: 0;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.custom.sidebar-contact {
+  padding: 70px 0 0;
+  text-align: center;
+
+  .module {
+    margin-bottom: 50px;
+
+    h5 {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    p {
+      margin-bottom: 0;
+
+      &.faux-link {
+        color: @blue;
+        font-weight: 700;
+        .antialiased;
+      }
+    }
+    .social-icons-custom {
+      li {
+        margin: 0 0 0 22px;
+      }
+    }
+  }
+}
+.contact .header + .container {
+  .hanging-arrow(@white;28px;22px;50%);
 }

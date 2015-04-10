@@ -56,16 +56,14 @@ JHtml::_('bootstrap.loadCss', false, $this->direction);
 // Add current user information
 $user = JFactory::getUser();
 
+$right = ($this->countModules('position-7') || $this->countModules('sidebar-right'));
+$left = ($this->countModules('position-8') || $this->countModules('sidebar-left'));
 // Adjusting content width
-if ($this->countModules('position-7') && $this->countModules('position-8'))
+if ($right && $left)
 {
 	$span = "span6";
 }
-elseif ($this->countModules('position-7') && !$this->countModules('position-8'))
-{
-	$span = "span9";
-}
-elseif (!$this->countModules('position-7') && $this->countModules('position-8'))
+elseif ($right xor $left)
 {
 	$span = "span9";
 }
@@ -173,13 +171,14 @@ else
         <?php if ($this->countModules('banner') || $this->countModules('above-content')) : ?>
         <jdoc:include type="modules" name="banner" style="xhtml" />
         <jdoc:include type="modules" name="above-content" style="none" />
-        <div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
-            <?php endif; ?>
+        <?php endif; ?>
+		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
 			<div class="row-fluid">
-				<?php if ($this->countModules('position-8')) : ?>
+				<?php if ($this->countModules('position-8') || $this->countModules('sidebar-left')) : ?>
 				<!-- Begin Sidebar -->
 				<div id="sidebar" class="span3">
 					<div class="sidebar-nav">
+						<jdoc:include type="modules" name="sidebar-left" style="none" />
 						<jdoc:include type="modules" name="position-8" style="xhtml" />
 					</div>
 				</div>
@@ -193,9 +192,10 @@ else
 					<jdoc:include type="modules" name="position-2" style="none" />
 					<!-- End Content -->
 				</main>
-				<?php if ($this->countModules('position-7')) : ?>
+				<?php if ($this->countModules('position-7') || $this->countModules('sidebar-right')) : ?>
 				<div id="aside" class="span3">
 					<!-- Begin Right Sidebar -->
+					<jdoc:include type="modules" name="sidebar-right" style="none" />
 					<jdoc:include type="modules" name="position-7" style="well" />
 					<!-- End Right Sidebar -->
 				</div>

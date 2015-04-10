@@ -7154,6 +7154,21 @@ dl.article-info dd.hits span[class*=" icon-"] {
 .social-icons-custom li a.linkedin {
   background-position: 0 -145px;
 }
+.social-icons-custom.social-icons-blue li a {
+  background: url(/templates/ee/images/social-sprite-blue.png) no-repeat;
+}
+.social-icons-custom.social-icons-blue li a.facebook {
+  background-position: 0 0;
+}
+.social-icons-custom.social-icons-blue li a.twitter {
+  background-position: 0 -45px;
+}
+.social-icons-custom.social-icons-blue li a.google_plus {
+  background-position: 0 -95px;
+}
+.social-icons-custom.social-icons-blue li a.linkedin {
+  background-position: 0 -145px;
+}
 body {
   padding: 0;
 }
@@ -7251,6 +7266,26 @@ h6 {
   line-height: 24px;
   margin: 0 0 15px;
 }
+p {
+  font-family: "Lato", sans-serif;
+  color: #0e263f;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 0 0 8px;
+}
+p a {
+  color: #0977bc;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+p a:hover {
+  text-decoration: none;
+  color: #36abf5;
+}
 .hide {
   display: none;
 }
@@ -7271,6 +7306,9 @@ header .header-inner .brand {
   position: relative;
   z-index: 9999;
 }
+header .header-inner .navbar-collapse {
+  padding: 0;
+}
 header .header-inner #mainMenu {
   margin: 0;
 }
@@ -7289,11 +7327,22 @@ header .header-inner #mainMenu li.active.current a {
   background: none;
   font-weight: 700;
 }
+@media (min-width: 481px) {
+  header .header-inner #mainMenu {
+    margin-right: -13px;
+  }
+}
 .home .header {
   background: none;
 }
 .who-we-are .header {
   background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom, url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
+  background-size: auto, cover;
+}
+.contact .header,
+.blog .header {
+  background: url(/templates/ee/images/hanging-caret-white.png) repeat-x center bottom, url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
+  background-size: auto, cover;
 }
 .footer {
   background: #0977bc;
@@ -7642,12 +7691,10 @@ header .header-inner #mainMenu li.active.current a {
   font-size: 18px;
   line-height: 30px;
 }
-.moduletable.expanded-services {
+.custom.expanded-services {
   position: relative;
   top: -22px;
   background: #ffffff;
-}
-.custom.expanded-services {
   height: 433px;
   overflow: hidden;
   padding-top: 0;
@@ -7774,12 +7821,12 @@ header .header-inner #mainMenu li.active.current a {
   font-weight: 400;
   margin-bottom: 45px;
 }
-.custom.team {
+.team {
   padding: 50px 0 100px;
   position: relative;
   text-align: center;
 }
-.custom.team:before {
+.team:before {
   content: "";
   height: 0;
   width: 0;
@@ -7793,24 +7840,136 @@ header .header-inner #mainMenu li.active.current a {
   left: 50%;
   z-index: 200;
 }
-.custom.team h4 {
+.team h4 {
   margin-bottom: 35px;
 }
-.custom.team h5 {
+.team h5 {
   font-weight: 700;
   margin: 10px 0 0;
 }
-.custom.team h5 + h4 {
+.team h5 + h4 {
   font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   margin-bottom: 30px;
 }
+#careersForm,
+#contactForm {
+  margin: 0;
+}
+#careersForm .formContainer .rsform-block .formControls,
+#contactForm .formContainer .rsform-block .formControls {
+  margin-left: 0;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="text"],
+#contactForm .formContainer .rsform-block .formControls input[type="text"],
+#careersForm .formContainer .rsform-block .formControls textarea,
+#contactForm .formContainer .rsform-block .formControls textarea {
+  width: 100%;
+  border: 1px solid #bfc5d0;
+  border-radius: 8px;
+  box-shadow: none;
+  padding: 18px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #0e263f;
+  line-height: 30px;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="text"]::-webkit-input-placeholder,
+#contactForm .formContainer .rsform-block .formControls input[type="text"]::-webkit-input-placeholder,
+#careersForm .formContainer .rsform-block .formControls textarea::-webkit-input-placeholder,
+#contactForm .formContainer .rsform-block .formControls textarea::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #0e263f;
+  line-height: 30px;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="text"]:-moz-placeholder,
+#contactForm .formContainer .rsform-block .formControls input[type="text"]:-moz-placeholder,
+#careersForm .formContainer .rsform-block .formControls textarea:-moz-placeholder,
+#contactForm .formContainer .rsform-block .formControls textarea:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #0e263f;
+  line-height: 30px;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="text"]::-moz-placeholder,
+#contactForm .formContainer .rsform-block .formControls input[type="text"]::-moz-placeholder,
+#careersForm .formContainer .rsform-block .formControls textarea::-moz-placeholder,
+#contactForm .formContainer .rsform-block .formControls textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #0e263f;
+  line-height: 30px;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="text"]:-ms-input-placeholder,
+#contactForm .formContainer .rsform-block .formControls input[type="text"]:-ms-input-placeholder,
+#careersForm .formContainer .rsform-block .formControls textarea:-ms-input-placeholder,
+#contactForm .formContainer .rsform-block .formControls textarea:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #0e263f;
+  line-height: 30px;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="text"],
+#contactForm .formContainer .rsform-block .formControls input[type="text"] {
+  height: 64px;
+}
+#careersForm .formContainer .rsform-block .formControls textarea,
+#contactForm .formContainer .rsform-block .formControls textarea {
+  resize: none;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="submit"],
+#contactForm .formContainer .rsform-block .formControls input[type="submit"] {
+  margin-top: 10px;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="submit"].btn,
+#contactForm .formContainer .rsform-block .formControls input[type="submit"].btn {
+  font-size: 16px !important;
+  padding: 22px 36px !important;
+  border-radius: 8px !important;
+  border: 1px solid !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-transition: 150ms linear !important;
+  -moz-transition: 150ms linear !important;
+  -o-transition: 150ms linear !important;
+  -ms-transition: 150ms linear !important;
+  transition: 150ms linear !important;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="submit"].btn-clear,
+#contactForm .formContainer .rsform-block .formControls input[type="submit"].btn-clear {
+  color: #ffffff !important;
+  background: transparent !important;
+  border-color: #ffffff !important;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="submit"].btn-clear:hover,
+#contactForm .formContainer .rsform-block .formControls input[type="submit"].btn-clear:hover {
+  color: #ffffff !important;
+  background: #0977bc !important;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="submit"].btn-blue,
+#contactForm .formContainer .rsform-block .formControls input[type="submit"].btn-blue {
+  color: #ffffff !important;
+  background: #0977bc !important;
+  border-color: #0977bc !important;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="submit"].btn-blue:hover,
+#contactForm .formContainer .rsform-block .formControls input[type="submit"].btn-blue:hover {
+  color: #ffffff !important;
+  background: #064973 !important;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="submit"].btn-wide,
+#contactForm .formContainer .rsform-block .formControls input[type="submit"].btn-wide {
+  padding: 22px 80px !important;
+  width: auto !important;
+}
 #careersForm {
   background: url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
   background-size: cover;
   padding: 70px 0 25px;
-  margin: 0;
 }
 #careersForm h6 {
   text-align: center;
@@ -7825,88 +7984,80 @@ header .header-inner #mainMenu li.active.current a {
 #careersForm .formContainer .rsform-block {
   margin-bottom: 14px;
 }
-#careersForm .formContainer .rsform-block .formControls {
-  margin-left: 0;
-}
 #careersForm .formContainer .rsform-block .formControls input[type="text"],
 #careersForm .formContainer .rsform-block .formControls textarea {
-  width: 100%;
   background: rgba(255, 255, 255, 0.38);
-  border: 1px solid #bfc5d0;
-  border-radius: 8px;
-  box-shadow: none;
-  padding: 18px;
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  color: #0e263f;
-  line-height: 30px;
-}
-#careersForm .formContainer .rsform-block .formControls input[type="text"]::-webkit-input-placeholder,
-#careersForm .formContainer .rsform-block .formControls textarea::-webkit-input-placeholder {
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  color: #0e263f;
-  line-height: 30px;
-}
-#careersForm .formContainer .rsform-block .formControls input[type="text"]:-moz-placeholder,
-#careersForm .formContainer .rsform-block .formControls textarea:-moz-placeholder {
-  /* Firefox 18- */
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  color: #0e263f;
-  line-height: 30px;
-}
-#careersForm .formContainer .rsform-block .formControls input[type="text"]::-moz-placeholder,
-#careersForm .formContainer .rsform-block .formControls textarea::-moz-placeholder {
-  /* Firefox 19+ */
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  color: #0e263f;
-  line-height: 30px;
-}
-#careersForm .formContainer .rsform-block .formControls input[type="text"]:-ms-input-placeholder,
-#careersForm .formContainer .rsform-block .formControls textarea:-ms-input-placeholder {
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  color: #0e263f;
-  line-height: 30px;
-}
-#careersForm .formContainer .rsform-block .formControls input[type="text"] {
-  height: 64px;
 }
 #careersForm .formContainer .rsform-block .formControls textarea {
   height: 245px;
-  resize: none;
-}
-#careersForm .formContainer .rsform-block .formControls input[type="submit"] {
-  margin-top: 10px;
-}
-#careersForm .formContainer .rsform-block .formControls input[type="submit"].btn {
-  font-size: 16px !important;
-  padding: 22px 36px !important;
-  border-radius: 8px !important;
-  border: 1px solid !important;
-  text-shadow: none !important;
-  box-shadow: none !important;
-  -webkit-transition: 150ms linear !important;
-  -moz-transition: 150ms linear !important;
-  -o-transition: 150ms linear !important;
-  -ms-transition: 150ms linear !important;
-  transition: 150ms linear !important;
-}
-#careersForm .formContainer .rsform-block .formControls input[type="submit"].btn-clear {
-  color: #ffffff !important;
-  background: transparent !important;
-  border-color: #ffffff !important;
-}
-#careersForm .formContainer .rsform-block .formControls input[type="submit"].btn-clear:hover {
-  color: #ffffff !important;
-  background: #0977bc !important;
-}
-#careersForm .formContainer .rsform-block .formControls input[type="submit"].btn-wide {
-  padding: 22px 80px !important;
-  width: auto !important;
 }
 #careersForm .formContainer .rsform-block-submit {
   text-align: center;
+}
+#contactForm {
+  padding: 70px 0 270px;
+}
+#contactForm .formContainer .rsform-block {
+  margin-bottom: 20px;
+}
+@media (min-width: 980px) {
+  #contactForm .formContainer .rsform-block .formControls input[type="submit"].btn-wide {
+    width: 50% !important;
+  }
+}
+@media (min-width: 980px) {
+  #contactForm {
+    padding-right: 75px;
+  }
+}
+.well.sidebar-contact {
+  padding: 0;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.custom.sidebar-contact {
+  padding: 70px 0 0;
+  text-align: center;
+}
+.custom.sidebar-contact .module {
+  margin-bottom: 50px;
+}
+.custom.sidebar-contact .module h5 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.custom.sidebar-contact .module p {
+  margin-bottom: 0;
+}
+.custom.sidebar-contact .module p.faux-link {
+  color: #0977bc;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+.custom.sidebar-contact .module .social-icons-custom li {
+  margin: 0 0 0 22px;
+}
+.contact .header + .container {
+  position: relative;
+  text-align: center;
+}
+.contact .header + .container:before {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-bottom: 28px solid transparent;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-top: 28px solid #ffffff;
+  bottom: -56px;
+  margin-left: -22px;
+  left: 50%;
+  z-index: 200;
 }

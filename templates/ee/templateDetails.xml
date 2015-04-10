@@ -47,6 +47,8 @@
         <position>header-content</position>
         <position>above-content</position>
         <position>below-content</position>
+        <position>sidebar-left</position>
+        <position>sidebar-right</position>
 	</positions>
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.tpl_ee.ini</language>
