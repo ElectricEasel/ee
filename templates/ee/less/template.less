@@ -222,6 +222,12 @@
     z-index: 200;
   }
 }
+.input-text() {
+  .sans;
+  font-size: 20px;
+  color: #0e263f;
+  line-height: 30px;
+}
 
 body {
   padding: 0;
@@ -312,7 +318,7 @@ h6 {
 header {
   border: none;
   background: url(/templates/ee/images/hanging-caret-greylight.png) repeat-x center bottom,
-              url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat;
+              url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat @grayGradientBackup;
   background-size: auto, cover;
   padding: 0;
   position: relative;
@@ -357,7 +363,7 @@ header {
 }
 .who-we-are .header {
   background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom,
-              url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat;
+              url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat @grayGradientBackup;
 }
 .footer {
   background: @blue;
@@ -636,7 +642,7 @@ header {
     }
   }
   .split-texture {
-    background: url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat top left;
+    background: url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat top left @grayGradientBackup;
     background-size: cover;
     width: 52%;
 
@@ -665,7 +671,7 @@ header {
     }
     &.split-texture {
       background: url(/templates/ee/images/hanging-caret-white-left.png) no-repeat left center,
-                  url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat left top;
+                  url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat left top @grayGradientBackup;
       background-size: 4% 100%, auto;
 
       .split-content {
@@ -683,7 +689,7 @@ header {
     }
     &.split-texture {
       background: url(/templates/ee/images/hanging-caret-white-right.png) no-repeat right center,
-                  url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat right top;
+                  url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat right top @grayGradientBackup;
       background-size: 4% 100%, auto;
 
       .split-content {
@@ -852,7 +858,7 @@ header {
   }
 }
 .custom.testimonials {
-  background: url(/templates/ee/images/gray-gradient-bg.jpg) top left no-repeat;
+  background: url(/templates/ee/images/gray-gradient-bg.jpg) top left no-repeat @grayGradientBackup;
   background-size: cover;
   padding: 80px 0 50px;
   text-align: center;
@@ -887,5 +893,99 @@ header {
     font-size: 15px;
     line-height: 25px;
     margin-bottom: 30px;
+  }
+}
+#careersForm {
+  background: url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat @grayGradientBackup;
+  background-size: cover;
+  padding: 70px 0 25px;
+  margin: 0;
+
+  h6 {
+    text-align: center;
+    font-size: 18px;
+  }
+  h3 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  .formContainer {
+    .rsform-block {
+      margin-bottom: 14px;
+
+      .formControls {
+        margin-left: 0;
+
+        input[type="text"], textarea {
+          width: 100%;
+          background: rgba(255, 255, 255, 0.38);
+          border: 1px solid #bfc5d0;
+          border-radius: 8px;
+          box-shadow: none;
+          padding: 18px;
+          .input-text;
+
+          &::-webkit-input-placeholder {
+            .input-text;
+          }
+
+          &:-moz-placeholder {
+            /* Firefox 18- */
+            .input-text;
+          }
+
+          &::-moz-placeholder {
+            /* Firefox 19+ */
+            .input-text;
+          }
+
+          &:-ms-input-placeholder {
+            .input-text;
+          }
+        }
+        input[type="text"] {
+          height: 64px;
+        }
+        textarea {
+          height: 245px;
+          resize: none;
+        }
+        input[type="submit"] {
+        margin-top: 10px;
+      }
+        input[type="submit"].btn {
+          font-size: 16px !important;
+          padding: 22px 36px !important;
+          border-radius: 8px !important;
+          border: 1px solid !important;
+          text-shadow: none !important;
+          box-shadow: none !important;
+          -webkit-transition: 150ms linear !important;
+          -moz-transition: 150ms linear !important;
+          -o-transition: 150ms linear !important;
+          -ms-transition: 150ms linear !important;
+          transition: 150ms linear !important;
+        }
+        input[type="submit"].btn-clear {
+          color: @white !important;
+          background: transparent !important;
+          border-color: @white !important;
+
+          &:hover {
+            color: @white !important;
+            background: @blue !important;
+          }
+        }
+        input[type="submit"].btn-wide {
+          padding: 22px 80px !important;
+          width: auto !important;
+        }
+      }
+    }
+    .rsform-block-submit {
+      text-align: center;
+    }
   }
 }

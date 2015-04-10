@@ -7256,7 +7256,7 @@ h6 {
 }
 header {
   border: none;
-  background: url(/templates/ee/images/hanging-caret-greylight.png) repeat-x center bottom, url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat;
+  background: url(/templates/ee/images/hanging-caret-greylight.png) repeat-x center bottom, url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
   background-size: auto, cover;
   padding: 0;
   position: relative;
@@ -7293,7 +7293,7 @@ header .header-inner #mainMenu li.active.current a {
   background: none;
 }
 .who-we-are .header {
-  background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom, url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat;
+  background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom, url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
 }
 .footer {
   background: #0977bc;
@@ -7559,7 +7559,7 @@ header .header-inner #mainMenu li.active.current a {
   bottom: 0;
 }
 .custom.home-split .split-texture {
-  background: url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat top left;
+  background: url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat top left #5a6477;
   background-size: cover;
   width: 52%;
 }
@@ -7583,7 +7583,7 @@ header .header-inner #mainMenu li.active.current a {
   left: 0;
 }
 .custom.home-split .split-right.split-texture {
-  background: url(/templates/ee/images/hanging-caret-white-left.png) no-repeat left center, url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat left top;
+  background: url(/templates/ee/images/hanging-caret-white-left.png) no-repeat left center, url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat left top #5a6477;
   background-size: 4% 100%, auto;
 }
 .custom.home-split .split-right.split-texture .split-content {
@@ -7596,7 +7596,7 @@ header .header-inner #mainMenu li.active.current a {
   right: 0;
 }
 .custom.home-split .split-left.split-texture {
-  background: url(/templates/ee/images/hanging-caret-white-right.png) no-repeat right center, url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat right top;
+  background: url(/templates/ee/images/hanging-caret-white-right.png) no-repeat right center, url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat right top #5a6477;
   background-size: 4% 100%, auto;
 }
 .custom.home-split .split-left.split-texture .split-content {
@@ -7757,7 +7757,7 @@ header .header-inner #mainMenu li.active.current a {
   }
 }
 .custom.testimonials {
-  background: url(/templates/ee/images/gray-gradient-bg.jpg) top left no-repeat;
+  background: url(/templates/ee/images/gray-gradient-bg.jpg) top left no-repeat #5a6477;
   background-size: cover;
   padding: 80px 0 50px;
   text-align: center;
@@ -7805,4 +7805,108 @@ header .header-inner #mainMenu li.active.current a {
   font-size: 15px;
   line-height: 25px;
   margin-bottom: 30px;
+}
+#careersForm {
+  background: url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
+  background-size: cover;
+  padding: 70px 0 25px;
+  margin: 0;
+}
+#careersForm h6 {
+  text-align: center;
+  font-size: 18px;
+}
+#careersForm h3 {
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+#careersForm .formContainer .rsform-block {
+  margin-bottom: 14px;
+}
+#careersForm .formContainer .rsform-block .formControls {
+  margin-left: 0;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="text"],
+#careersForm .formContainer .rsform-block .formControls textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.38);
+  border: 1px solid #bfc5d0;
+  border-radius: 8px;
+  box-shadow: none;
+  padding: 18px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #0e263f;
+  line-height: 30px;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="text"]::-webkit-input-placeholder,
+#careersForm .formContainer .rsform-block .formControls textarea::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #0e263f;
+  line-height: 30px;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="text"]:-moz-placeholder,
+#careersForm .formContainer .rsform-block .formControls textarea:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #0e263f;
+  line-height: 30px;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="text"]::-moz-placeholder,
+#careersForm .formContainer .rsform-block .formControls textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #0e263f;
+  line-height: 30px;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="text"]:-ms-input-placeholder,
+#careersForm .formContainer .rsform-block .formControls textarea:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #0e263f;
+  line-height: 30px;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="text"] {
+  height: 64px;
+}
+#careersForm .formContainer .rsform-block .formControls textarea {
+  height: 245px;
+  resize: none;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="submit"] {
+  margin-top: 10px;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="submit"].btn {
+  font-size: 16px !important;
+  padding: 22px 36px !important;
+  border-radius: 8px !important;
+  border: 1px solid !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-transition: 150ms linear !important;
+  -moz-transition: 150ms linear !important;
+  -o-transition: 150ms linear !important;
+  -ms-transition: 150ms linear !important;
+  transition: 150ms linear !important;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="submit"].btn-clear {
+  color: #ffffff !important;
+  background: transparent !important;
+  border-color: #ffffff !important;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="submit"].btn-clear:hover {
+  color: #ffffff !important;
+  background: #0977bc !important;
+}
+#careersForm .formContainer .rsform-block .formControls input[type="submit"].btn-wide {
+  padding: 22px 80px !important;
+  width: auto !important;
+}
+#careersForm .formContainer .rsform-block-submit {
+  text-align: center;
 }
