@@ -223,9 +223,8 @@
   }
 }
 
-.hanging-arrow(@color:@white; @height:20px; @width:20px; @left:50%) {
+.hanging-arrow(@color:@white; @width:20px; @height:20px; @left:50%) {
   position: relative;
-  text-align: center;
   &:before {
     content: "";
     height: 0;
@@ -287,6 +286,7 @@ h2 {
   color: @blue;
   font-size: 21px;
   font-weight: 700;
+  .antialiased;
   text-transform: none;
   line-height: 34px;
   margin: 0 0 5px;
@@ -303,7 +303,7 @@ h3 {
 }
 h4 {
   .sans;
-  color: @black;
+  color: @nearBlack;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -312,7 +312,7 @@ h4 {
 }
 h5 {
   .sans;
-  color: @black;
+  color: @nearBlack;
   font-size: 18px;
   font-weight: 300;
   text-transform: none;
@@ -355,7 +355,7 @@ p {
 
 header {
   border: none;
-  background: url(/templates/ee/images/hanging-caret-greylight.png) repeat-x center bottom,
+  background: url(/templates/ee/images/hanging-caret-white.png) repeat-x center bottom,
               url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat @grayGradientBackup;
   background-size: auto, cover;
   padding: 0;
@@ -410,9 +410,9 @@ header {
               url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat @grayGradientBackup;
   background-size: auto, cover;
 }
-.contact, .blog {
+.what-we-do {
   .header {
-    background: url(/templates/ee/images/hanging-caret-white.png) repeat-x center bottom,
+    background: url(/templates/ee/images/hanging-caret-greylight.png) repeat-x center bottom,
                 url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat @grayGradientBackup;
     background-size: auto, cover;
   }
@@ -889,7 +889,7 @@ header {
   background: @gray;
   text-align: center;
   padding: 50px 0 20px;
-  .hanging-arrow(@gray;28px;22px;50%);
+  .hanging-arrow(@gray;@longArrowWidth;@longArrowHeight;50%);
 
   h4 {
     margin-bottom: 50px;
@@ -929,7 +929,7 @@ header {
 .team {
   padding: 50px 0 100px;
   text-align: center;
-  .hanging-arrow(@white;28px;22px;50%);
+  .hanging-arrow(@white;@longArrowWidth;@longArrowHeight;50%);
 
   h4 {
     margin-bottom: 35px;
@@ -1118,5 +1118,35 @@ header {
   }
 }
 .contact .header + .container {
-  .hanging-arrow(@white;28px;22px;50%);
+  .hanging-arrow(@white;@longArrowWidth;@longArrowHeight;50%);
+}
+.case-studies-content {
+  .hanging-arrow(@white;@longArrowWidth;@longArrowHeight;50%);
+  padding: 40px 0 5px;
+
+  .row-fluid {
+    margin-bottom: 30px;
+  }
+  .module {
+    img {
+      width: 100%;
+    }
+    .module-text {
+      background: @grayLight;
+      padding: 33px 22px 43px 30px;
+
+      h2 {
+        font-size: 23px;
+      }
+      h4 {
+        font-size: 16px;
+      }
+    }
+    &:first-child {
+      padding-right: 5px;
+    }
+    &:last-child {
+      padding-left: 5px;
+    }
+  }
 }

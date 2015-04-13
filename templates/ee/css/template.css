@@ -7218,6 +7218,10 @@ h2 {
   color: #0977bc;
   font-size: 21px;
   font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   text-transform: none;
   line-height: 34px;
   margin: 0 0 5px;
@@ -7237,7 +7241,7 @@ h3 {
 }
 h4 {
   font-family: "Lato", sans-serif;
-  color: #000000;
+  color: #0e263f;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -7246,7 +7250,7 @@ h4 {
 }
 h5 {
   font-family: "Lato", sans-serif;
-  color: #000000;
+  color: #0e263f;
   font-size: 18px;
   font-weight: 300;
   text-transform: none;
@@ -7291,7 +7295,7 @@ p a:hover {
 }
 header {
   border: none;
-  background: url(/templates/ee/images/hanging-caret-greylight.png) repeat-x center bottom, url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
+  background: url(/templates/ee/images/hanging-caret-white.png) repeat-x center bottom, url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
   background-size: auto, cover;
   padding: 0;
   position: relative;
@@ -7339,9 +7343,8 @@ header .header-inner #mainMenu li.active.current a {
   background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom, url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
   background-size: auto, cover;
 }
-.contact .header,
-.blog .header {
-  background: url(/templates/ee/images/hanging-caret-white.png) repeat-x center bottom, url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
+.what-we-do .header {
+  background: url(/templates/ee/images/hanging-caret-greylight.png) repeat-x center bottom, url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
   background-size: auto, cover;
 }
 .footer {
@@ -7771,9 +7774,9 @@ header .header-inner #mainMenu li.active.current a {
 }
 .custom.clients {
   background: #dcdee3;
+  text-align: center;
   padding: 50px 0 20px;
   position: relative;
-  text-align: center;
 }
 .custom.clients:before {
   content: "";
@@ -7823,8 +7826,8 @@ header .header-inner #mainMenu li.active.current a {
 }
 .team {
   padding: 50px 0 100px;
-  position: relative;
   text-align: center;
+  position: relative;
 }
 .team:before {
   content: "";
@@ -8045,7 +8048,6 @@ header .header-inner #mainMenu li.active.current a {
 }
 .contact .header + .container {
   position: relative;
-  text-align: center;
 }
 .contact .header + .container:before {
   content: "";
@@ -8060,4 +8062,44 @@ header .header-inner #mainMenu li.active.current a {
   margin-left: -22px;
   left: 50%;
   z-index: 200;
+}
+.case-studies-content {
+  position: relative;
+  padding: 40px 0 5px;
+}
+.case-studies-content:before {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-bottom: 28px solid transparent;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-top: 28px solid #ffffff;
+  bottom: -56px;
+  margin-left: -22px;
+  left: 50%;
+  z-index: 200;
+}
+.case-studies-content .row-fluid {
+  margin-bottom: 30px;
+}
+.case-studies-content .module img {
+  width: 100%;
+}
+.case-studies-content .module .module-text {
+  background: #eceef2;
+  padding: 33px 22px 43px 30px;
+}
+.case-studies-content .module .module-text h2 {
+  font-size: 23px;
+}
+.case-studies-content .module .module-text h4 {
+  font-size: 16px;
+}
+.case-studies-content .module:first-child {
+  padding-right: 5px;
+}
+.case-studies-content .module:last-child {
+  padding-left: 5px;
 }
