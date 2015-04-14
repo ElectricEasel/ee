@@ -234,6 +234,19 @@
             $('.toggleable').removeClass('visible');
             activeItem.addClass('visible');
         }
+
+        $('.nav-toggle').click(function(){
+            toggleExpandedMenu();
+        });
+        $('.menu-overlay').click(function(){
+            toggleExpandedMenu();
+        });
+
+        function toggleExpandedMenu(){
+            $('.nav-main-collapse').toggleClass('expanded');
+            $('.body').toggleClass('expanded');
+            $('.menu-overlay').toggleClass('expanded');
+        }
 	})
 
 })(jQuery);

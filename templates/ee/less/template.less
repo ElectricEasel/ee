@@ -256,6 +256,22 @@ html {
 html * {
   .box-sizing(inherit);
 }
+.body {
+  @media (max-width:@screen-sm-max) {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    -webkit-transition: 250ms linear;
+    -moz-transition: 250ms linear;
+    -o-transition: 250ms linear;
+    -ms-transition: 250ms linear;
+    transition: 250ms linear;
+
+    &.expanded {
+      left: 240px;
+    }
+  }
+}
 .container {
   max-width: 960px;
   padding: 0;
@@ -369,9 +385,9 @@ header {
 
     .brand {
       position: relative;
-      z-index: 9999;
+      z-index: 999;
     }
-    .navbar-collapse {
+    .nav-main-collapse {
       padding: 0;
     }
     #mainMenu {
@@ -411,16 +427,17 @@ header {
       position: relative;
     }
     .nav-toggle {
-      height: 40px;
+      height: 35px;
       width: 40px;
       background: @blue;
       text-align: center;
       position: absolute;
-      right: 20px;
+      z-index: 8888;
+      left: 20px;
       box-shadow: none;
       border: 1px solid @nearBlack;
       border-radius: 8px;
-      padding: 6px 8px;
+      padding: 4px 8px;
       -webkit-transition: 150ms linear;
       -moz-transition: 150ms linear;
       -o-transition: 150ms linear;
@@ -440,6 +457,48 @@ header {
       }
       @media (min-width:@screen-md-min) {
         display: none;
+      }
+    }
+    @media (max-width:@screen-sm-max) {
+      text-align: center;
+
+      .brand {
+        float: none !important;
+      }
+      .nav-main-collapse {
+        position: fixed;
+        z-index: 9999;
+        width: 240px;
+        height: 100%;
+        top: 0;
+        left: -240px;
+        display: block;
+        background: @nearBlack;
+        text-align: left;
+        -webkit-transition: 250ms linear;
+        -moz-transition: 250ms linear;
+        -o-transition: 250ms linear;
+        -ms-transition: 250ms linear;
+        transition: 250ms linear;
+
+        &.expanded {
+          left: 0;
+        }
+      }
+      .menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        z-index: 7777;
+        cursor: pointer;
+        display: none;
+
+        &.expanded {
+          display: block;
+        }
       }
     }
   }
@@ -688,6 +747,9 @@ header {
       text-decoration: none;
       color: @blue;
       cursor: pointer;
+    }
+    @media (max-width:@screen-sm-max) {
+      display: none;
     }
   }
   .prev {

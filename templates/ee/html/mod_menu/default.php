@@ -11,12 +11,12 @@ defined('_JEXEC') or die;
 
 // Note. It is important to remove spaces between elements.
 ?>
-<button class="nav-toggle" data-toggle="collapse" data-target=".nav-main-collapse">
+<button class="nav-toggle" data-toggle="collapse">
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
 </button>
-<div class="navbar-collapse nav-main-collapse collapse">
+<div class="nav-main-collapse">
     <nav class="nav-main mega-menu">
         <?php // The menu class is deprecated. Use nav instead. ?>
         <ul class="nav menu nav-main<?php echo $class_sfx;?>" id="mainMenu<?php
@@ -112,3 +112,4 @@ defined('_JEXEC') or die;
         ?></ul>
     </nav>
 </div>
+<div class="menu-overlay"></div>
