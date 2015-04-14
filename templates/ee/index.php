@@ -214,7 +214,7 @@ else
             </ul>
 			<jdoc:include type="modules" name="footer" style="none" />
 			<p>
-				&copy; <?php echo date('Y'); ?> Electric Easel, Inc. All rights reserved. <span class="divider">|</span> <a href="#">Privacy Policy</a>
+				&copy; <?php echo date('Y'); ?> Electric Easel, Inc. All rights reserved. <span class="divider">|</span> <a href="/privacy-policy">Privacy Policy</a>
 			</p>
 		</div>
 	</footer>
