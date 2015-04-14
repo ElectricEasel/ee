@@ -475,6 +475,7 @@ header {
         display: block;
         background: @nearBlack;
         text-align: left;
+        padding: 0 15px;
         -webkit-transition: 250ms linear;
         -moz-transition: 250ms linear;
         -o-transition: 250ms linear;
@@ -483,6 +484,18 @@ header {
 
         &.expanded {
           left: 0;
+        }
+        li {
+          border-bottom: 0;
+          a {
+            border-bottom: 1px solid @white !important;
+            border-radius: 0;
+            padding-top: 12px;
+            padding-bottom: 12px;
+          }
+          &:last-child a {
+            border-bottom: 0 !important;
+          }
         }
       }
       .menu-overlay {

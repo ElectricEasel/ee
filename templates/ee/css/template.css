@@ -7414,6 +7414,7 @@ header .header-inner .nav-toggle:hover {
     display: block;
     background: #0e263f;
     text-align: left;
+    padding: 0 15px;
     -webkit-transition: 250ms linear;
     -moz-transition: 250ms linear;
     -o-transition: 250ms linear;
@@ -7422,6 +7423,18 @@ header .header-inner .nav-toggle:hover {
   }
   header .header-inner .nav-main-collapse.expanded {
     left: 0;
+  }
+  header .header-inner .nav-main-collapse li {
+    border-bottom: 0;
+  }
+  header .header-inner .nav-main-collapse li a {
+    border-bottom: 1px solid #ffffff !important;
+    border-radius: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  header .header-inner .nav-main-collapse li:last-child a {
+    border-bottom: 0 !important;
   }
   header .header-inner .menu-overlay {
     position: fixed;
