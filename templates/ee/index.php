@@ -17,7 +17,11 @@ $doc = JFactory::getDocument();
 $this->language = $doc->language;
 $this->direction = $doc->direction;
 $menu = $app->getMenu();
-$title = $menu->getActive()->title;
+$active = $menu->getActive();
+$title = $active->title;
+$parent_id = $active->parent_id;
+$parent_title = $menu->getItem($parent_id)->alias;
+$parent_class_title = ($parent_title == '') ? '' : $parent_title . '-child';
 
 // Detecting Active Variables
 $option   = $app->input->getCmd('option', '');
@@ -134,10 +138,14 @@ else
 		<script src="<?php echo $this->baseurl ?>/media/jui/js/html5.js"></script>
 	<![endif]-->
 </head>
-<?php $page_class = strtolower(str_replace(' ','-',$title)); ?>
+<?php
+$page_class = strtolower(str_replace(' ','-',$title));
+$parent_class = ($parent_class_title == '') ? '' : ' ' . $parent_class_title;
+?>
 <body class="site <?php echo $option
 	. ' view-' . $view
     . ' ' . $page_class
+    . $parent_class
 	. ($layout ? ' layout-' . $layout : ' no-layout')
 	. ($task ? ' task-' . $task : ' no-task')
 	. ($itemid ? ' itemid-' . $itemid : '')

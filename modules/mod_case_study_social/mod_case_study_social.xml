@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4.1" client="site" method="upgrade">
+    <name>Case Study Social</name>
+    <author>Ricky Goldman</author>
+    <creationDate>April 2015</creationDate>
+    <copyright>Copyright (C) 2015 Electric Easel, Inc. All rights reserved.</copyright>
+    <version>1.0.0</version>
+    <description>Display formatted social media links for case studies.</description>
+    <files>
+        <filename>mod_case_study_social.xml</filename>
+        <filename module="Case Study Social">mod_case_study_social.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="social" label="Social Params">
+                <field
+                    name="title"
+                    type="text"
+                    default="Social Media"
+                    label="Title"
+                    description="Module Title" />
+                <field
+                    name="subtitle"
+                    type="textarea"
+                    label="Subtitle"
+                    description="Module Subtitle" />
+                <field
+                    name="facebook_link"
+                    type="text"
+                    label="Facebook Link"
+                    description="Link to Facebook Page" />
+                <field
+                    name="facebook_subtitle"
+                    type="textarea"
+                    label="Facebook Subtitle"
+                    description="Facebook Subtitle" />
+                <field
+                    name="pinterest_link"
+                    type="text"
+                    label="Pinterest Link"
+                    description="Link to Pinterest Page" />
+                <field
+                    name="pinterest_subtitle"
+                    type="textarea"
+                    label="Pinterest Subtitle"
+                    description="Pinterest Subtitle" />
+                <field
+                    name="twitter_link"
+                    type="text"
+                    label="Twitter Link"
+                    description="Link to Twitter Page" />
+                <field
+                    name="twitter_subtitle"
+                    type="textarea"
+                    label="Twitter Sibtitle"
+                    description="Twitter Subtitle" />
+                <field
+                    name="google_plus_link"
+                    type="text"
+                    label="Google+ Link"
+                    description="Link to Google+ Page" />
+                <field
+                    name="google_plus_subtitle"
+                    type="textarea"
+                    label="Google+ Subtitle"
+                    description="Google+ Subtitle" />
+
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

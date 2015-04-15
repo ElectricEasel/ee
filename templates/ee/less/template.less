@@ -306,6 +306,11 @@ h2 {
   text-transform: none;
   line-height: 34px;
   margin: 0 0 5px;
+
+  a:hover {
+    text-decoration: none;
+    color: lighten(@blue,20%);
+  }
 }
 h3 {
   .sans;
@@ -405,7 +410,7 @@ header {
             color: @blue;
           }
         }
-        &.active.current {
+        &.active.current, &.active.parent {
           a {
             background: none;
             font-weight: 700;
@@ -1358,5 +1363,25 @@ header {
         font-weight: 400;
       }
     }
+  }
+}
+.cs-social {
+  text-align: center;
+  padding: 65px 0;
+  .hanging-arrow(@white;@longArrowWidth;@longArrowHeight;50%);
+
+  p {
+    max-width: 650px;
+    display: inline-block;
+  }
+  .module {
+    img {
+      margin: 50px 0 20px;
+    }
+  }
+  h5 {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 6px;
   }
 }

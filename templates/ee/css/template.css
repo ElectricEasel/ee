@@ -7241,6 +7241,10 @@ h2 {
   line-height: 34px;
   margin: 0 0 5px;
 }
+h2 a:hover {
+  text-decoration: none;
+  color: #36abf5;
+}
 h3 {
   font-family: "Lato", sans-serif;
   color: #ffffff;
@@ -7342,7 +7346,8 @@ header .header-inner #mainMenu li > a:focus {
   background: none;
   color: #0977bc;
 }
-header .header-inner #mainMenu li.active.current a {
+header .header-inner #mainMenu li.active.current a,
+header .header-inner #mainMenu li.active.parent a {
   background: none;
   font-weight: 700;
 }
@@ -8317,4 +8322,35 @@ header .header-inner .nav-toggle:hover {
 }
 .privacy-policy .item-page p a {
   font-weight: 400;
+}
+.cs-social {
+  text-align: center;
+  padding: 65px 0;
+  position: relative;
+}
+.cs-social:before {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-bottom: 28px solid transparent;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-top: 28px solid #ffffff;
+  bottom: -56px;
+  margin-left: -22px;
+  left: 50%;
+  z-index: 200;
+}
+.cs-social p {
+  max-width: 650px;
+  display: inline-block;
+}
+.cs-social .module img {
+  margin: 50px 0 20px;
+}
+.cs-social h5 {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 6px;
 }
