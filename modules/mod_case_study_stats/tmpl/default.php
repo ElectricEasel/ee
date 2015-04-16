@@ -1,6 +1,6 @@
 <?php defined('_JEXEC') or die; ?>
 
-<div class="cs-stats">
+<div class="cs-stats<?=$params->get('moduleclass_sfx')?>">
 	<div class="container">
 		<h6><?=$params->get('title')?></h6>
 		<p><?=$params->get('subtitle')?></p>

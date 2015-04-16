@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4.1" client="site" method="upgrade">
+    <name>Case Study Mobile</name>
+    <author>Ricky Goldman</author>
+    <creationDate>April 2015</creationDate>
+    <copyright>Copyright (C) 2015 Electric Easel, Inc. All rights reserved.</copyright>
+    <version>1.0.0</version>
+    <description>Display formatted modules for case studies.</description>
+    <files>
+        <filename>mod_case_study_mobile.xml</filename>
+        <filename module="Case Study Mobile">mod_case_study_mobile.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="mobile" label="Mobile Info">
+                <field
+                    name="title"
+                    type="text"
+                    default="Mobile"
+                    label="Title"
+                    description="Module Title" />
+                <field
+                    name="subtitle"
+                    type="textarea"
+                    label="Subtitle"
+                    description="Module Subtitle" />
+                <field
+                    name="mobile1"
+                    type="imagelist"
+                    directory="/templates/ee/images/case-studies/mobile-module"
+                    hide_default="true"
+                    label="Mobile Image 1"
+                    description="Mobile Image" />
+                <field
+                    name="mobile2"
+                    type="imagelist"
+                    directory="/templates/ee/images/case-studies/mobile-module"
+                    hide_default="true"
+                    label="Mobile Image 2"
+                    description="Mobile Image" />
+                <field
+                    name="mobile3"
+                    type="imagelist"
+                    directory="/templates/ee/images/case-studies/mobile-module"
+                    hide_default="true"
+                    label="Mobile Image 3"
+                    description="Mobile Image" />
+
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

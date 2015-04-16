@@ -8325,7 +8325,7 @@ header .header-inner .nav-toggle:hover {
 }
 .cs-social {
   text-align: center;
-  padding: 65px 0;
+  padding: 80px 0 65px;
   position: relative;
 }
 .cs-social:before {
@@ -8384,4 +8384,46 @@ header .header-inner .nav-toggle:hover {
   font-size: 15px;
   font-weight: 300;
   margin-bottom: 65px;
+}
+.cs-mobile {
+  background: #eceef2;
+  text-align: center;
+  padding: 50px 0 15px;
+  position: relative;
+}
+.cs-mobile:before {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #eceef2;
+  bottom: -40px;
+  margin-left: -20px;
+  left: 50%;
+  z-index: 200;
+}
+@media (min-width: 980px) {
+  .cs-mobile .container {
+    width: 1096px;
+    max-width: 100%;
+  }
+  .cs-mobile .container .span4 {
+    width: 33.33333%;
+    margin-left: -22px;
+    position: relative;
+    left: 48px;
+  }
+}
+.cs-mobile p {
+  max-width: 700px;
+  display: inline-block;
+}
+.cs-mobile .module img {
+  margin: 45px 0 0;
+}
+.cs-mobile.lower-i h4::first-letter {
+  text-transform: lowercase;
 }

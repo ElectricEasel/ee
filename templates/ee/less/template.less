@@ -1367,7 +1367,7 @@ header {
 }
 .cs-social {
   text-align: center;
-  padding: 65px 0;
+  padding: 80px 0 65px;
   .hanging-arrow(@white;@longArrowWidth;@longArrowHeight;50%);
 
   p {
@@ -1412,5 +1412,36 @@ header {
     font-size: 15px;
     font-weight: 300;
     margin-bottom: 65px;
+  }
+}
+.cs-mobile {
+  background: @grayLight;
+  text-align: center;
+  padding: 50px 0 15px;
+  .hanging-arrow(@grayLight;@arrowHeight;@arrowWidth;50%);
+
+  .container {
+    @media (min-width:@screen-lg-min) {
+      width: 1096px;
+      max-width: 100%;
+
+      .span4 {
+        width: 33.33333%;
+        margin-left: -22px;
+        position: relative;
+        left: 48px;
+      }
+    }
+  }
+  p {
+    max-width: 700px;
+    display: inline-block;
+  }
+  .module img {
+    margin: 45px 0 0;
+  }
+
+  &.lower-i h4::first-letter {
+    text-transform: lowercase;
   }
 }
