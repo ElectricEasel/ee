@@ -99,10 +99,10 @@
   font-smoothing: antialiased;
 }
 .subpixel() {
-  -webkit-font-smoothing: sub-pixel-antialiased;
-  -moz-osx-font-smoothing: sub-pixel-antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: subpixel-antialiased;
   -o-font-smoothing: auto;
-  font-smoothing: antialiased;
+  font-smoothing: subpixel-antialiased;
 }
 
 .btn {
@@ -1383,5 +1383,34 @@ header {
     font-size: 21px;
     font-weight: 700;
     margin-bottom: 6px;
+  }
+}
+.cs-stats {
+  background: url(/templates/ee/images/gray-gradient-bg.jpg) right top no-repeat @grayGradientBackup;
+  background-size: cover;
+  text-align: center;
+  padding: 85px 0 75px;
+
+  h6 {
+    font-size: 18px;
+  }
+  p {
+    color: @white;
+    .antialiased;
+    font-weight: 400;
+    max-width: 700px;
+    display: inline-block;
+  }
+  h1 {
+    font-size: 90px;
+    line-height: 90px;
+    font-weight: 100;
+    margin: 60px 0 5px;
+  }
+  h4 {
+    color: @blueLight;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 65px;
   }
 }

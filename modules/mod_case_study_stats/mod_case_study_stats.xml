@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4.1" client="site" method="upgrade">
+    <name>Case Study Stats</name>
+    <author>Ricky Goldman</author>
+    <creationDate>April 2015</creationDate>
+    <copyright>Copyright (C) 2015 Electric Easel, Inc. All rights reserved.</copyright>
+    <version>1.0.0</version>
+    <description>Display formatted stats for case studies.</description>
+    <files>
+        <filename>mod_case_study_stats.xml</filename>
+        <filename module="Case Study Stats">mod_case_study_stats.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="stats" label="Stats Params">
+                <field
+                    name="title"
+                    type="text"
+                    default="The Results"
+                    label="Title"
+                    description="Module Title" />
+                <field
+                    name="subtitle"
+                    type="textarea"
+                    label="Subtitle"
+                    description="Module Subtitle" />
+                <field
+                    name="growth1"
+                    type="text"
+                    label="Growth Amount 1"
+                    description="Growth Amount" />
+                <field
+                    name="growth1_subtitle"
+                    type="text"
+                    label="Growth Subtitle 1"
+                    description="Growth Subtitle" />
+                <field
+                    name="growth2"
+                    type="text"
+                    label="Growth Amount 2"
+                    description="Growth Amount" />
+                <field
+                    name="growth2_subtitle"
+                    type="text"
+                    label="Growth Subtitle 2"
+                    description="Growth Subtitle" />
+                <field
+                    name="growth3"
+                    type="text"
+                    label="Growth Amount 3"
+                    description="Growth Amount" />
+                <field
+                    name="growth3_subtitle"
+                    type="text"
+                    label="Growth Subtitle 3"
+                    description="Growth Subtitle" />
+
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

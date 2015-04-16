@@ -20,7 +20,7 @@ $menu = $app->getMenu();
 $active = $menu->getActive();
 $title = $active->title;
 $parent_id = $active->parent_id;
-$parent_title = $menu->getItem($parent_id)->alias;
+$parent_title = isset($menu->getItem($parent_id)->alias) ? $menu->getItem($parent_id)->alias : '';
 $parent_class_title = ($parent_title == '') ? '' : $parent_title . '-child';
 
 // Detecting Active Variables
@@ -95,7 +95,7 @@ else
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<jdoc:include type="head" />
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700|Oleo+Script:400,700' rel='stylesheet' type='text/css'>
 	<?php
 	// Use of Google Font
 	if ($this->params->get('googleFont'))
