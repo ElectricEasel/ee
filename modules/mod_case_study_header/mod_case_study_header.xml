@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4.1" client="site" method="upgrade">
+    <name>Case Study Header</name>
+    <author>Ricky Goldman</author>
+    <creationDate>April 2015</creationDate>
+    <copyright>Copyright (C) 2015 Electric Easel, Inc. All rights reserved.</copyright>
+    <version>1.0.0</version>
+    <description>Display formatted modules for case studies.</description>
+    <files>
+        <filename>mod_case_study_header.xml</filename>
+        <filename module="Case Study Header">mod_case_study_header.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="header" label="Header Info">
+                <field
+                    name="header_type"
+                    type="list"
+                    label="Header Type"
+                    description="Header Type">
+
+                    <option value="screens">Responsive</option>
+                    <option value="catalog">Catalog</option>
+                </field>
+                <field
+                    name="phone"
+                    type="imagelist"
+                    directory="/templates/ee/images/case-studies/header"
+                    hide_default="true"
+                    label="Phone Image"
+                    description="Phone Image"
+                    showon="header_type:screens" />
+                <field
+                    name="tablet"
+                    type="imagelist"
+                    directory="/templates/ee/images/case-studies/header"
+                    hide_default="true"
+                    label="Tablet Image"
+                    description="Tablet Image"
+                    showon="header_type:screens" />
+                <field
+                    name="laptop"
+                    type="imagelist"
+                    directory="/templates/ee/images/case-studies/header"
+                    hide_default="true"
+                    label="Laptop Image"
+                    description="Laptop Image" />
+                <field
+                    name="cover"
+                    type="imagelist"
+                    directory="/templates/ee/images/case-studies/header"
+                    hide_default="true"
+                    label="Catalog Cover Image"
+                    description="Catalog Cover Image"
+                    showon="header_type:catalog" />
+                <field
+                    name="spread"
+                    type="imagelist"
+                    directory="/templates/ee/images/case-studies/header"
+                    hide_default="true"
+                    label="Catalog Spread Image"
+                    description="Catalog Spread Image"
+                    showon="header_type:catalog" />
+
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

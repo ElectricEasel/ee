@@ -7375,6 +7375,7 @@ header .header-inner .nav-toggle {
   text-align: center;
   position: absolute;
   z-index: 8888;
+  top: 0;
   left: 20px;
   box-shadow: none;
   border: 1px solid #0e263f;
@@ -7459,7 +7460,8 @@ header .header-inner .nav-toggle:hover {
 .home .header {
   background: none;
 }
-.who-we-are .header {
+.who-we-are .header,
+.case-studies-child .header {
   background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom, url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
   background-size: auto, cover;
 }
@@ -8396,12 +8398,12 @@ header .header-inner .nav-toggle:hover {
   height: 0;
   width: 0;
   position: absolute;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #eceef2;
-  bottom: -40px;
-  margin-left: -20px;
+  border-bottom: 22px solid transparent;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-top: 22px solid #eceef2;
+  bottom: -44px;
+  margin-left: -22px;
   left: 50%;
   z-index: 200;
 }
@@ -8426,4 +8428,144 @@ header .header-inner .nav-toggle:hover {
 }
 .cs-mobile.lower-i h4::first-letter {
   text-transform: lowercase;
+}
+@media (max-width: 767px) {
+  .cs-header-screens,
+  .cs-header-catalog {
+    background: #0977bc;
+  }
+  .cs-header-screens .container,
+  .cs-header-catalog .container {
+    display: none;
+  }
+}
+.cs-header-screens {
+  padding: 22px 0 0;
+}
+.cs-header-screens .container {
+  position: relative;
+}
+.cs-header-screens .phone {
+  position: absolute;
+  z-index: 303;
+}
+.cs-header-screens .tablet {
+  position: absolute;
+  z-index: 302;
+}
+.cs-header-screens .laptop {
+  position: relative;
+  z-index: 301;
+}
+@media (min-width: 1150px) {
+  .cs-header-screens .phone {
+    left: -63px;
+    bottom: -63px;
+  }
+  .cs-header-screens .tablet {
+    right: -86px;
+    bottom: -86px;
+  }
+  .cs-header-screens .laptop {
+    left: 34px;
+    bottom: -20px;
+  }
+}
+@media (max-width: 1149px) and (min-width: 980px) {
+  .cs-header-screens .phone {
+    left: 0;
+    bottom: -63px;
+  }
+  .cs-header-screens .tablet {
+    right: 0;
+    bottom: -86px;
+  }
+  .cs-header-screens .laptop {
+    left: 50px;
+    bottom: -20px;
+  }
+}
+@media (max-width: 979px) and (min-width: 768px) {
+  .cs-header-screens .phone {
+    left: 0;
+    bottom: -42px;
+    width: 104px;
+  }
+  .cs-header-screens .tablet {
+    right: 0;
+    bottom: -58px;
+    width: 321px;
+  }
+  .cs-header-screens .laptop {
+    left: 50px;
+    bottom: -20px;
+    width: 468px;
+  }
+}
+.cs-header-catalog {
+  padding: 22px 0 0;
+}
+.cs-header-catalog .container {
+  margin-top: 55px;
+  position: relative;
+}
+.cs-header-catalog .cover {
+  position: relative;
+  z-index: 303;
+}
+.cs-header-catalog .spread {
+  position: absolute;
+  z-index: 302;
+}
+.cs-header-catalog .laptop {
+  position: absolute;
+  z-index: 301;
+}
+@media (min-width: 1150px) {
+  .cs-header-catalog .cover {
+    left: 369px;
+    bottom: -30px;
+  }
+  .cs-header-catalog .spread {
+    right: -26px;
+    bottom: -20px;
+  }
+  .cs-header-catalog .laptop {
+    left: -80px;
+    bottom: 1px;
+  }
+}
+@media (max-width: 1149px) and (min-width: 980px) {
+  .cs-header-catalog .cover {
+    left: 383px;
+    bottom: -30px;
+  }
+  .cs-header-catalog .spread {
+    right: 0;
+    bottom: -20px;
+  }
+  .cs-header-catalog .laptop {
+    left: 0;
+    bottom: 1px;
+  }
+}
+@media (max-width: 979px) and (min-width: 768px) {
+  .cs-header-catalog .container {
+    margin-top: 36px;
+  }
+  .cs-header-catalog .cover {
+    left: 300px;
+    bottom: -14px;
+    width: 166px;
+  }
+  .cs-header-catalog .spread {
+    right: 0;
+    bottom: -6px;
+    width: 318px;
+  }
+  .cs-header-catalog .laptop {
+    left: 0;
+    bottom: 7px;
+    width: 409px;
+  }
 }
