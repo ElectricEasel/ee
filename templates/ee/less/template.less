@@ -971,6 +971,19 @@ header {
     line-height: 30px;
   }
 }
+.case-studies-child .custom.banner-blue {
+  padding-top: 65px;
+  .hanging-arrow(@blue;@arrowWidth;@arrowHeight);
+
+  h3 {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (max-width:@screen-sm-max) {
+    padding-top: 15px;
+  }
+}
 .custom.expanded-services {
   position: relative;
   top: -22px;
@@ -1492,11 +1505,11 @@ header {
   @media (max-width:1149px) and (min-width:@screen-lg-min) {
     .phone {
       left: 0;
-      bottom: -63px;
+      bottom: -57px;
     }
     .tablet {
       right: 0;
-      bottom: -86px;
+      bottom: -80px;
     }
     .laptop {
       left: 50px;

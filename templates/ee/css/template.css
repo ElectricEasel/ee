@@ -7862,6 +7862,34 @@ header .header-inner .nav-toggle:hover {
   font-size: 18px;
   line-height: 30px;
 }
+.case-studies-child .custom.banner-blue {
+  padding-top: 65px;
+  position: relative;
+}
+.case-studies-child .custom.banner-blue:before {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-bottom: 22px solid transparent;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-top: 22px solid #0977bc;
+  bottom: -44px;
+  margin-left: -22px;
+  left: 50%;
+  z-index: 200;
+}
+.case-studies-child .custom.banner-blue h3 {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 767px) {
+  .case-studies-child .custom.banner-blue {
+    padding-top: 15px;
+  }
+}
 .custom.expanded-services {
   position: relative;
   top: -22px;
@@ -8474,11 +8502,11 @@ header .header-inner .nav-toggle:hover {
 @media (max-width: 1149px) and (min-width: 980px) {
   .cs-header-screens .phone {
     left: 0;
-    bottom: -63px;
+    bottom: -57px;
   }
   .cs-header-screens .tablet {
     right: 0;
-    bottom: -86px;
+    bottom: -80px;
   }
   .cs-header-screens .laptop {
     left: 50px;
