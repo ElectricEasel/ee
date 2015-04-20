@@ -8609,6 +8609,7 @@ header .header-inner .nav-toggle:hover {
 }
 .cs-boxes {
   overflow: hidden;
+  text-align: center;
 }
 .cs-boxes .half {
   width: 50%;
@@ -8635,8 +8636,84 @@ header .header-inner .nav-toggle:hover {
   margin-left: 0;
   margin-right: auto;
 }
-.case-studies-child.angel-adoption .cs-boxes .logo-boxes .half {
+.cs-boxes .logo-boxes .half {
   height: 260px;
+}
+@media (max-width: 480px) {
+  .cs-boxes .logo-boxes .half {
+    height: auto;
+  }
+  .cs-boxes .logo-boxes .half.left {
+    padding: 40px 20px !important;
+  }
+  .cs-boxes .logo-boxes .half.right {
+    padding: 40px 20px !important;
+  }
+}
+.cs-design {
+  text-align: center;
+  padding: 25px 0 45px;
+}
+.cs-design .custom.banner-white {
+  padding-top: 35px;
+}
+.cs-catalog {
+  text-align: center;
+  background: #fafafa;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fafafa 0%, #ffffff 0%, #ffffff 11%, #b4b4ba 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(0%, #ffffff), color-stop(11%, #ffffff), color-stop(100%, #b4b4ba));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fafafa 0%, #ffffff 0%, #ffffff 11%, #b4b4ba 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fafafa 0%, #ffffff 0%, #ffffff 11%, #b4b4ba 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fafafa 0%, #ffffff 0%, #ffffff 11%, #b4b4ba 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #fafafa 0%, #ffffff 0%, #ffffff 11%, #b4b4ba 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#b4b4ba', GradientType=0);
+  /* IE6-9 */
+  padding: 35px 0;
+}
+.cs-catalog .custom.banner-gray {
+  background: none;
+}
+@media (min-width: 980px) {
+  .cs-catalog .container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.cs-ads {
+  text-align: center;
+  background: #eceef2;
+  padding: 25px 0 50px;
+  position: relative;
+}
+.cs-ads:before {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-bottom: 22px solid transparent;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-top: 22px solid #eceef2;
+  bottom: -44px;
+  margin-left: -22px;
+  left: 50%;
+  z-index: 200;
+}
+.cs-ads .custom.banner-gray {
+  background: none;
+}
+@media (min-width: 980px) {
+  .cs-ads .container {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 .case-studies-child.angel-adoption .cs-boxes .logo-boxes .half.left {
   background: url(/templates/ee/images/case-studies/misc-inner/angel-bg-tan.jpg) 0 0 repeat #ede4e0;
@@ -8655,27 +8732,152 @@ header .header-inner .nav-toggle:hover {
     padding: 52px 20px;
   }
 }
-@media (max-width: 480px) {
-  .case-studies-child.angel-adoption .cs-boxes .logo-boxes .half {
-    height: auto;
-  }
-  .case-studies-child.angel-adoption .cs-boxes .logo-boxes .half.left {
-    padding: 40px 20px;
-  }
-  .case-studies-child.angel-adoption .cs-boxes .logo-boxes .half.right {
-    padding: 40px 20px;
-  }
-}
 .case-studies-child.angel-adoption .cs-boxes .picture-boxes .half.left {
   background: #a4a5a0;
+}
+.case-studies-child.angel-adoption .cs-boxes .picture-boxes .half.left .stripes {
+  height: 88px;
+  background: url(/templates/ee/images/case-studies/misc-inner/angel-bg-stripes.jpg) right 0 repeat-x transparent;
 }
 .case-studies-child.angel-adoption .cs-boxes .picture-boxes .half.right {
   background: #d5d5d6;
 }
-.cs-design {
-  text-align: center;
-  padding: 17px 0 45px;
+.case-studies-child.angel-adoption .cs-design {
+  padding-top: 17px;
 }
-.cs-design .custom.banner-white {
+.case-studies-child.aerex .cs-design {
   padding-top: 35px;
+  position: relative;
+  z-index: 401;
+}
+.case-studies-child.aerex .cs-design .container {
+  position: relative;
+}
+.case-studies-child.aerex .cs-design .bug {
+  position: absolute;
+  z-index: 400;
+}
+.case-studies-child.aerex .cs-design #bug1 {
+  left: -106px;
+  bottom: -128px;
+}
+.case-studies-child.aerex .cs-design #bug2 {
+  right: 8px;
+  bottom: -163px;
+}
+.case-studies-child.aerex .cs-design #monitor {
+  position: relative;
+  z-index: 401;
+}
+@media (min-width: 768px) {
+  .case-studies-child.aerex .cs-design {
+    padding-bottom: 77px;
+  }
+}
+@media (max-width: 767px) {
+  .case-studies-child.aerex .cs-design .bug {
+    display: none;
+  }
+}
+.case-studies-child.adoptlist .cs-boxes .logo-boxes .half.left {
+  background: #412764;
+  padding: 83px 75px 83px 20px;
+}
+.case-studies-child.adoptlist .cs-boxes .logo-boxes .half.right {
+  background: url(/templates/ee/images/case-studies/misc-inner/adoptlist-bg-bubbles.jpg) 0 0 no-repeat #cee8f9;
+  background-size: cover;
+  padding: 83px 20px 83px 75px;
+}
+@media (max-width: 767px) and (min-width: 481px) {
+  .case-studies-child.adoptlist .cs-boxes .logo-boxes .half.left {
+    padding: 83px 20px;
+  }
+  .case-studies-child.adoptlist .cs-boxes .logo-boxes .half.right {
+    padding: 83px 20px;
+  }
+}
+.case-studies-child.adoptlist .cs-boxes .picture-boxes {
+  background: url(/templates/ee/images/case-studies/misc-inner/adoptlist-bg-gradient.jpg) 0 0 no-repeat #9d9e9e;
+  background-size: cover;
+}
+@media (min-width: 980px) {
+  .case-studies-child.adoptlist .cs-boxes .picture-boxes .container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.case-studies-child.adoptlist .cs-boxes .hearts {
+  background: #cee8f9;
+  padding-bottom: 22px;
+  overflow: hidden;
+}
+.case-studies-child.adoptlist .cs-boxes .hearts img {
+  margin-top: -76px;
+}
+.case-studies-child.adoptlist .cs-design {
+  padding-bottom: 0;
+}
+@media (min-width: 980px) {
+  .case-studies-child.adoptlist .cs-design .container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.case-studies-child.echo .cs-design {
+  padding-bottom: 0;
+}
+.case-studies-child.equity-lifestyle .cs-design .custom.banner-white {
+  padding-bottom: 90px;
+}
+.case-studies-child.gazebos-com .cs-boxes .logo-boxes .half.left {
+  background: url(/templates/ee/images/case-studies/misc-inner/gazebos-bg-textured.jpg) 0 0 repeat #eae5dd;
+  padding: 63px 75px 63px 20px;
+}
+.case-studies-child.gazebos-com .cs-boxes .logo-boxes .half.right {
+  background: url(/templates/ee/images/case-studies/misc-inner/gazebos-bg-brown.jpg) 0 0 no-repeat #463228;
+  background-size: cover;
+  padding: 63px 20px 63px 75px;
+}
+@media (max-width: 767px) and (min-width: 481px) {
+  .case-studies-child.gazebos-com .cs-boxes .logo-boxes .half.left {
+    padding: 63px 20px;
+  }
+  .case-studies-child.gazebos-com .cs-boxes .logo-boxes .half.right {
+    padding: 63px 20px;
+  }
+}
+.case-studies-child.gazebos-com .cs-boxes .picture-boxes {
+  background: #c8c8c8;
+}
+@media (min-width: 980px) {
+  .case-studies-child.gazebos-com .cs-boxes .picture-boxes .container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.case-studies-child.gazebos-com .cs-boxes .stripes {
+  height: 80px;
+  background: url(/templates/ee/images/case-studies/misc-inner/gazebos-bg-stripes.jpg) right 0 repeat-x transparent;
+}
+.case-studies-child.gazebos-com .cs-design {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.case-studies-child.gazebos-com .cs-design .custom.banner-white {
+  padding-bottom: 40px;
+}
+.case-studies-child.gazebos-com .cs-design .hills {
+  height: 160px;
+  width: 100%;
+  background: url(/templates/ee/images/case-studies/misc-inner/gazebos-hills.png) right bottom repeat-x transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media (min-width: 980px) {
+  .case-studies-child.gazebos-com .cs-design .hills {
+    background-size: 100% 160px;
+    background-position: center bottom;
+  }
 }

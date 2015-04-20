@@ -139,7 +139,7 @@ else
 	<![endif]-->
 </head>
 <?php
-$page_class = strtolower(str_replace(' ','-',$title));
+$page_class = strtolower(str_replace(array(' ','.'),'-',$title));
 $parent_class = ($parent_class_title == '') ? '' : ' ' . $parent_class_title;
 ?>
 <body class="site <?php echo $option
