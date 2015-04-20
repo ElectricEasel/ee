@@ -971,6 +971,17 @@ header {
     line-height: 30px;
   }
 }
+.custom.banner-white {
+  background: @white;
+  padding: 65px 0;
+  text-align: center;
+
+  h5 {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .case-studies-child .custom.banner-blue {
   padding-top: 65px;
   .hanging-arrow(@blue;@arrowWidth;@arrowHeight);
@@ -1601,5 +1612,90 @@ header {
       bottom: 7px;
       width: 409px;
     }
+  }
+}
+.cs-boxes {
+  overflow: hidden;
+
+  .half {
+    width: 50%;
+
+    .pseudo-container {
+      width: 100%;
+      max-width: 480px;
+    }
+  }
+  .half.left {
+    text-align: right;
+    clear: left;
+    float: left;
+
+    .pseudo-container {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+  .half.right {
+    text-align: left;
+    clear: right;
+    float: right;
+
+    .pseudo-container {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+}
+.case-studies-child.angel-adoption {
+  .cs-boxes {
+    .logo-boxes {
+      .half {
+        height: 260px;
+      }
+      .half.left {
+        background: url(/templates/ee/images/case-studies/misc-inner/angel-bg-tan.jpg) 0 0 repeat #ede4e0;
+        padding: 52px 84px 52px 20px;
+      }
+      .half.right {
+        background: url(/templates/ee/images/case-studies/misc-inner/angel-bg-pink.jpg) 0 0 no-repeat #d7649a;
+        background-size: cover;
+        padding: 52px 20px 52px 84px;
+      }
+      @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
+        .half.left {
+          padding: 52px 20px;
+        }
+        .half.right {
+          padding: 52px 20px;
+        }
+      }
+      @media (max-width:@screen-mb-max) {
+        .half {
+          height: auto;
+        }
+        .half.left {
+          padding: 40px 20px;
+        }
+        .half.right {
+          padding: 40px 20px;
+        }
+      }
+    }
+    .picture-boxes {
+      .half.left {
+        background: #a4a5a0;
+      }
+      .half.right {
+        background: #d5d5d6;
+      }
+    }
+  }
+}
+.cs-design {
+  text-align: center;
+  padding: 17px 0 45px;
+
+  .custom.banner-white {
+    padding-top: 35px;
   }
 }

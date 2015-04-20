@@ -7862,6 +7862,16 @@ header .header-inner .nav-toggle:hover {
   font-size: 18px;
   line-height: 30px;
 }
+.custom.banner-white {
+  background: #ffffff;
+  padding: 65px 0;
+  text-align: center;
+}
+.custom.banner-white h5 {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .case-studies-child .custom.banner-blue {
   padding-top: 65px;
   position: relative;
@@ -8596,4 +8606,76 @@ header .header-inner .nav-toggle:hover {
     bottom: 7px;
     width: 409px;
   }
+}
+.cs-boxes {
+  overflow: hidden;
+}
+.cs-boxes .half {
+  width: 50%;
+}
+.cs-boxes .half .pseudo-container {
+  width: 100%;
+  max-width: 480px;
+}
+.cs-boxes .half.left {
+  text-align: right;
+  clear: left;
+  float: left;
+}
+.cs-boxes .half.left .pseudo-container {
+  margin-left: auto;
+  margin-right: 0;
+}
+.cs-boxes .half.right {
+  text-align: left;
+  clear: right;
+  float: right;
+}
+.cs-boxes .half.right .pseudo-container {
+  margin-left: 0;
+  margin-right: auto;
+}
+.case-studies-child.angel-adoption .cs-boxes .logo-boxes .half {
+  height: 260px;
+}
+.case-studies-child.angel-adoption .cs-boxes .logo-boxes .half.left {
+  background: url(/templates/ee/images/case-studies/misc-inner/angel-bg-tan.jpg) 0 0 repeat #ede4e0;
+  padding: 52px 84px 52px 20px;
+}
+.case-studies-child.angel-adoption .cs-boxes .logo-boxes .half.right {
+  background: url(/templates/ee/images/case-studies/misc-inner/angel-bg-pink.jpg) 0 0 no-repeat #d7649a;
+  background-size: cover;
+  padding: 52px 20px 52px 84px;
+}
+@media (max-width: 767px) and (min-width: 481px) {
+  .case-studies-child.angel-adoption .cs-boxes .logo-boxes .half.left {
+    padding: 52px 20px;
+  }
+  .case-studies-child.angel-adoption .cs-boxes .logo-boxes .half.right {
+    padding: 52px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .case-studies-child.angel-adoption .cs-boxes .logo-boxes .half {
+    height: auto;
+  }
+  .case-studies-child.angel-adoption .cs-boxes .logo-boxes .half.left {
+    padding: 40px 20px;
+  }
+  .case-studies-child.angel-adoption .cs-boxes .logo-boxes .half.right {
+    padding: 40px 20px;
+  }
+}
+.case-studies-child.angel-adoption .cs-boxes .picture-boxes .half.left {
+  background: #a4a5a0;
+}
+.case-studies-child.angel-adoption .cs-boxes .picture-boxes .half.right {
+  background: #d5d5d6;
+}
+.cs-design {
+  text-align: center;
+  padding: 17px 0 45px;
+}
+.cs-design .custom.banner-white {
+  padding-top: 35px;
 }
