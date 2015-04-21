@@ -8679,6 +8679,7 @@ header .header-inner .nav-toggle:hover {
 }
 .cs-catalog .custom.banner-gray {
   background: none;
+  padding-bottom: 20px;
 }
 @media (min-width: 980px) {
   .cs-catalog .container {
@@ -8738,6 +8739,14 @@ header .header-inner .nav-toggle:hover {
 .case-studies-child.angel-adoption .cs-boxes .picture-boxes .half.left .stripes {
   height: 88px;
   background: url(/templates/ee/images/case-studies/misc-inner/angel-bg-stripes.jpg) right 0 repeat-x transparent;
+  background-size: contain;
+}
+@media (max-width: 1199px) {
+  .case-studies-child.angel-adoption .cs-boxes .picture-boxes .half.left .stripes {
+    height: 0;
+    padding-top: 14.7%;
+    background-size: cover;
+  }
 }
 .case-studies-child.angel-adoption .cs-boxes .picture-boxes .half.right {
   background: #d5d5d6;
@@ -8879,5 +8888,144 @@ header .header-inner .nav-toggle:hover {
   .case-studies-child.gazebos-com .cs-design .hills {
     background-size: 100% 160px;
     background-position: center bottom;
+  }
+}
+.case-studies-child.lifelong-adoptions .cs-boxes .logo-boxes .half.left {
+  background: url(/templates/ee/images/case-studies/misc-inner/lifelong-bg-tan.jpg) 0 0 repeat #ede4e0;
+  padding: 77px 73px 77px 20px;
+}
+.case-studies-child.lifelong-adoptions .cs-boxes .logo-boxes .half.right {
+  background: #4f7707;
+  padding: 77px 20px 77px 73px;
+}
+@media (max-width: 767px) and (min-width: 481px) {
+  .case-studies-child.lifelong-adoptions .cs-boxes .logo-boxes .half.left {
+    padding: 77px 20px;
+  }
+  .case-studies-child.lifelong-adoptions .cs-boxes .logo-boxes .half.right {
+    padding: 77px 20px;
+  }
+}
+.case-studies-child.lifelong-adoptions .cs-boxes .picture-boxes .half.left {
+  background: #787d80;
+}
+.case-studies-child.lifelong-adoptions .cs-boxes .picture-boxes .half.left .stripes {
+  height: 148px;
+  background: url(/templates/ee/images/case-studies/misc-inner/lifelong-bg-stripes.jpg) right 0 repeat-x transparent;
+  background-size: contain;
+}
+@media (max-width: 1199px) {
+  .case-studies-child.lifelong-adoptions .cs-boxes .picture-boxes .half.left .stripes {
+    height: 0;
+    padding-top: 24.8%;
+    background-size: cover;
+  }
+}
+.case-studies-child.lifelong-adoptions .cs-boxes .picture-boxes .half.right {
+  background: #9f9e9c;
+}
+.case-studies-child.lifelong-adoptions .cs-design {
+  padding-bottom: 0;
+}
+.case-studies-child.lifelong-adoptions .cs-design .dots {
+  background: url(/templates/ee/images/case-studies/misc-inner/lifelong-dots.png) center center repeat-x transparent;
+}
+.case-studies-child.lifelong-adoptions .cs-design .dots img {
+  background: #ffffff;
+  padding: 0 22px;
+}
+@media (min-width: 980px) {
+  .case-studies-child.lifelong-adoptions .cs-design .container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.case-studies-child.posrg .cs-boxes .logo-boxes .half.left {
+  background: url(/templates/ee/images/case-studies/misc-inner/posrg-bg-white.jpg) 0 0 repeat #f9f9f9;
+  padding: 62px 50px 62px 20px;
+}
+.case-studies-child.posrg .cs-boxes .logo-boxes .half.right {
+  background: #000000;
+  padding: 62px 20px 62px 50px;
+}
+@media (max-width: 767px) and (min-width: 481px) {
+  .case-studies-child.posrg .cs-boxes .logo-boxes .half.left {
+    padding: 62px 20px;
+  }
+  .case-studies-child.posrg .cs-boxes .logo-boxes .half.right {
+    padding: 62px 20px;
+  }
+}
+.case-studies-child.posrg .cs-boxes .picture-boxes .half.left {
+  background: #d9d9d9;
+}
+.case-studies-child.posrg .cs-boxes .picture-boxes .half.right {
+  background: #808080;
+}
+.case-studies-child.posrg .cs-boxes .picture-boxes .half.right .stripe {
+  height: 22px;
+  background: #1b6eb6;
+}
+@media (max-width: 1199px) {
+  .case-studies-child.posrg .cs-boxes .picture-boxes .half.right .stripe {
+    height: 0;
+    padding-top: 3.7%;
+  }
+}
+.case-studies-child.posrg .cs-design {
+  padding-bottom: 30px;
+}
+.case-studies-child.posrg .cs-design .custom.banner-white {
+  padding-bottom: 45px;
+}
+@media (min-width: 980px) {
+  .case-studies-child.posrg .cs-design .container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.case-studies-child.rv-on-the-go .cs-design .custom.banner-white {
+  padding-bottom: 20px;
+}
+.case-studies-child.rv-on-the-go .cs-design img {
+  margin-right: -13%;
+}
+@media (min-width: 980px) {
+  .case-studies-child.rv-on-the-go .cs-design .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .case-studies-child.rv-on-the-go .cs-design img {
+    margin-right: -146px;
+  }
+}
+.case-studies-child.shindaiwa .cs-design {
+  padding-bottom: 25px;
+  position: relative;
+}
+.case-studies-child.shindaiwa .cs-design:before {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-bottom: 28px solid transparent;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-top: 28px solid #ffffff;
+  bottom: -56px;
+  margin-left: -22px;
+  left: 50%;
+  z-index: 200;
+}
+.case-studies-child.thousand-trails .cs-design {
+  padding-bottom: 55px;
+}
+.case-studies-child.thousand-trails .cs-design .custom.banner-white {
+  padding-bottom: 55px;
+}
+@media (min-width: 980px) {
+  .case-studies-child.thousand-trails .cs-design .container {
+    width: 100%;
+    max-width: 100%;
   }
 }

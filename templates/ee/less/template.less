@@ -1685,6 +1685,7 @@ header {
 
   .custom.banner-gray {
     background: none;
+    padding-bottom: 20px;
   }
   @media (min-width:@screen-lg-min) {
     .container {
@@ -1737,6 +1738,13 @@ header {
         .stripes {
           height: 88px;
           background: url(/templates/ee/images/case-studies/misc-inner/angel-bg-stripes.jpg) right 0 repeat-x transparent;
+          background-size: contain;
+
+          @media (max-width:@screen-lg-max) {
+            height: 0;
+            padding-top: 14.7%;
+            background-size: cover;
+          }
         }
       }
       .half.right {
@@ -1902,6 +1910,159 @@ header {
       @media (min-width:@screen-lg-min) {
         background-size: 100% 160px;
         background-position: center bottom;
+      }
+    }
+  }
+}
+.case-studies-child.lifelong-adoptions {
+  .cs-boxes {
+    .logo-boxes {
+      .half.left {
+        background: url(/templates/ee/images/case-studies/misc-inner/lifelong-bg-tan.jpg) 0 0 repeat #ede4e0;
+        padding: 77px 73px 77px 20px;
+      }
+      .half.right {
+        background: @lifelongGreen;
+        padding: 77px 20px 77px 73px;
+      }
+      @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
+        .half.left {
+          padding: 77px 20px;
+        }
+        .half.right {
+          padding: 77px 20px;
+        }
+      }
+    }
+    .picture-boxes {
+      .half.left {
+        background: #787d80;
+
+        .stripes {
+          height: 148px;
+          background: url(/templates/ee/images/case-studies/misc-inner/lifelong-bg-stripes.jpg) right 0 repeat-x transparent;
+          background-size: contain;
+
+          @media (max-width:@screen-lg-max) {
+            height: 0;
+            padding-top: 24.8%;
+            background-size: cover;
+          }
+        }
+      }
+      .half.right {
+        background: #9f9e9c;
+      }
+    }
+  }
+  .cs-design {
+    padding-bottom: 0;
+
+    .dots {
+      background: url(/templates/ee/images/case-studies/misc-inner/lifelong-dots.png) center center repeat-x transparent;
+
+      img {
+        background: @white;
+        padding: 0 22px;
+      }
+    }
+    @media (min-width:@screen-lg-min) {
+      .container {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+.case-studies-child.posrg {
+  .cs-boxes {
+    .logo-boxes {
+      .half.left {
+        background: url(/templates/ee/images/case-studies/misc-inner/posrg-bg-white.jpg) 0 0 repeat #f9f9f9;
+        padding: 62px 50px 62px 20px;
+      }
+      .half.right {
+        background: @black;
+        padding: 62px 20px 62px 50px;
+      }
+      @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
+        .half.left {
+          padding: 62px 20px;
+        }
+        .half.right {
+          padding: 62px 20px;
+        }
+      }
+    }
+    .picture-boxes {
+      .half.left {
+        background: #d9d9d9;
+      }
+      .half.right {
+        background: #808080;
+
+        .stripe {
+          height: 22px;
+          background: @posrgBlue;
+
+          @media (max-width:@screen-lg-max) {
+            height: 0;
+            padding-top: 3.7%;
+          }
+        }
+      }
+    }
+  }
+  .cs-design {
+    padding-bottom: 30px;
+
+    .custom.banner-white {
+      padding-bottom: 45px;
+    }
+    @media (min-width:@screen-lg-min) {
+      .container {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+.case-studies-child.rv-on-the-go {
+  .cs-design {
+    .custom.banner-white {
+      padding-bottom: 20px;
+    }
+    img {
+      margin-right: -13%;
+    }
+    @media(min-width:@screen-lg-min) {
+      .container {
+        width: 100%;
+        max-width: 100%;
+      }
+      img {
+        margin-right: -146px;
+      }
+    }
+  }
+}
+.case-studies-child.shindaiwa {
+  .cs-design {
+    padding-bottom: 25px;
+    .hanging-arrow(@white;@longArrowWidth;@longArrowHeight;50%);
+  }
+}
+.case-studies-child.thousand-trails {
+  .cs-design {
+    padding-bottom: 55px;
+
+    .custom.banner-white {
+      padding-bottom: 55px;
+    }
+    @media(min-width:@screen-lg-min) {
+      .container {
+        width: 100%;
+        max-width: 100%;
       }
     }
   }
