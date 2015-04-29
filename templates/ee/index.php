@@ -159,7 +159,9 @@ $parent_class = ($parent_class_title == '') ? '' : ' ' . $parent_class_title;
 			<div class="header-inner clearfix">
 				<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
 					<a class="brand pull-left" href="<?php echo $this->baseurl; ?>">
-						<img src="/templates/ee/images/logo.png" alt= "Electric Easel Digital Marketing Agency" /><?php if ($this->params->get('sitedescription')) { echo '<div class="site-description">'. htmlspecialchars($this->params->get('sitedescription')) .'</div>'; } ?>
+						<img class="normal-image" src="/templates/ee/images/logo.png" alt= "Electric Easel Digital Marketing Agency" />
+						<img class="retina-image" src="/templates/ee/images/logo@2x.png" alt= "Electric Easel Digital Marketing Agency" />
+						<?php if ($this->params->get('sitedescription')) { echo '<div class="site-description">'. htmlspecialchars($this->params->get('sitedescription')) .'</div>'; } ?>
 					</a>
 					<div class="header-search pull-right">
 						<jdoc:include type="modules" name="position-0" style="none" />

@@ -7169,6 +7169,17 @@ dl.article-info dd.hits span[class*=" icon-"] {
 .social-icons-custom.social-icons-blue li a.linkedin {
   background-position: 0 -145px;
 }
+.retina-image {
+  display: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .normal-image {
+    display: none;
+  }
+  .retina-image {
+    display: inline-block;
+  }
+}
 body {
   padding: 0;
 }
@@ -7744,6 +7755,11 @@ header .header-inner .nav-toggle:hover {
 .what-we-do .custom.services-carousel .container .owl-wrapper .owl-item .item.arrow:before {
   opacity: 1;
 }
+@media (max-width: 767px) {
+  .what-we-do .custom.services-carousel .container .owl-wrapper .owl-item .item {
+    height: 261px;
+  }
+}
 .what-we-do .custom.services-carousel .bottom-stripe {
   background: #ffffff;
   height: 22px;
@@ -7932,6 +7948,11 @@ header .header-inner .nav-toggle:hover {
 .custom.expanded-services .design .expanded-content {
   margin-top: -5px;
 }
+@media (max-width: 767px) {
+  .custom.expanded-services .design img {
+    margin-bottom: 30px;
+  }
+}
 .custom.expanded-services .sem {
   padding-top: 48px;
 }
@@ -7977,6 +7998,29 @@ header .header-inner .nav-toggle:hover {
 }
 .custom.expanded-services .toggleable.visible {
   opacity: 1;
+}
+@media (max-width: 979px) and (min-width: 768px) {
+  .custom.expanded-services .expanded .expanded-content {
+    max-width: 42%;
+  }
+}
+@media (max-width: 767px) {
+  .custom.expanded-services {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 700px;
+  }
+  .custom.expanded-services .expanded img {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .custom.expanded-services .expanded .expanded-content {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 .custom.clients {
   background: #dcdee3;
