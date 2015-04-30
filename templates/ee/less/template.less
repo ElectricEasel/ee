@@ -1525,7 +1525,7 @@ header {
     text-transform: lowercase;
   }
 }
-.cs-header-screens, .cs-header-catalog {
+.cs-header-screens, .cs-header-catalog, .cs-header-single {
   @media (max-width:@screen-sm-max) {
     background: @blue;
 
@@ -1664,6 +1664,20 @@ header {
       left: 0;
       bottom: 7px;
       width: 409px;
+    }
+  }
+}
+.cs-header-single {
+  padding: @arrowHeight 0 0;
+
+  .container {
+    margin-top: 24px;
+    margin-bottom: -66px;
+  }
+  @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
+    .container {
+      margin-top: 10px;
+      margin-bottom: -44px;
     }
   }
 }
@@ -2117,6 +2131,55 @@ header {
         width: 100%;
         max-width: 100%;
       }
+    }
+  }
+}
+.case-studies-child.homes-heart {
+  .cs-header-single {
+    @media (min-width:@screen-lg-min) {
+      img {
+        width: 1012px;
+        max-width: none;
+        margin-left: -31px;
+      }
+    }
+  }
+  .cs-boxes {
+    .logo-boxes {
+      .half.left {
+        background: url(/templates/ee/images/case-studies/misc-inner/homesheart-bg-tan.jpg) 0 0 repeat #e5d5c7;
+        padding: 100px 45px 100px 20px;
+      }
+      .half.right {
+        background: @black;
+        padding: 100px 20px 100px 45px;
+      }
+      @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
+        .half.left {
+          padding: 105px 20px;
+        }
+        .half.right {
+          padding: 105px 20px;
+        }
+      }
+    }
+    .picture-boxes {
+      background: #cbcccd;
+      @media (min-width:@screen-lg-min) {
+        .container {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .cs-design {
+    background: @grayLight;
+    padding-bottom: 35px;
+    .hanging-arrow(@grayLight; @arrowWidth; @arrowHeight; 50%);
+
+    .banner-gray {
+      padding: 25px 0 60px;
     }
   }
 }

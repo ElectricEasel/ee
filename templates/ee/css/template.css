@@ -8513,11 +8513,13 @@ header .header-inner .nav-toggle:hover {
 }
 @media (max-width: 767px) {
   .cs-header-screens,
-  .cs-header-catalog {
+  .cs-header-catalog,
+  .cs-header-single {
     background: #0977bc;
   }
   .cs-header-screens .container,
-  .cs-header-catalog .container {
+  .cs-header-catalog .container,
+  .cs-header-single .container {
     display: none;
   }
 }
@@ -8649,6 +8651,19 @@ header .header-inner .nav-toggle:hover {
     left: 0;
     bottom: 7px;
     width: 409px;
+  }
+}
+.cs-header-single {
+  padding: 22px 0 0;
+}
+.cs-header-single .container {
+  margin-top: 24px;
+  margin-bottom: -66px;
+}
+@media (max-width: 979px) and (min-width: 768px) {
+  .cs-header-single .container {
+    margin-top: 10px;
+    margin-bottom: -44px;
   }
 }
 .cs-boxes {
@@ -9072,4 +9087,58 @@ header .header-inner .nav-toggle:hover {
     width: 100%;
     max-width: 100%;
   }
+}
+@media (min-width: 980px) {
+  .case-studies-child.homes-heart .cs-header-single img {
+    width: 1012px;
+    max-width: none;
+    margin-left: -31px;
+  }
+}
+.case-studies-child.homes-heart .cs-boxes .logo-boxes .half.left {
+  background: url(/templates/ee/images/case-studies/misc-inner/homesheart-bg-tan.jpg) 0 0 repeat #e5d5c7;
+  padding: 100px 45px 100px 20px;
+}
+.case-studies-child.homes-heart .cs-boxes .logo-boxes .half.right {
+  background: #000000;
+  padding: 100px 20px 100px 45px;
+}
+@media (max-width: 767px) and (min-width: 481px) {
+  .case-studies-child.homes-heart .cs-boxes .logo-boxes .half.left {
+    padding: 105px 20px;
+  }
+  .case-studies-child.homes-heart .cs-boxes .logo-boxes .half.right {
+    padding: 105px 20px;
+  }
+}
+.case-studies-child.homes-heart .cs-boxes .picture-boxes {
+  background: #cbcccd;
+}
+@media (min-width: 980px) {
+  .case-studies-child.homes-heart .cs-boxes .picture-boxes .container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.case-studies-child.homes-heart .cs-design {
+  background: #eceef2;
+  padding-bottom: 35px;
+  position: relative;
+}
+.case-studies-child.homes-heart .cs-design:before {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-bottom: 22px solid transparent;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-top: 22px solid #eceef2;
+  bottom: -44px;
+  margin-left: -22px;
+  left: 50%;
+  z-index: 200;
+}
+.case-studies-child.homes-heart .cs-design .banner-gray {
+  padding: 25px 0 60px;
 }

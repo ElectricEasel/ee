@@ -7,24 +7,24 @@
 
 		<div class="row-fluid">
 			<div class="span3 module">
-				<a href="<?=$params->get('facebook_link')?>" target="_blank"><img src="/templates/ee/images/case-studies/social/facebook.png" alt="Facebook" /></a>
-				<h5>Facebook</h5>
-				<p><?=$params->get('facebook_subtitle')?></p>
+				<a href="<?=$params->get('social1_link')?>" target="_blank"><img src="/templates/ee/images/case-studies/social/<?=$params->get('social1_image')?>" alt="<?=$params->get('social1_title')?>" /></a>
+				<h5><?=$params->get('social1_title')?></h5>
+				<p><?=$params->get('social1_subtitle')?></p>
 			</div>
 			<div class="span3 module">
-				<a href="<?=$params->get('pinterest_link')?>" target="_blank"><img src="/templates/ee/images/case-studies/social/pinterest.png" alt="Pinterest" /></a>
-				<h5>Pinterest</h5>
-				<p><?=$params->get('pinterest_subtitle')?></p>
+				<a href="<?=$params->get('social2_link')?>" target="_blank"><img src="/templates/ee/images/case-studies/social/<?=$params->get('social2_image')?>" alt="<?=$params->get('social2_title')?>" /></a>
+				<h5><?=$params->get('social2_title')?></h5>
+				<p><?=$params->get('social2_subtitle')?></p>
 			</div>
 			<div class="span3 module">
-				<a href="<?=$params->get('twitter_link')?>" target="_blank"><img src="/templates/ee/images/case-studies/social/twitter.png" alt="Twitter" /></a>
-				<h5>Twitter</h5>
-				<p><?=$params->get('twitter_subtitle')?></p>
+				<a href="<?=$params->get('social3_link')?>" target="_blank"><img src="/templates/ee/images/case-studies/social/<?=$params->get('social3_image')?>" alt="<?=$params->get('social3_title')?>" /></a>
+				<h5><?=$params->get('social3_title')?></h5>
+				<p><?=$params->get('social3_subtitle')?></p>
 			</div>
 			<div class="span3 module">
-				<a href="<?=$params->get('google_plus_link')?>" target="_blank"><img src="/templates/ee/images/case-studies/social/google_plus.png" alt="Google+" /></a>
-				<h5>Google+</h5>
-				<p><?=$params->get('google_plus_subtitle')?></p>
+				<a href="<?=$params->get('social4_link')?>" target="_blank"><img src="/templates/ee/images/case-studies/social/<?=$params->get('social4_image')?>" alt="<?=$params->get('social4_title')?>" /></a>
+				<h5><?=$params->get('social4_title')?></h5>
+				<p><?=$params->get('social4_subtitle')?></p>
 			</div>
 		</div>
 	</div>

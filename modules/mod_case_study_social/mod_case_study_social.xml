@@ -28,45 +28,93 @@
                     label="Subtitle"
                     description="Module Subtitle" />
                 <field
-                    name="facebook_link"
+                    name="social1_title"
                     type="text"
-                    label="Facebook Link"
-                    description="Link to Facebook Page" />
+                    label="Social 1 Site"
+                    description="Social 1 Site Title" />
                 <field
-                    name="facebook_subtitle"
-                    type="textarea"
-                    label="Facebook Subtitle"
-                    description="Facebook Subtitle" />
-                <field
-                    name="pinterest_link"
+                    name="social1_link"
                     type="text"
-                    label="Pinterest Link"
-                    description="Link to Pinterest Page" />
+                    label="Social 1 Link"
+                    description="Link to Social 1 Page" />
                 <field
-                    name="pinterest_subtitle"
+                    name="social1_image"
+                    type="imagelist"
+                    directory="/templates/ee/images/case-studies/social"
+                    hide_default="true"
+                    label="Social 1 Image"
+                    description="Social 1 Image" />
+                <field
+                    name="social1_subtitle"
                     type="textarea"
-                    label="Pinterest Subtitle"
-                    description="Pinterest Subtitle" />
+                    label="Social 1 Subtitle"
+                    description="Social 1 Subtitle" />
                 <field
-                    name="twitter_link"
+                    name="social2_title"
                     type="text"
-                    label="Twitter Link"
-                    description="Link to Twitter Page" />
+                    label="Social 2 Site"
+                    description="Social 2 Site Title" />
                 <field
-                    name="twitter_subtitle"
-                    type="textarea"
-                    label="Twitter Sibtitle"
-                    description="Twitter Subtitle" />
-                <field
-                    name="google_plus_link"
+                    name="social2_link"
                     type="text"
-                    label="Google+ Link"
-                    description="Link to Google+ Page" />
+                    label="Social 2 Link"
+                    description="Link to Social 2 Page" />
                 <field
-                    name="google_plus_subtitle"
+                    name="social2_image"
+                    type="imagelist"
+                    directory="/templates/ee/images/case-studies/social"
+                    hide_default="true"
+                    label="Social 2 Image"
+                    description="Social 2 Image" />
+                <field
+                    name="social2_subtitle"
                     type="textarea"
-                    label="Google+ Subtitle"
-                    description="Google+ Subtitle" />
+                    label="Social 2 Subtitle"
+                    description="Social 2 Subtitle" />
+                <field
+                    name="social3_title"
+                    type="text"
+                    label="Social 3 Site"
+                    description="Social 3 Site Title" />
+                <field
+                    name="social3_link"
+                    type="text"
+                    label="Social 3 Link"
+                    description="Link to Social 3 Page" />
+                <field
+                    name="social3_image"
+                    type="imagelist"
+                    directory="/templates/ee/images/case-studies/social"
+                    hide_default="true"
+                    label="Social 3 Image"
+                    description="Social 3 Image" />
+                <field
+                    name="social3_subtitle"
+                    type="textarea"
+                    label="Social 3 Subtitle"
+                    description="Social 3 Subtitle" />
+                <field
+                    name="social4_title"
+                    type="text"
+                    label="Social 4 Site"
+                    description="Social 4 Site Title" />
+                <field
+                    name="social4_link"
+                    type="text"
+                    label="Social 4 Link"
+                    description="Link to Social 4 Page" />
+                <field
+                    name="social4_image"
+                    type="imagelist"
+                    directory="/templates/ee/images/case-studies/social"
+                    hide_default="true"
+                    label="Social 4 Image"
+                    description="Social 4 Image" />
+                <field
+                    name="social4_subtitle"
+                    type="textarea"
+                    label="Social 4 Subtitle"
+                    description="Social 4 Subtitle" />
 
             </fieldset>
             <fieldset name="advanced">

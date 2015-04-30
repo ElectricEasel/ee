@@ -24,6 +24,7 @@
 
                     <option value="screens">Responsive</option>
                     <option value="catalog">Catalog</option>
+                    <option value="single">Single Image</option>
                 </field>
                 <field
                     name="phone"
@@ -47,7 +48,8 @@
                     directory="/templates/ee/images/case-studies/header"
                     hide_default="true"
                     label="Laptop Image"
-                    description="Laptop Image" />
+                    description="Laptop Image"
+                    showon="header_type:screens,catalog" />
                 <field
                     name="cover"
                     type="imagelist"
@@ -64,6 +66,14 @@
                     label="Catalog Spread Image"
                     description="Catalog Spread Image"
                     showon="header_type:catalog" />
+                <field
+                    name="single"
+                    type="imagelist"
+                    directory="/templates/ee/images/case-studies/header"
+                    hide_default="true"
+                    label="Single Image"
+                    description="Single Image"
+                    showon="header_type:single" />
 
             </fieldset>
             <fieldset name="advanced">
