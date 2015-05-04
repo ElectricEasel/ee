@@ -205,6 +205,7 @@
         var servicesCarousel = $('#servicesCarousel');
         servicesCarousel.owlCarousel({
             items: 4,
+            itemsTablet: [767,2],
             pagination: false,
             slideSpeed: 400,
             addClassActive: true

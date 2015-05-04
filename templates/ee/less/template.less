@@ -580,6 +580,17 @@ header {
       text-decoration: underline;
     }
   }
+  @media(max-width:@screen-sm-max) {
+    p {
+      clear: both;
+      text-align: center;
+    }
+    .social-icons-custom {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
 }
 #homeHeaderCarousel {
   height: 785px;
@@ -650,6 +661,32 @@ header {
         }
         h3 {
           max-width: 630px;
+        }
+      }
+    }
+  }
+  @media (max-width:@screen-sm-max) {
+    height: 625px;
+    .carousel-inner .item {
+      .slide {
+        h3 {
+          .subpixel;
+          font-size: 22px;
+        }
+      }
+      .tt {
+        padding-top: 156px;
+      }
+      .posrg {
+        padding-top: 166px
+      }
+      .echo {
+        padding-top: 166px;
+      }
+      .al {
+        padding-top: 102px;
+        img {
+          margin: 0 0 -75px;
         }
       }
     }
@@ -765,6 +802,21 @@ header {
         max-width: 154px;
       }
     }
+    @media (max-width:@screen-sm-max) and (min-width:505px) {
+      h5 {
+        height: 90px;
+      }
+    }
+    @media (max-width:620px) and (min-width:@screen-sm-min) {
+      h4 {
+        height: 60px;
+      }
+    }
+    @media (max-width:504px) and (min-width:@screen-sm-min) {
+      h5 {
+        height: 120px;
+      }
+    }
   }
   .prev, .next {
     color: @white;
@@ -835,9 +887,6 @@ header {
           }
           &.arrow:before {
             opacity: 1;
-          }
-          @media (max-width:@screen-sm-max) {
-            height: 261px;
           }
         }
       }
@@ -1132,7 +1181,6 @@ header {
   background: @gray;
   text-align: center;
   padding: 50px 0 20px;
-  .hanging-arrow(@gray;@longArrowWidth;@longArrowHeight;50%);
 
   h4 {
     margin-bottom: 50px;
@@ -1148,6 +1196,9 @@ header {
         width: 25%;
       }
     }
+  }
+  @media (min-width:@screen-md-min) {
+    .hanging-arrow(@gray;@longArrowWidth;@longArrowHeight;50%);
   }
   @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
     img {
@@ -1167,20 +1218,37 @@ header {
 .custom.testimonials {
   background: url(/templates/ee/images/gray-gradient-bg.jpg) top left no-repeat @grayGradientBackup;
   background-size: cover;
-  padding: 80px 0 50px;
+  padding: 60px 0 50px;
   text-align: center;
+  position: relative;
 
+  .item {
+    padding-top: 156px;
+  }
   h3 {
     font-size: 19px;
     line-height: 34px;
     margin-bottom: 15px;
-    height: 136px;
-    overflow: hidden;
+    position: absolute;
+    bottom: 123px;
+    width: 100%;
+
+    &.small {
+      font-size: 15px;
+    }
   }
   h6 {
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
+  }
+  @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
+    .item {
+      padding-top: 209px;
+    }
+  }
+  @media (max-width:@screen-sm-max) {
+    display: none;
   }
 }
 .team {
@@ -1341,6 +1409,10 @@ header {
   @media (min-width:@screen-lg-min) {
     padding-right: 75px;
   }
+  @media (min-width:@screen-md-min) and (max-width:@screen-md-max) {
+    padding-right: 30px;
+    padding-bottom: 120px;
+  }
   @media (max-width:@screen-sm-max) {
     padding-bottom: 0px;
   }
@@ -1373,15 +1445,34 @@ header {
         .antialiased;
       }
     }
-    .social-icons-custom {
-      li {
-        margin: 0 0 0 22px;
+    .social-icons-custom li {
+      margin: 0 11px;
+    }
+    @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
+      p {
+        font-size: 16px;
+      }
+      .social-icons-custom li {
+        margin: 0 4px;
+      }
+    }
+  }
+  @media (max-width:@screen-sm-max) {
+    padding: 30px 0;
+
+    .module {
+      margin-bottom: 30px;
+
+      .social-icons-custom {
+        display: none;
       }
     }
   }
 }
 .contact .header + .container {
-  .hanging-arrow(@white;@longArrowWidth;@longArrowHeight;50%);
+  @media (min-width:@screen-md-min) {
+    .hanging-arrow(@white; @longArrowWidth; @longArrowHeight; 50%);
+  }
 }
 .case-studies-content {
   .hanging-arrow(@white;@longArrowWidth;@longArrowHeight;50%);
@@ -1402,6 +1493,16 @@ header {
       }
       h4 {
         font-size: 16px;
+      }
+    }
+    @media (min-width:@screen-lg-min) {
+      p {
+        height: 84px;
+      }
+    }
+    @media (min-width:@screen-md-min) and (max-width:@screen-md-max) {
+      p {
+        height: 140px;
       }
     }
     @media (min-width:@screen-md-min) {
