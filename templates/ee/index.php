@@ -95,7 +95,7 @@ else
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<jdoc:include type="head" />
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700|Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700%7COleo+Script:400,700' rel='stylesheet' type='text/css'>
 	<?php
 	// Use of Google Font
 	if ($this->params->get('googleFont'))
@@ -214,20 +214,21 @@ $parent_class = ($parent_class_title == '') ? '' : ' ' . $parent_class_title;
 		</div>
         <jdoc:include type="modules" name="below-content" style="none" />
 	<!-- Footer -->
-	<footer class="footer" role="contentinfo">
-		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
-            <ul class="pull-left social-icons-custom">
-	            <li><a class="facebook" target="_blank" href="https://www.facebook.com/ElectricEasel"></a></li>
-	            <li><a class="twitter" target="_blank" href="https://twitter.com/electriceasel1"></a></li>
-	            <li><a class="google_plus" target="_blank" href="https://plus.google.com/113840527065273591351"></a></li>
-	            <li><a class="linkedin" target="_blank" href="https://www.linkedin.com/company/electric-easel"></a></li>
-            </ul>
-			<jdoc:include type="modules" name="footer" style="none" />
-			<p>
-				&copy; <?php echo date('Y'); ?> Electric Easel, Inc. All rights reserved. <span class="divider">|</span> <a href="/privacy-policy">Privacy Policy</a>
-			</p>
-		</div>
-	</footer>
+		<footer class="footer" role="contentinfo">
+			<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
+	            <ul class="pull-left social-icons-custom">
+		            <li><a class="facebook" target="_blank" href="https://www.facebook.com/ElectricEasel"></a></li>
+		            <li><a class="twitter" target="_blank" href="https://twitter.com/electriceasel1"></a></li>
+		            <li><a class="google_plus" target="_blank" href="https://plus.google.com/113840527065273591351"></a></li>
+		            <li><a class="linkedin" target="_blank" href="https://www.linkedin.com/company/electric-easel"></a></li>
+	            </ul>
+				<jdoc:include type="modules" name="footer" style="none" />
+				<p>
+					&copy; <?php echo date('Y'); ?> Electric Easel, Inc. All rights reserved. <span class="divider">|</span> <a href="/privacy-policy">Privacy Policy</a>
+				</p>
+			</div>
+		</footer>
+	</div>
 	<jdoc:include type="modules" name="debug" style="none" />
 
     <script src="/templates/ee/vendor/jquery.js"></script>
