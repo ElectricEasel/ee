@@ -227,7 +227,6 @@ $parent_class = ($parent_class_title == '') ? '' : ' ' . $parent_class_title;
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700%7COleo+Script:400,700' rel='stylesheet' type='text/css'>
 
-    <script src="/templates/ee/vendor/jquery.min.js"></script>
     <script src="/templates/ee/js/plugins.min.js"></script>
 
     <script src="/templates/ee/vendor/bootstrap.min.js"></script>
