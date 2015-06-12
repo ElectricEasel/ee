@@ -43,15 +43,17 @@ else
 
 <?php
 
-$doc->addScript('templates/' .$this->template. '/vendor/modernizr.js');
+$doc->addScript('templates/' .$this->template. '/vendor/modernizr.min.js');
 
 // Add Stylesheets
-$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css')
+// The commented out styles below are all added to combined.min.css
+/*$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css')
     ->addStyleSheet('templates/'.$this->template.'/css/theme.css')
     ->addStyleSheet('templates/'.$this->template.'/vendor/owl-carousel/owl.carousel.css')
     ->addStyleSheet('templates/'.$this->template.'/vendor/owl-carousel/owl.theme.css')
     ->addStyleSheet('templates/'.$this->template.'/vendor/owl-carousel/owl.transitions.css')
-    ->addStyleSheet('templates/'.$this->template.'/css/theme-responsive.css')
+    ->addStyleSheet('templates/'.$this->template.'/css/theme-responsive.css');*/
+$doc->addStyleSheet('templates/'.$this->template.'/css/combined.min.css')
     ->addStyleSheet('templates/'.$this->template.'/css/template.css');
 
 // Load optional RTL Bootstrap CSS
@@ -95,15 +97,7 @@ else
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<jdoc:include type="head" />
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700%7COleo+Script:400,700' rel='stylesheet' type='text/css'>
 	<?php
-	// Use of Google Font
-	if ($this->params->get('googleFont'))
-	{
-	?>
-		<link href='//fonts.googleapis.com/css?family=<?php echo $this->params->get('googleFontName');?>' rel='stylesheet' type='text/css' />
-	<?php
-	}
 	// Template color
 	if ($this->params->get('templateColor'))
 	{
@@ -231,16 +225,18 @@ $parent_class = ($parent_class_title == '') ? '' : ' ' . $parent_class_title;
 	</div>
 	<jdoc:include type="modules" name="debug" style="none" />
 
-    <script src="/templates/ee/vendor/jquery.js"></script>
-    <script src="/templates/ee/js/plugins.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700%7COleo+Script:400,700' rel='stylesheet' type='text/css'>
 
-    <script src="/templates/ee/vendor/bootstrap.js"></script>
-    <script src="/templates/ee/vendor/owl-carousel/owl.carousel.js"></script>
+    <script src="/templates/ee/vendor/jquery.min.js"></script>
+    <script src="/templates/ee/js/plugins.min.js"></script>
+
+    <script src="/templates/ee/vendor/bootstrap.min.js"></script>
+    <script src="/templates/ee/vendor/owl-carousel/owl.carousel.min.js"></script>
 
     <script src="/templates/ee/js/template.js"></script>
 
     <!-- Theme Initializer -->
-    <script src="/templates/ee/js/theme.js"></script>
+    <script src="/templates/ee/js/theme.min.js"></script>
 
     <?php if ($menu->getActive() == $menu->getDefault()) : ?>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
