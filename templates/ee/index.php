@@ -213,7 +213,7 @@ $parent_class = ($parent_class_title == '') ? '' : ' ' . $parent_class_title;
 	            <ul class="pull-left social-icons-custom">
 		            <li><a class="facebook" target="_blank" href="https://www.facebook.com/ElectricEasel"></a></li>
 		            <li><a class="twitter" target="_blank" href="https://twitter.com/electriceasel1"></a></li>
-		            <li><a class="google_plus" target="_blank" href="https://plus.google.com/113840527065273591351"></a></li>
+		            <li><a class="google_plus" target="_blank" href="https://plus.google.com/113840527065273591351" rel="publisher"></a></li>
 		            <li><a class="linkedin" target="_blank" href="https://www.linkedin.com/company/electric-easel"></a></li>
 	            </ul>
 				<jdoc:include type="modules" name="footer" style="none" />
