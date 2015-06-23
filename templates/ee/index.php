@@ -43,18 +43,18 @@ else
 
 <?php
 
-$doc->addScript('templates/' .$this->template. '/vendor/modernizr.min.js');
+$doc->addScript('/templates/' .$this->template. '/vendor/modernizr.min.js');
 
 // Add Stylesheets
 // The commented out styles below are all added to combined.min.css
-/*$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css')
-    ->addStyleSheet('templates/'.$this->template.'/css/theme.css')
-    ->addStyleSheet('templates/'.$this->template.'/vendor/owl-carousel/owl.carousel.css')
-    ->addStyleSheet('templates/'.$this->template.'/vendor/owl-carousel/owl.theme.css')
-    ->addStyleSheet('templates/'.$this->template.'/vendor/owl-carousel/owl.transitions.css')
-    ->addStyleSheet('templates/'.$this->template.'/css/theme-responsive.css');*/
-$doc->addStyleSheet('templates/'.$this->template.'/css/combined.min.css')
-    ->addStyleSheet('templates/'.$this->template.'/css/template.css');
+/*$doc->addStyleSheet('/templates/'.$this->template.'/css/bootstrap.css')
+    ->addStyleSheet('/templates/'.$this->template.'/css/theme.css')
+    ->addStyleSheet('/templates/'.$this->template.'/vendor/owl-carousel/owl.carousel.css')
+    ->addStyleSheet('/templates/'.$this->template.'/vendor/owl-carousel/owl.theme.css')
+    ->addStyleSheet('/templates/'.$this->template.'/vendor/owl-carousel/owl.transitions.css')
+    ->addStyleSheet('/templates/'.$this->template.'/css/theme-responsive.css');*/
+$doc->addStyleSheet('/templates/'.$this->template.'/css/combined.min.css')
+    ->addStyleSheet('/templates/'.$this->template.'/css/template.css');
 
 // Load optional RTL Bootstrap CSS
 JHtml::_('bootstrap.loadCss', false, $this->direction);
@@ -123,10 +123,10 @@ else
 	}
 	?>
     <!--[if IE]>
-        <link rel="stylesheet" href="templates/<?php echo $this->template ?>/css/ie.css">
+        <link rel="stylesheet" href="/templates/<?php echo $this->template ?>/css/ie.css">
     <![endif]-->
     <!--[if lte IE 8]>
-        <script src="templates/<?php echo $this->template ?>/vendor/respond.js"></script>
+        <script src="/templates/<?php echo $this->template ?>/vendor/respond.js"></script>
     <![endif]-->
 	<!--[if lt IE 9]>
 		<script src="<?php echo $this->baseurl ?>/media/jui/js/html5.js"></script>
