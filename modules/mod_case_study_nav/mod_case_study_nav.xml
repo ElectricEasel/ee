@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4.1" client="site" method="upgrade">
+    <name>Case Study Nav</name>
+    <author>Ricky Goldman</author>
+    <creationDate>June 2015</creationDate>
+    <copyright>Copyright (C) 2015 Electric Easel, Inc. All rights reserved.</copyright>
+    <version>1.0.0</version>
+    <description>Display navigation links for case studies.</description>
+    <files>
+        <filename>mod_case_study_nav.xml</filename>
+        <filename module="Case Study Social">mod_case_study_nav.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="nav" label="Nav Params">
+                <field
+                    name="next_title"
+                    type="text"
+                    label="Up Next Title"
+                    description="Up Next Title" />
+                <field
+                    name="next_link"
+                    type="text"
+                    label="Up Next Link"
+                    description="Up Next Link" />
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

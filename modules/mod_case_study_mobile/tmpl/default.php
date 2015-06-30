@@ -10,10 +10,10 @@
 				<img src="/templates/ee/images/case-studies/mobile-module/<?=$params->get('mobile1')?>" alt="" />
 			</div>
 			<div class="span4 module">
-				<img src="/templates/ee/images/case-studies/mobile-module/<?=$params->get('mobile1')?>" alt="" />
+				<img src="/templates/ee/images/case-studies/mobile-module/<?=$params->get('mobile2')?>" alt="" />
 			</div>
 			<div class="span4 module">
-				<img src="/templates/ee/images/case-studies/mobile-module/<?=$params->get('mobile1')?>" alt="" />
+				<img src="/templates/ee/images/case-studies/mobile-module/<?=$params->get('mobile3')?>" alt="" />
 			</div>
 		</div>
 	</div>

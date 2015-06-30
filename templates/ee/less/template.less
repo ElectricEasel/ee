@@ -202,6 +202,11 @@
       background-position: 0 -145px;
     }
   }
+  @media (max-width:@screen-mb-max) {
+    li {
+      margin: 0 10px;
+    }
+  }
 }
 .social-icons-custom.social-icons-blue {
   li {
@@ -410,6 +415,14 @@ header {
     .brand {
       position: relative;
       z-index: 999;
+      display: inline-block;
+
+      img {
+        max-width: 100%;
+      }
+      @media (max-width:430px) {
+        padding-left: 50px;
+      }
     }
     .nav-main-collapse {
       padding: 0;
@@ -1878,6 +1891,114 @@ header {
     }
   }
 }
+.cs-nav {
+  background: #e0e3e9;
+  text-align: center;
+  padding: 50px 0;
+  a {
+    display: inline-block;
+    h5 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    h4 {
+      font-size: 53px;
+      line-height: 1em;
+      display: inline-block;
+      font-weight: 400;
+      vertical-align: middle;
+      margin: 0;
+    }
+    .grid-btn {
+      display: inline-block;
+      overflow: hidden;
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+
+      .grid-square {
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        float: left;
+        margin: 0 3px 3px 0;
+        background: #73879d;
+        border-radius: 1px;
+        -webkit-transition: 150ms linear;
+        -moz-transition: 150ms linear;
+        -o-transition: 150ms linear;
+        -ms-transition: 150ms linear;
+        transition: 150ms linear;
+      }
+    }
+    .arrow {
+      display: inline-block;
+      width: 29px;
+      height: 38px;
+      vertical-align: middle;
+      margin-left: 8px;
+      background: url(/templates/ee/images/up-next-gray.png) 0 0 no-repeat;
+      -webkit-transition: 150ms linear;
+      -moz-transition: 150ms linear;
+      -o-transition: 150ms linear;
+      -ms-transition: 150ms linear;
+      transition: 150ms linear;
+    }
+  }
+  a:hover, a:focus {
+    text-decoration: none;
+
+    .grid-btn {
+      .grid-square {
+        background: @blue;
+        -webkit-transition: 150ms linear;
+        -moz-transition: 150ms linear;
+        -o-transition: 150ms linear;
+        -ms-transition: 150ms linear;
+        transition: 150ms linear;
+      }
+    }
+    .arrow {
+      display: inline-block;
+      width: 29px;
+      height: 38px;
+      background: url(/templates/ee/images/up-next-blue.png) 0 0 no-repeat;
+      -webkit-transition: 150ms linear;
+      -moz-transition: 150ms linear;
+      -o-transition: 150ms linear;
+      -ms-transition: 150ms linear;
+      transition: 150ms linear;
+    }
+  }
+  @media (min-width:@screen-md-min) {
+    .view-all {
+      text-align: left;
+      line-height: 53px;
+    }
+    .up-next {
+      text-align: right;
+      line-height: 53px;
+    }
+  }
+  @media (max-width:@screen-sm-max) {
+    .view-all {
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width:@screen-mb-max) {
+    a {
+      h5 {
+        font-size: 14px;
+      }
+      h4 {
+        font-size: 42px;
+      }
+    }
+  }
+}
 .case-studies-child.angel-adoption {
   .cs-boxes {
     .logo-boxes {
@@ -1901,27 +2022,49 @@ header {
     }
     .picture-boxes {
       .half.left {
-        background: #a4a5a0;
+        background: url(/templates/ee/images/case-studies/misc-inner/angel-packets.jpg) right top no-repeat #a09f9c;
+        height: 0;
+        padding-top: 548px;
 
         .stripes {
           height: 88px;
           background: url(/templates/ee/images/case-studies/misc-inner/angel-bg-stripes.jpg) right 0 repeat-x transparent;
           background-size: contain;
+        }
+        @media (max-width:@screen-lg-max) {
+          padding-top: 45.7%;
+          background-size: cover;
 
-          @media (max-width:@screen-lg-max) {
+          .stripes {
             height: 0;
-            padding-top: 14.7%;
-            background-size: cover;
+            padding-top: 15%;
+            background-size: contain;
           }
         }
       }
       .half.right {
-        background: #d5d5d6;
+        background: url(/templates/ee/images/case-studies/misc-inner/angel-packet.jpg) left top no-repeat #bdbebe;
+        height: 0;
+        padding-top: 636px;
+
+        @media (max-width:@screen-lg-max) {
+          padding-top: 53%;
+          background-size: cover;
+        }
       }
     }
   }
   .cs-design {
     padding-top: 17px;
+  }
+  .cs-nav {
+    @media (max-width:@screen-mb-max) {
+      a {
+        h4 {
+          font-size: 42px;
+        }
+      }
+    }
   }
 }
 .case-studies-child.aerex {
@@ -1955,6 +2098,29 @@ header {
     @media (max-width:@screen-sm-max) {
       .bug {
         display: none;
+      }
+    }
+  }
+  .cs-nav {
+    @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
+      a {
+        h4 {
+          font-size: 38px;
+        }
+      }
+    }
+    @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
+      a {
+        h4 {
+          font-size: 40px;
+        }
+      }
+    }
+    @media (max-width:@screen-mb-max) {
+      a {
+        h4 {
+          font-size: 17px;
+        }
       }
     }
   }
@@ -2011,16 +2177,60 @@ header {
       }
     }
   }
+  .cs-nav {
+    @media (max-width:@screen-mb-max) {
+      a {
+        h4 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
 }
 .case-studies-child.echo {
   .cs-design {
     padding-bottom: 0;
+  }
+  .cs-nav {
+    @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
+      h4 {
+        font-size: 45px;
+      }
+    }
+    @media (max-width:@screen-mb-max) {
+      h4 {
+        font-size: 22px;
+      }
+    }
   }
 }
 .case-studies-child.equity-lifestyle {
   .cs-design {
     .custom.banner-white {
       padding-bottom: 90px;
+    }
+  }
+  .cs-nav {
+    @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
+      a {
+        h4 {
+          font-size: 38px;
+        }
+      }
+    }
+    @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
+      a {
+        h4 {
+          font-size: 42px;
+        }
+      }
+    }
+    @media (max-width:@screen-mb-max) {
+      a {
+        h4 {
+          font-size: 18px;
+        }
+      }
     }
   }
 }
@@ -2046,7 +2256,14 @@ header {
       }
     }
     .picture-boxes {
-      background: #c8c8c8;
+      background: url(/templates/ee/images/case-studies/misc-inner/gazebos-print.jpg) center top no-repeat #c8c8c9;
+      height: 0;
+      padding-top: 608px;
+      clear: both;
+      @media (max-width:@screen-lg-max) {
+        padding-top: 50.7%;
+        background-size: cover;
+      }
       @media (min-width:@screen-lg-min) {
         .container {
           width: 100%;
@@ -2081,6 +2298,29 @@ header {
       }
     }
   }
+  .cs-nav {
+    @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
+      a {
+        h4 {
+          font-size: 38px;
+        }
+      }
+    }
+    @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
+      a {
+        h4 {
+          font-size: 44px;
+        }
+      }
+    }
+    @media (max-width:@screen-mb-max) {
+      a {
+        h4 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
 .case-studies-child.lifelong-adoptions {
   .cs-boxes {
@@ -2104,14 +2344,20 @@ header {
     }
     .picture-boxes {
       .half.left {
-        background: #787d80;
+        background: url(/templates/ee/images/case-studies/misc-inner/lifelong-brochure.jpg) right top no-repeat #6e7376;
+        height: 0;
+        padding-top: 480px;
 
         .stripes {
           height: 148px;
           background: url(/templates/ee/images/case-studies/misc-inner/lifelong-bg-stripes.jpg) right 0 repeat-x transparent;
           background-size: contain;
+        }
+        @media (max-width:@screen-lg-max) {
+          padding-top: 40%;
+          background-size: cover;
 
-          @media (max-width:@screen-lg-max) {
+          .stripes {
             height: 0;
             padding-top: 24.8%;
             background-size: cover;
@@ -2119,7 +2365,14 @@ header {
         }
       }
       .half.right {
-        background: #9f9e9c;
+        background: url(/templates/ee/images/case-studies/misc-inner/lifelong-packets.jpg) left top no-repeat #a7a7a3;
+        height: 0;
+        padding-top: 628px;
+
+        @media (max-width:@screen-lg-max) {
+          padding-top: 52.4%;
+          background-size: cover;
+        }
       }
     }
   }
@@ -2138,6 +2391,39 @@ header {
       .container {
         width: 100%;
         max-width: 100%;
+      }
+    }
+  }
+  .cs-nav {
+    @media (min-width:@screen-lg-min) {
+      a {
+        h4 {
+          font-size: 45px;
+        }
+      }
+    }
+    @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
+      a {
+        h4 {
+          font-size: 28px;
+        }
+      }
+    }
+    @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
+      a {
+        h4 {
+          font-size: 33px;
+        }
+      }
+    }
+    @media (max-width:@screen-mb-max) {
+      .up-next a h5 {
+        display: block;
+      }
+      a {
+        h4 {
+          font-size: 21px;
+        }
       }
     }
   }
@@ -2164,18 +2450,31 @@ header {
     }
     .picture-boxes {
       .half.left {
-        background: #d9d9d9;
+        background: url(/templates/ee/images/case-studies/misc-inner/posrg-shirt.jpg) right top no-repeat #d9d9d9;
+        height: 0;
+        padding-top: 471px;
+
+        @media (max-width:@screen-lg-max) {
+          padding-top: 39.3%;
+          background-size: cover;
+        }
       }
       .half.right {
-        background: #808080;
+        background: url(/templates/ee/images/case-studies/misc-inner/posrg-cards.jpg) left top no-repeat #7d7d7d;
+        height: 0;
+        padding-top: 449px;
 
         .stripe {
           height: 22px;
           background: @posrgBlue;
+        }
+        @media (max-width:@screen-lg-max) {
+          padding-top: 37.9%;
+          background-size: cover;
 
-          @media (max-width:@screen-lg-max) {
+          .stripe {
             height: 0;
-            padding-top: 3.7%;
+            padding-top: 2.8%;
           }
         }
       }
@@ -2187,10 +2486,34 @@ header {
     .custom.banner-white {
       padding-bottom: 45px;
     }
-    @media (min-width:@screen-lg-min) {
-      .container {
-        width: 100%;
-        max-width: 100%;
+    .design-img {
+      overflow:hidden;
+
+      img {
+        margin-right: -280px;
+      }
+    }
+    @media (max-width:@screen-lg-max) {
+      .design-img {
+        img {
+          margin-right: -23.3%;
+        }
+      }
+    }
+  }
+  .cs-nav {
+    @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
+      a {
+        h4 {
+          font-size: 44px;
+        }
+      }
+    }
+    @media (max-width:@screen-mb-max) {
+      a {
+        h4 {
+          font-size: 21px;
+        }
       }
     }
   }
@@ -2200,16 +2523,27 @@ header {
     .custom.banner-white {
       padding-bottom: 20px;
     }
-    img {
-      margin-right: -13%;
-    }
-    @media(min-width:@screen-lg-min) {
-      .container {
-        width: 100%;
-        max-width: 100%;
-      }
+    .design-img {
+      overflow: hidden;
+
       img {
-        margin-right: -146px;
+        margin-right: -285px;
+      }
+    }
+    @media (max-width:@screen-lg-max) {
+      .design-img {
+        img {
+          margin-right: -23.8%;
+        }
+      }
+    }
+  }
+  .cs-nav {
+    @media (max-width:@screen-mb-max) {
+      a {
+        h4 {
+          font-size: 38px;
+        }
       }
     }
   }
@@ -2218,6 +2552,41 @@ header {
   .cs-design {
     padding-bottom: 25px;
     .hanging-arrow(@white;@longArrowWidth;@longArrowHeight;50%);
+  }
+  .cs-nav {
+    @media (min-width:@screen-lg-min) {
+      a {
+        h4 {
+          font-size: 38px;
+        }
+      }
+    }
+    @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
+      a {
+        h4 {
+          font-size: 25px;
+        }
+      }
+    }
+    @media (max-width:@screen-sm-max) {
+      .up-next a h5 {
+        display: block;
+      }
+    }
+    @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
+      a {
+        h4 {
+          font-size: 30px;
+        }
+      }
+    }
+    @media (max-width:@screen-mb-max) {
+      a {
+        h4 {
+          font-size: 17px;
+        }
+      }
+    }
   }
 }
 .case-studies-child.thousand-trails {
@@ -2231,6 +2600,39 @@ header {
       .container {
         width: 100%;
         max-width: 100%;
+      }
+    }
+  }
+  .cs-nav {
+    @media (min-width:@screen-lg-min) {
+      a {
+        h4 {
+          font-size: 48px;
+        }
+      }
+    }
+    @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
+      a {
+        h4 {
+          font-size: 30px;
+        }
+      }
+    }
+    @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
+      a {
+        h4 {
+          font-size: 35px;
+        }
+      }
+    }
+    @media (max-width:@screen-mb-max) {
+      .up-next a h5 {
+        display: block;
+      }
+      a {
+        h4 {
+          font-size: 22px;
+        }
       }
     }
   }
@@ -2265,7 +2667,15 @@ header {
       }
     }
     .picture-boxes {
-      background: #cbcccd;
+      background: url(/templates/ee/images/case-studies/misc-inner/homesheart-print.jpg) center top no-repeat #c1c1c2;
+      height: 0;
+      padding-top: 609px;
+      clear: both;
+
+      @media (max-width:@screen-lg-max) {
+        padding-top: 50.7%;
+        background-size: cover;
+      }
       @media (min-width:@screen-lg-min) {
         .container {
           width: 100%;
@@ -2281,6 +2691,39 @@ header {
 
     .banner-gray {
       padding: 25px 0 60px;
+    }
+  }
+  .cs-nav {
+    @media (min-width:@screen-lg-min) {
+      a {
+        h4 {
+          font-size: 48px;
+        }
+      }
+    }
+    @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
+      a {
+        h4 {
+          font-size: 30px;
+        }
+      }
+    }
+    @media (max-width:@screen-sm-max) and (min-width:@screen-sm-min) {
+      a {
+        h4 {
+          font-size: 34px;
+        }
+      }
+    }
+    @media (max-width:@screen-mb-max) {
+      .up-next a h5 {
+        display: block;
+      }
+      a {
+        h4 {
+          font-size: 20px;
+        }
+      }
     }
   }
 }
