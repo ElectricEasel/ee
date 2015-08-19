@@ -249,6 +249,26 @@
             $('.body').toggleClass('expanded');
             $('.menu-overlay').toggleClass('expanded');
         }
+
+        var darkenHeader = false;
+        $(window).scroll(function(){
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > 88) {
+                if (darkenHeader === true) {
+                    return;
+                } else {
+                    darkenHeader = true;
+                    $('.header-inner').css('background-color','rgba(0,0,30,0.6)');
+                }
+            } else {
+                if (darkenHeader === false) {
+                    return;
+                } else {
+                    darkenHeader = false;
+                    $('.header-inner').css('background-color','rgba(0,0,30,0.2)');
+                }
+            }
+        });
 	})
 
 })(jQuery);
