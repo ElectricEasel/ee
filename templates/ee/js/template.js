@@ -218,25 +218,6 @@
             servicesCarousel.trigger('owl.prev');
         });
 
-        $('.expanded').addClass('toggleable');
-        $('.toggleable').show();
-        toggleExpandedServices($('.owl-item .item:first'));
-
-        $('.owl-item .item').click(function(){
-            toggleExpandedServices($(this));
-        });
-
-        function toggleExpandedServices(activeSlide) {
-            $('.owl-item .item').removeClass('arrow');
-            activeSlide.addClass('arrow');
-            var activeTag = activeSlide.attr('data-selector');
-            var jQueryTag = "div[data-select='" + activeTag + "']";
-            var activeItem = $(jQueryTag);
-
-            $('.toggleable').removeClass('visible');
-            activeItem.addClass('visible');
-        }
-
         $('.nav-toggle').click(function(){
             toggleExpandedMenu();
         });

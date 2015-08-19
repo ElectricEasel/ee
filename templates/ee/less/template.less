@@ -917,42 +917,15 @@ header {
       z-index: 200;
 
       .owl-item {
-        padding-bottom: 75px;
+        padding-bottom: 50px;
 
         .item {
           position: relative;
           text-align: center;
           cursor: pointer;
-          &:before {
-            content: "";
-            height: 0;
-            width: 0;
-            position: absolute;
-            border: 22px solid transparent;
-            border-top-color: @grayLight;
-            bottom: -98px;
-            margin-left: -1 * 22px;
-            left: 50%;
-            z-index: 200;
-            opacity: 0;
-            -webkit-transition: opacity 350ms linear;
-            -moz-transition: opacity 350ms linear;
-            -o-transition: opacity 350ms linear;
-            -ms-transition: opacity 350ms linear;
-            transition: opacity 350ms linear;
-          }
-          &.arrow:before {
-            opacity: 1;
-          }
         }
       }
     }
-  }
-  .bottom-stripe {
-    background: @white;
-    height: 22px;
-    position: relative;
-    top: -22px;
   }
 }
 .custom.home-split {
@@ -1123,87 +1096,73 @@ header {
   }
 }
 .custom.expanded-services {
-  position: relative;
   top: -22px;
   background: @white;
-  height: 433px;
-  overflow: hidden;
-  padding-top: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
-  .container {
-    position: relative;
-  }
   .expanded {
     overflow: hidden;
-    img {
+    padding-top: 25px;
+    margin-top: 25px;
+    border-top: 2px solid @grayLight;
+
+    .img-wrap {
       float: right;
+      width: 46%;
+      text-align: center;
     }
     .expanded-content {
-      max-width: 54%;
+      width: 54%;
+      margin-left: 0;
+      margin-right: auto;
     }
-  }
-  .programming {
-    padding-top: 29px;
-    .expanded-content {
-      margin-top: 30px;
+    &:first-child {
+      padding-top: 0;
+      margin-top: 0;
+      border-top: 0;
     }
-  }
-  .design {
-    padding-top: 64px;
-    .expanded-content {
-      margin-top: -5px;
-    }
-    @media (max-width:@screen-sm-max) {
-      img {
-        margin-bottom: 30px;
+    &:nth-child(even) {
+      .img-wrap {
+        float: left;
+      }
+      .expanded-content {
+        margin-left: auto;
+        margin-right: 0;
       }
     }
   }
-  .sem {
-    padding-top: 48px;
-    img {
-      margin-right: 80px;
+  @media (min-width:@screen-lg-min) {
+    .programming {
+      .expanded-content {
+        margin-top: 30px;
+      }
     }
-    .expanded-content {
-      margin-top: 11px;
+    .design {
+      .expanded-content {
+        margin-top: -5px;
+      }
     }
-  }
-  .social {
-    padding-top: 44px;
-    .expanded-content {
-      margin-top: 15px;
+    .sem {
+      .expanded-content {
+        margin-top: 11px;
+      }
     }
-  }
-  .content {
-    padding-top: 0;
-    .expanded-content {
-      margin-top: 59px;
+    .social {
+      .expanded-content {
+        margin-top: 15px;
+      }
     }
-  }
-  .consulting {
-    padding-top: 18px;
-    img {
-      margin-right: 64px;
+    .content {
+      .expanded-content {
+        margin-top: 59px;
+      }
     }
-    .expanded-content {
-      margin-top: 41px;
-      max-width: 52%;
-    }
-  }
-  .toggleable {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    -webkit-transition: opacity 350ms linear;
-    -moz-transition: opacity 350ms linear;
-    -o-transition: opacity 350ms linear;
-    -ms-transition: opacity 350ms linear;
-    transition: opacity 350ms linear;
-
-    &.visible {
-      opacity: 1;
+    .consulting {
+      .expanded-content {
+        margin-top: 41px;
+        max-width: 52%;
+      }
     }
   }
   @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
@@ -1216,19 +1175,20 @@ header {
   @media (max-width:@screen-sm-max) {
     padding-left: 20px;
     padding-right: 20px;
-    height: 700px;
 
     .expanded {
-      img {
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+      .img-wrap {
+        margin: 15px;
       }
       .expanded-content {
         float: none;
         width: 100%;
         max-width: 100%;
+      }
+    }
+    .design {
+      img {
+        margin-bottom: 30px;
       }
     }
   }
