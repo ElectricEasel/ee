@@ -405,7 +405,7 @@ header {
   background-size: auto, cover;
   padding: 88px 0 0;
   position: relative;
-  z-index: 15;
+  z-index: 9999;
 
   .header-inner {
     padding: 22px 0;
@@ -415,13 +415,24 @@ header {
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 30, 0.2);
-    -webkit-transition: background-color 0.75s ease-in-out;
-    -moz-transition: background-color 0.75s ease-in-out;
-    -o-transition: background-color 0.75s ease-in-out;
-    transition: background-color 0.75s ease-in-out;
+    -webkit-transition: all 0.75s ease-in-out;
+    -moz-transition: all 0.75s ease-in-out;
+    -o-transition: all 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
 
     &.darker {
       background-color: rgba(0, 0, 30, 0.85);
+      padding: 12px 0;
+      height: 65px;
+
+      .brand {
+        img.thick {
+          opacity: 0;
+        }
+        img.thin {
+          opacity: 1;
+        }
+      }
     }
     .brand {
       position: relative;
@@ -431,6 +442,24 @@ header {
       img {
         max-width: 100%;
         width: 230px;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        -ms-transition: opacity 1s ease-in-out;    
+        transition: opacity 1s ease-in-out;
+
+        &.thick {
+          position: relative;
+          z-index: 20;
+          opacity: 1;
+        }
+        &.thin {
+          position: absolute;
+          z-index: 10;
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
       }
       @media (max-width:430px) {
         padding-left: 50px;

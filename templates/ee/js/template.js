@@ -251,6 +251,8 @@
         }
 
         var stickyHeader = $('.header-inner');
+        var thickImage = $('.brand .thick');
+        var thinImage = $('.brand .thin');
         $(window).scroll(function(){
             var scrollTop = $(window).scrollTop();
             if (scrollTop > 88) {
