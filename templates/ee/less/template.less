@@ -1100,6 +1100,12 @@ header {
     margin-left: auto;
     margin-right: auto;
   }
+  .btn-blue {
+    &:hover {
+      color: @white;
+      background: darken(@blue,15%);
+    }
+  }
 }
 .case-studies-child .custom.banner-blue {
   padding-top: 65px;
@@ -1676,7 +1682,12 @@ header {
   }
 }
 .cs-action {
-  .hanging-arrow(@grayLight;@arrowHeight;@arrowWidth;50%);
+  .banner-gray {
+    .hanging-arrow(@grayLight;@arrowHeight;@arrowWidth;50%);
+  }
+  .banner-white {
+    .hanging-arrow(@white;@arrowHeight;@arrowWidth;50%);
+  }
 }
 .cs-header-screens {
   padding: @arrowHeight 0 0;
