@@ -74,6 +74,14 @@
                     label="Single Image"
                     description="Single Image"
                     showon="header_type:single" />
+                <field
+                    name="single"
+                    type="imagelist"
+                    directory="/templates/ee/images/case-studies/header"
+                    hide_default="true"
+                    label="Single Image"
+                    description="Single Image"
+                    showon="header_type:single" />
 
             </fieldset>
             <fieldset name="advanced">

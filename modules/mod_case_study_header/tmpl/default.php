@@ -13,6 +13,7 @@
 			<img class="spread" src="/templates/ee/images/case-studies/header/<?=$params->get('spread')?>" alt="" />
 		<?php else : ?>
 			<img class="single" src="/templates/ee/images/case-studies/header/<?=$params->get('single')?>" alt="" />
+			<img class="single-small" src="/templates/ee/images/case-studies/header/<?=$params->get('single-small')?>" alt="" />
 		<?php endif; ?>
 	</div>
 </div>

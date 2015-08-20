@@ -1771,6 +1771,14 @@ header {
       bottom: 11px;
     }
   }
+  @media (max-width:360px) {
+    .phone, .tablet {
+      display: none;
+    }
+    .laptop {
+      left: auto;
+    }
+  }
 }
 .cs-header-catalog {
   padding: @arrowHeight 0 0;
@@ -1857,6 +1865,14 @@ header {
       bottom: 5%;
     }
   }
+  @media (max-width:360px) {
+    .cover, .spread {
+      display: none;
+    }
+    .laptop {
+      left: auto;
+    }
+  }
 }
 .cs-header-single {
   padding: @arrowHeight 0 0;
@@ -1874,6 +1890,19 @@ header {
   @media (max-width:@screen-sm-max) {
     .container {
       margin-bottom: -15px;
+    }
+  }
+  @media (min-width:361px) {
+    .single-small {
+      display: none;
+    }
+  }
+  @media (max-width:360px) {
+    .container {
+      margin-bottom: 0;
+    }
+    .single {
+      display: none;
     }
   }
 }
