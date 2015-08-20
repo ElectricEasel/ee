@@ -75,12 +75,12 @@
                     description="Single Image"
                     showon="header_type:single" />
                 <field
-                    name="single"
+                    name="single-small"
                     type="imagelist"
                     directory="/templates/ee/images/case-studies/header"
                     hide_default="true"
-                    label="Single Image"
-                    description="Single Image"
+                    label="Mobile Single Image"
+                    description="Mobile Single Image"
                     showon="header_type:single" />
 
             </fieldset>
