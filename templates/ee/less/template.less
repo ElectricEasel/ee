@@ -464,6 +464,10 @@ header {
       }
       @media (max-width:430px) {
         padding-left: 50px;
+
+        img.thin {
+          left: 50px;
+        }
       }
     }
     .nav-main-collapse {
@@ -599,7 +603,14 @@ header {
 .home .header {
   background: none;
 }
-.who-we-are, .case-studies-child {
+.case-studies-child {
+  .header {
+    background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x left bottom,
+                url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat @grayGradientBackup;
+    background-size: 2000px 22px, cover;
+  }
+}
+.who-we-are {
   .header {
     background: url(/templates/ee/images/hanging-caret-blue.png) repeat-x center bottom,
                 url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat @grayGradientBackup;
@@ -1058,6 +1069,12 @@ header {
     max-width: 775px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .btn-blue {
+    &:hover {
+      color: @white;
+      background: darken(@blue,15%);
+    }
   }
 }
 .custom.banner-blue {
@@ -1658,15 +1675,6 @@ header {
     text-transform: lowercase;
   }
 }
-.cs-header-screens, .cs-header-catalog, .cs-header-single {
-  @media (max-width:@screen-sm-max) {
-    background: @blue;
-
-    .container {
-      display: none;
-    }
-  }
-}
 .cs-header-screens {
   padding: @arrowHeight 0 0;
 
@@ -1728,6 +1736,23 @@ header {
       left: 50px;
       bottom: -20px;
       width: 468px;
+    }
+  }
+  @media (max-width:@screen-sm-max) {
+    .phone {
+      width: 16.5%;
+      left: -1%;
+      bottom: -6%;
+    }
+    .tablet {
+      width: 50.2%;
+      right: -3%;
+      bottom: -10.5%;
+    }
+    .laptop {
+      width: 73.1%;
+      left: 5.5%;
+      bottom: 11px;
     }
   }
 }
@@ -1799,6 +1824,23 @@ header {
       width: 409px;
     }
   }
+  @media (max-width:@screen-sm-max) {
+    .cover {
+      width: 25.8%;
+      left: 38.5%;
+      bottom: -5px;
+    }
+    .spread {
+      width: 49.7%;
+      right: -2.8%;
+      bottom: -2.5%;
+    }
+    .laptop {
+      width: 63.9%;
+      left: -4.5%;
+      bottom: 5%;
+    }
+  }
 }
 .cs-header-single {
   padding: @arrowHeight 0 0;
@@ -1811,6 +1853,11 @@ header {
     .container {
       margin-top: 10px;
       margin-bottom: -44px;
+    }
+  }
+  @media (max-width:@screen-sm-max) {
+    .container {
+      margin-bottom: -15px;
     }
   }
 }
