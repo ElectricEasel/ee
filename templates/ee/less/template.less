@@ -394,8 +394,10 @@ p {
   }
 }
 
-.hide {
-  display: none;
+.mobile-only {
+  @media (min-width:@screen-sm-min) {
+    display: none !important;
+  }
 }
 
 header {
