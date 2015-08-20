@@ -27,3 +27,5 @@ Disallow: /modules/
 Disallow: /plugins/
 Disallow: /tmp/
 
+# 404 page
+Disallow: /index.php?option=com_content&view=article&id=18

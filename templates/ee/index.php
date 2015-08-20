@@ -134,6 +134,10 @@ else
 </head>
 <?php
 $page_class = strtolower(str_replace(array(' ','.'),'-',$title));
+if (is_numeric(substr($page_class, 0, 1)))
+{
+	$page_class = 'page-'.$page_class;
+}
 $parent_class = ($parent_class_title == '') ? '' : ' ' . $parent_class_title;
 ?>
 <body class="site <?php echo $option
