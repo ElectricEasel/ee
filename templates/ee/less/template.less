@@ -399,6 +399,11 @@ p {
     display: none !important;
   }
 }
+.desktop-only {
+  @media (max-width:@screen-sm-max) {
+    display: none !important;
+  }
+}
 
 header {
   border: none;
@@ -1376,6 +1381,22 @@ header {
     width: 100%;
     border: 1px solid #adb8c2;
     border-radius: 10px;
+  }
+  @media (max-width:@screen-sm-max) and (min-width:361px) {
+    .row-fluid .span3 {
+      width: 50%;
+      float: left;
+      padding: 0 20px;
+
+      &:nth-child(odd) {
+        padding-left: 0;
+        padding-right: 20px;
+      }
+      &:nth-child(even) {
+        padding-right: 0;
+        padding-left: 20px;
+      }
+    }
   }
 }
 #careersForm, #contactForm {
