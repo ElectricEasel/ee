@@ -182,24 +182,38 @@
 
   li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 5px;
     a {
       background: url(/templates/ee/images/social-sprite.png) no-repeat;
       display: inline-block;
       height: 30px;
       width: 30px;
+      padding: 5px;
+      box-sizing: content-box;
+      border: 1px solid @white;
+      border-radius: 8px;
+      -webkit-transition: 150ms linear;
+      -moz-transition: 150ms linear;
+      -o-transition: 150ms linear;
+      -ms-transition: 150ms linear;
+      transition: 150ms linear;
+
+      &:hover, &:focus {
+        background: url(/templates/ee/images/social-sprite-blue.png) no-repeat @white;
+        border-color: @blue;
+      }
     }
     a.facebook {
-      background-position: 0 0;
+      background-position: 12px 5px;
     }
     a.twitter {
-      background-position: 0 -45px;
+      background-position: 11px -43px;
     }
     a.google_plus {
-      background-position: 0 -95px;
+      background-position: 7px -93px;
     }
     a.linkedin {
-      background-position: 0 -145px;
+      background-position: 7px -143px;
     }
   }
   @media (max-width:@screen-mb-max) {
@@ -212,18 +226,24 @@
   li {
     a {
       background: url(/templates/ee/images/social-sprite-blue.png) no-repeat;
+      border: 1px solid @blue;
+
+      &:hover, &:focus {
+        background: url(/templates/ee/images/social-sprite.png) no-repeat @blue;
+        border-color: @white;
+      }
     }
     a.facebook {
-      background-position: 0 0;
+      background-position: 12px 5px;
     }
     a.twitter {
-      background-position: 0 -45px;
+      background-position: 11px -43px;
     }
     a.google_plus {
-      background-position: 0 -95px;
+      background-position: 7px -93px;
     }
     a.linkedin {
-      background-position: 0 -145px;
+      background-position: 7px -143px;
     }
   }
 }
@@ -1636,15 +1656,12 @@ header {
         .antialiased;
       }
     }
-    .social-icons-custom li {
-      margin: 0 11px;
-    }
     @media (max-width:@screen-md-max) and (min-width:@screen-md-min) {
       p {
         font-size: 16px;
       }
       .social-icons-custom li {
-        margin: 0 4px;
+        margin: 4px 7px;
       }
     }
   }
