@@ -217,7 +217,11 @@ $parent_class = ($parent_class_title == '') ? '' : ' ' . $parent_class_title;
 	<!-- Footer -->
 		<footer class="footer" role="contentinfo">
 			<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
-	            <ul class="pull-left social-icons-custom">
+				<a class="brand pull-left" href="<?php echo $this->baseurl; ?>">
+					<img class="normal-image thick" src="/templates/ee/images/logo.png" alt= "Electric Easel Digital Marketing Agency" />
+					<img class="retina-image thick" src="/templates/ee/images/logo@2x.png" alt= "Electric Easel Digital Marketing Agency" />
+				</a>
+	            <ul class="pull-right social-icons-custom">
 		            <li><a class="facebook" target="_blank" href="https://www.facebook.com/ElectricEasel"></a></li>
 		            <li><a class="twitter" target="_blank" href="https://twitter.com/electriceasel1"></a></li>
 		            <li><a class="google_plus" target="_blank" href="https://plus.google.com/113840527065273591351" rel="publisher"></a></li>
