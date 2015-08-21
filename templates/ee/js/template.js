@@ -262,7 +262,7 @@
             }
             var parentLink = $(this).children('a').attr('href');
             var trueLink = e.target.getAttribute('href');
-            if(parentLink != trueLink) {
+            if(parentLink != trueLink && !hasClass(e, 'mobile-only')) {
                 return true;
             }
             var trueClass = false;
@@ -280,7 +280,6 @@
             if(trueClass) {
                 $(this).addClass('expanded');
             }
-            return false;
         });
     });
 
