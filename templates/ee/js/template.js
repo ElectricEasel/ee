@@ -273,14 +273,21 @@
                 $(this).children('#mainMenu ul.nav-child').css('height',height);
                 trueClass = true;
                 return false;
-            } else if(!hasClass(e, 'mobile-only')) {
+            } else {
                 $(this).children('#mainMenu ul.nav-child').css('height', '0');
             }
             parent.removeClass('expanded');
             if(trueClass) {
                 $(this).addClass('expanded');
             }
+            if(trueLink == parentLink && !hasClass(e, 'mobile-only')) {
+                return false;
+            }
         });
     });
 
 })(jQuery);
+
+function hasClass(element, cls) {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+}
