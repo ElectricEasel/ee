@@ -197,7 +197,7 @@
         // Custom Code
         $('#homeHeaderCarousel').carousel({
             interval: 5000,
-            pause: true
+            pause: false
         });
         $('#testimonialsCarousel').carousel({
             interval: 10000
