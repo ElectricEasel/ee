@@ -256,8 +256,13 @@
             $(this).css('height','0');
         });
         var parent = $('.parent');
-        parent.click(function(){
+        parent.click(function(e){
             if($(window).width() > 767) {
+                return true;
+            }
+            var parentLink = $(this).children('a').attr('href');
+            var trueLink = e.target.getAttribute('href');
+            if(parentLink != trueLink) {
                 return true;
             }
             var trueClass = false;
@@ -267,6 +272,7 @@
             if($(this).hasClass('expanded')) {
                 $(this).children('#mainMenu ul.nav-child').css('height',height);
                 trueClass = true;
+                return false;
             } else {
                 $(this).children('#mainMenu ul.nav-child').css('height', '0');
             }
