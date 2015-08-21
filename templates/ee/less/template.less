@@ -1301,12 +1301,18 @@ header {
 
     .expanded {
       .img-wrap {
-        margin: 15px;
+        float: none;
+        width: 100%;
+        margin-bottom: 15px;
       }
       .expanded-content {
         float: none;
         width: 100%;
         max-width: 100%;
+
+        h2 {
+          text-align: center;
+        }
       }
     }
     .design {
@@ -1347,6 +1353,21 @@ header {
   @media (max-width:@screen-sm-max) {
     .row-fluid {
       margin-bottom: 0;
+
+      .span3 {
+        width: 50%;
+        float: left;
+        padding: 0 20px;
+
+        &:nth-child(odd) {
+          padding-left: 0;
+          padding-right: 20px;
+        }
+        &:nth-child(even) {
+          padding-right: 0;
+          padding-left: 20px;
+        }
+      }
     }
     img {
       max-width: 100%;
