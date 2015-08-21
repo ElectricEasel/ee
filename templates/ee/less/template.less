@@ -477,8 +477,19 @@ header {
         }
       }
     }
+    nav.nav-main {
+      padding: 0;
+
+      > ul > li:first-child {
+        padding-top: 10px;
+      }
+    }
     .nav-main-collapse {
       padding: 0;
+
+      &.expanded-special {
+        background: #eceef2;
+      }
     }
     #mainMenu {
       margin: 0;
@@ -504,6 +515,10 @@ header {
       }
       li + li {
         margin-left: 0;
+      }
+      .back-parent {
+        background: #0e263f;
+        padding-top: 10px;
       }
       .back {
         &:before {
@@ -578,11 +593,11 @@ header {
         background: @nearBlack;
         text-align: left;
         padding: 0;
-        -webkit-transition: 250ms linear;
-        -moz-transition: 250ms linear;
-        -o-transition: 250ms linear;
-        -ms-transition: 250ms linear;
-        transition: 250ms linear;
+        -webkit-transition: left 250ms linear;
+        -moz-transition: left 250ms linear;
+        -o-transition: left 250ms linear;
+        -ms-transition: left 250ms linear;
+        transition: left 250ms linear;
 
         .nav-child {
           display: block !important;
@@ -599,6 +614,7 @@ header {
             a {
               font-weight: 400 !important;
               text-decoration: none;
+              border-bottom: 1px solid #cacccf !important;
             }
             &:last-child a {
               border-bottom: 1px solid #cacccf !important;
@@ -620,14 +636,29 @@ header {
           &:last-child a {
             border-bottom: 0 !important;
           }
+          &.active.current {
+            a {
+              font-weight: 300 !important;
+            }
+          }
+          &.parent {
+            a {
+              font-weight: 700 !important;
+            }
+          }
+          &.parent.expanded {
+            a {
+              font-weight: 300 !important;
+            }
+          }
           &.expanded {
             padding: 0;
             background: @blue;
 
             a {
               color: @white !important;
-              padding-left: 15px;
-              padding-right: 15px;
+              margin-left: 15px;
+              margin-right: 15px;
             }
             ul.nav-child {
               background: #eceef2;
