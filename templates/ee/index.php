@@ -44,7 +44,7 @@ else
 <?php
 
 $doc->addScript('/templates/' .$this->template. '/vendor/modernizr.min.js')
-	->addScript('/templates/' .$this->template. '/js/template.js');
+	->addScript('/templates/' .$this->template. '/js/template.min.js');
 
 // Add Stylesheets
 // The commented out styles below are all added to combined.min.css
