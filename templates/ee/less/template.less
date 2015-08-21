@@ -199,8 +199,8 @@
       transition: 150ms linear;
 
       &:hover, &:focus {
-        background: url(/templates/ee/images/social-sprite-blue.png) no-repeat @white;
-        border-color: @blue;
+        background: url(/templates/ee/images/social-sprite-blue-dark.png) no-repeat @white;
+        border-color: @blueDark;
       }
     }
     a.facebook {
@@ -226,6 +226,31 @@
   li {
     a {
       background: url(/templates/ee/images/social-sprite-blue.png) no-repeat;
+      border: 1px solid @blue;
+
+      &:hover, &:focus {
+        background: url(/templates/ee/images/social-sprite.png) no-repeat @blue;
+        border-color: @white;
+      }
+    }
+    a.facebook {
+      background-position: 12px 6px;
+    }
+    a.twitter {
+      background-position: 11px -42px;
+    }
+    a.google_plus {
+      background-position: 7px -92px;
+    }
+    a.linkedin {
+      background-position: 7px -142px;
+    }
+  }
+}
+.social-icons-custom.social-icons-blue-darl {
+  li {
+    a {
+      background: url(/templates/ee/images/social-sprite-blue-dark.png) no-repeat;
       border: 1px solid @blue;
 
       &:hover, &:focus {
@@ -731,7 +756,7 @@ header {
   }
 }
 .footer {
-  background: @blue;
+  background: @blueDark;
   padding: 35px 0;
 
   p {
@@ -744,6 +769,7 @@ header {
     line-height: 35px;
     vertical-align: middle;
     letter-spacing: 1px;
+    clear: right;
 
     span.divider {
       margin: 0 2px
@@ -761,6 +787,16 @@ header {
       width: 100%;
       text-align: center;
       margin-bottom: 10px;
+    }
+    .brand {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 25px;
+
+      img {
+        width: auto;
+        max-width: 100%;
+      }
     }
   }
 }
