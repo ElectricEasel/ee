@@ -43,7 +43,8 @@ else
 
 <?php
 
-$doc->addScript('/templates/' .$this->template. '/vendor/modernizr.min.js');
+$doc->addScript('/templates/' .$this->template. '/vendor/modernizr.min.js')
+	->addScript('/templates/' .$this->template. '/js/template.js');
 
 // Add Stylesheets
 // The commented out styles below are all added to combined.min.css
@@ -237,8 +238,6 @@ $parent_class = ($parent_class_title == '') ? '' : ' ' . $parent_class_title;
 
     <script src="/templates/ee/vendor/bootstrap.min.js"></script>
     <script src="/templates/ee/vendor/owl-carousel/owl.carousel.min.js"></script>
-
-    <script src="/templates/ee/js/template.js"></script>
 
     <!-- Theme Initializer -->
     <script src="/templates/ee/js/theme.min.js"></script>

@@ -497,6 +497,14 @@ header {
           }
         }
       }
+      li + li {
+        margin-left: 0;
+      }
+      .back {
+        &:before {
+          content: "< ";
+        }
+      }
       .nav-child {
         display: none;
       }
@@ -775,6 +783,7 @@ header {
       .al {
         padding-top: 102px;
         img {
+          max-width: 375px;
           margin: 0 0 -75px;
         }
       }

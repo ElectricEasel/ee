@@ -250,6 +250,9 @@
 
     $(window).load(function(){
         $('#mainMenu ul.nav-child').each(function(){
+            if($(this).children('a').hasClass('special')) {
+                return true;
+            }
             $(this).css('height','auto');
             var height = $(this).height();
             $(this).attr('data-height',height);
@@ -263,22 +266,23 @@
             }
             var parentLink = $(this).children('a').attr('href');
             var trueLink = e.target.getAttribute('href');
-            if(parentLink != trueLink && !hasClass(e.target, aliasLinkClass)) {
+            if(hasClass(e.target, aliasLinkClass)) {
                 return true;
+            }
+            if(parentLink != trueLink) {
+                return true;
+            }
+            if($(this).children('a').hasClass('special')) {
+                return false;
             }
             var trueClass = false;
             $(this).toggleClass('expanded');
-            $('#mainMenu ul.sub-level').css('height','0');
+            $('#mainMenu ul.nav-child').css('height','0');
             var height = $(this).children('#mainMenu ul.nav-child').attr('data-height');
             if($(this).hasClass('expanded')) {
                 $(this).children('#mainMenu ul.nav-child').css('height',height);
                 trueClass = true;
                 return false;
-            } else {
-                if(hasClass(e.target, aliasLinkClass)) {
-                    return true;
-                }
-                $(this).children('#mainMenu ul.nav-child').css('height', '0');
             }
             parent.removeClass('expanded');
             if(trueClass) {
@@ -288,6 +292,28 @@
                 return false;
             }
         });
+        var special = $('a.special').parent('.parent');
+        var returnMenu = $('.back').parent('li');
+        returnMenu.hide();
+        special.click(function(){
+            if($(window).innerWidth() > 767) {
+                return 0;
+            }
+            if($(this).hasClass('expanded')) {
+                return 0;
+            }
+            $('#mainMenu > li').hide();
+            returnMenu.show();
+            $(this).show();
+            $(this).toggleClass('expanded');
+            $(this).children('#mainMenu ul.nav-child').css('height','auto');
+        });
+        returnMenu.click(function(){
+            $('#mainMenu ul.nav-child').css('height','0');
+            parent.removeClass('expanded');
+            $('#mainMenu > li').show();
+            returnMenu.hide();
+        })
     });
 
 })(jQuery);
