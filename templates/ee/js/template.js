@@ -255,6 +255,7 @@
             $(this).attr('data-height',height);
             $(this).css('height','0');
         });
+        var aliasLinkClass = 'mobile-only';
         var parent = $('.parent');
         parent.click(function(e){
             if($(window).width() > 767) {
@@ -262,7 +263,7 @@
             }
             var parentLink = $(this).children('a').attr('href');
             var trueLink = e.target.getAttribute('href');
-            if(parentLink != trueLink && !hasClass(e, 'mobile-only')) {
+            if(parentLink != trueLink && !hasClass(e.target, aliasLinkClass)) {
                 return true;
             }
             var trueClass = false;
@@ -274,13 +275,16 @@
                 trueClass = true;
                 return false;
             } else {
+                if(hasClass(e.target, aliasLinkClass)) {
+                    return true;
+                }
                 $(this).children('#mainMenu ul.nav-child').css('height', '0');
             }
             parent.removeClass('expanded');
             if(trueClass) {
                 $(this).addClass('expanded');
             }
-            if(trueLink == parentLink && !hasClass(e, 'mobile-only')) {
+            if(trueLink == parentLink && !hasClass(e.target, aliasLinkClass)) {
                 return false;
             }
         });
