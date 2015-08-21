@@ -199,7 +199,7 @@
       transition: 150ms linear;
 
       &:hover, &:focus {
-        background: url(/templates/ee/images/social-sprite-blue.png) no-repeat @white;
+        background: url(/templates/ee/images/social-sprite-blue-dark.png) no-repeat @white;
         border-color: @blue;
       }
     }
@@ -226,6 +226,31 @@
   li {
     a {
       background: url(/templates/ee/images/social-sprite-blue.png) no-repeat;
+      border: 1px solid @blue;
+
+      &:hover, &:focus {
+        background: url(/templates/ee/images/social-sprite.png) no-repeat @blue;
+        border-color: @white;
+      }
+    }
+    a.facebook {
+      background-position: 12px 6px;
+    }
+    a.twitter {
+      background-position: 11px -42px;
+    }
+    a.google_plus {
+      background-position: 7px -92px;
+    }
+    a.linkedin {
+      background-position: 7px -142px;
+    }
+  }
+}
+.social-icons-custom.social-icons-blue-darl {
+  li {
+    a {
+      background: url(/templates/ee/images/social-sprite-blue-dark.png) no-repeat;
       border: 1px solid @blue;
 
       &:hover, &:focus {
