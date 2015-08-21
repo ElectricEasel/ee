@@ -273,7 +273,7 @@
                 $(this).children('#mainMenu ul.nav-child').css('height',height);
                 trueClass = true;
                 return false;
-            } else {
+            } else if(!hasClass(e, 'mobile-only')) {
                 $(this).children('#mainMenu ul.nav-child').css('height', '0');
             }
             parent.removeClass('expanded');
