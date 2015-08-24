@@ -28,3 +28,6 @@ header {
 .custom.home-split .split-left.split-texture {
   background: url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat right top #5a6477;
 }
+.btn-white-alt {
+  color: #0977bc;
+}
