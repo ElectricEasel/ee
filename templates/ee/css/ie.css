@@ -1,5 +1,5 @@
 .row-fluid [class*='span'] {
-  min-height: 0;
+  min-height: 0 !important;
 }
 .btn-white-alt {
   color: #0977bc;
