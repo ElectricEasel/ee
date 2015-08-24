@@ -29,3 +29,12 @@ header {
 .custom.home-aerex .split-white img {
   width: auto;
 }
+.custom.services-carousel .item h5 {
+  font-size: 17px;
+}
+@media (max-width: 979px) and (min-width: 768px) {
+  .custom.services-carousel .item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
