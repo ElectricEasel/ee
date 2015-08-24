@@ -1,20 +1,13 @@
 @import "variables.less";
 
 
+.btn-white-alt {
+  color: @blue;
+}
 header {
   background: url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat @grayGradientBackup;
 }
-.case-studies-child {
-  .header {
-    background: url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat @grayGradientBackup;
-  }
-}
-.who-we-are {
-  .header {
-    background: url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat @grayGradientBackup;
-  }
-}
-.what-we-do {
+.case-studies-child, .who-we-are, .what-we-do {
   .header {
     background: url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat @grayGradientBackup;
   }
@@ -38,17 +31,16 @@ header {
   }
 }
 .custom.home-split {
-  .split-right {
+  .split-right, .split-left {
     &.split-texture {
       background: url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat left top @grayGradientBackup;
     }
   }
-  .split-left {
-    &.split-texture {
-      background: url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat right top @grayGradientBackup;
+}
+.custom.home-angel, .custom.home-aerex {
+  .split-white {
+    img {
+      width: auto;
     }
   }
-}
-.btn-white-alt {
-  color: @blue;
 }
