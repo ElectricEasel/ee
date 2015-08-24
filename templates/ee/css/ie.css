@@ -7,6 +7,10 @@
 header {
   background: url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
 }
+header .header-inner .brand {
+  width: 230px;
+  max-width: 100%;
+}
 .case-studies-child .header,
 .who-we-are .header,
 .what-we-do .header {
