@@ -1,51 +1,30 @@
-/* Header */
-html.ie header {
-	background: #fff;
-	filter: none;
+header {
+  background: url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
 }
-
-/* Navigation */
-html.ie8 header nav ul.nav-main ul.dropdown-menu,
-html.ie9 header nav ul.nav-main ul.dropdown-menu {
-	filter: none !important;
+.case-studies-child .header {
+  background: url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
 }
-
-html.ie8 div.home-concept,
-html.ie8 div.home-concept div.process-image,
-html.ie8 div.home-concept div.project-image {
-	background: none;
+.who-we-are .header {
+  background: url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
 }
-
-/* Social Icons */
-html.ie8 header ul.social-icons {
-	margin-top: 2px;
+.what-we-do .header {
+  background: url(/templates/ee/images/gray-gradient-bg.jpg) 0 0 no-repeat #5a6477;
 }
-
-html.ie8 header ul.social-icons li {
-	background-color: #F1F1F1;
+#homeHeaderCarousel .carousel-inner .item .tt {
+  background: url(/templates/ee/images/home-header-carousel/tt-bg.jpg) no-repeat center bottom transparent;
 }
-
-/* History */
-html.ie8 ul.history li div.thumb {
-	background: none;
+#homeHeaderCarousel .carousel-inner .item .posrg {
+  background: url(/templates/ee/images/home-header-carousel/posrg-bg.jpg) no-repeat center bottom transparent;
 }
-
-/* Testimonials */
-html.ie8 div.testimonial-author div.img-thumbnail {
-	height: 60px;
-	width: 60px;
+#homeHeaderCarousel .carousel-inner .item .echo {
+  background: url(/templates/ee/images/home-header-carousel/echo-bg.jpg) no-repeat center bottom transparent;
 }
-
-html.ie8 div.testimonial-author div.img-thumbnail img {
-	float: left;
+#homeHeaderCarousel .carousel-inner .item .al {
+  background: url(/templates/ee/images/home-header-carousel/al-bg.jpg) no-repeat center bottom transparent;
 }
-
-/* Pricing Plans */
-html.ie8 div.plan-ribbon-wrapper {
-	top: -30px;
+.custom.home-split .split-right.split-texture {
+  background: url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat left top #5a6477;
 }
-
-html.ie8 div.plan-ribbon-wrapper div.plan-ribbon {
-	text-align: left;
-	padding-left: 20px;
+.custom.home-split .split-left.split-texture {
+  background: url(/templates/ee/images/gray-gradient-bg.jpg) no-repeat right top #5a6477;
 }
