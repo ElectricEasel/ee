@@ -236,7 +236,7 @@ $parent_class = ($parent_class_title == '') ? '' : ' ' . $parent_class_title;
 	</div>
 	<jdoc:include type="modules" name="debug" style="none" />
 
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700%7COleo+Script:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700%7COleo+Script:400,700' rel='stylesheet' property='stylesheet' type='text/css'>
 
     <script src="/templates/ee/js/plugins.min.js"></script>
 
